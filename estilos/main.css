@@ -17,39 +17,80 @@ a {
 }
 
 body {
-    background-color: rgb(68, 68, 68);
+    background-color: rgb(110, 110, 110);
 }
 
 header {
-    background-color: black;
-    margin: auto;
-    width: 90vw;
+    background-color:#292B2E;
+    width: 100vw;
     height: 100px;
     display: flex;
     align-items: center;
     border-radius: 0px 0px 4px 4px;
-    padding: 33px 3%;
     justify-content: space-between;
+    position: fixed;
+    z-index: 100;
 }
 
-header > a {
-    color: white;
-    padding-left: 20px;
+.fk {
+    color: #EDEAE0;
+    padding: 0 10%;
     font-size: 1.7em;
 }
 
-ul.ul-header {
-    display: flex; 
-    border-style: solid;
-    border-color: white;
-    border-radius: 10px;
-    border-width: 0.1em;
+.navbar {
+    padding: 15px 5%;
 }
 
+.navbar a {
+    color: #EDEAE0;
+    margin-left: 40px;
+}
 
+.navbar a.ativado {
+    color: #C4BFBA;
+}
 
-ul.ul-header > a {
+.Index {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    padding: 0 10%;
+}
+
+.Conteudo-Index{
+    color: #EDEAE0;
+}
+
+.Conteudo-Index h6 {
+    font-size: 1.2em;
+}
+
+.Conteudo-Index h1 {
+    font-size:2.8em;
+}
+
+.Conteudo-Index h2 {
+    font-size: 1.7em;
+    color: #E8DED4;
+}
+
+.mais-sobre-mim h1{
     color: white;
-    padding: 15px;
+    font-size: 1.8em;
+    margin: 30px 0px 30px 0px;
+    padding: 10px 0px 10px 0px;
+    border-style:solid;
+    border-width: 1px;
+    border-radius: 30px;
+    text-align: center;
+}
+
+.caixa-butao {
+    width: 100px;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
 }
 
