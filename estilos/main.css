@@ -62,6 +62,11 @@ header {
     color: #EDEAE0;
 }
 
+.Conteudo-Index h4 {
+    font-size: 16px;
+    margin: 20px 0 40px;    
+}
+
 .Conteudo-Index h6 {
     font-size: 1.2em;
 }
@@ -70,13 +75,20 @@ header {
     font-size:2.8em;
 }
 
+.Conteudo-Index h1:hover {
+    color: crimson;
+    transition: .7s;
+}
+
 .Conteudo-Index h2 {
     font-size: 1.7em;
     color: #E8DED4;
 }
 
 .mais-sobre-mim h1{
+    position: relative;
     color: white;
+    background-color: #292B2E ;
     font-size: 1.8em;
     margin: 30px 0px 30px 0px;
     padding: 10px 0px 10px 0px;
@@ -84,13 +96,70 @@ header {
     border-width: 1px;
     border-radius: 30px;
     text-align: center;
+    border-color: #292B2E;
+    z-index: 1;
+    overflow: hidden;
+    transition: .2s;
+}
+
+.mais-sobre-mim h1:hover {
+    color: #292B2E;
+    border-color: rgb(232, 222, 212);  
+}
+
+
+.mais-sobre-mim h1::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background-color: #e8ded4; 
+    z-index: -1;
+    transition: .5s;
+}
+
+.mais-sobre-mim h1:hover::before {
+    width: 100%;
 }
 
 .caixa-butao {
-    width: 100px;
+    position: relative;
     margin: auto;
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
+    width: 130px;
+    display:flex;
+    justify-content: space-between;
 }
+
+
+.caixa-butao a {
+    color: #292B2E;
+    display: inline-flex;
+    justify-content: center;
+    text-decoration: none;
+    font-size: 35px;
+}
+
+
+.caixa-butao i:hover{
+    color: white;
+    transition: 1s;
+}
+
+.foto-perfil {
+    position: relative;
+    width: 400px;
+    margin-left: 500px;
+    
+}
+
+.foto-perfil:hover {
+    content: url("/fotos/foto\ de\ perfil\ do\ site\ branca.png");
+}
+
+
+
+
+
 
