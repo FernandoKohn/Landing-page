@@ -13,7 +13,7 @@
 
 <body>
     <header>
-        <a href="index.html" class="fk">FK</a>
+        <a href="index.html" class="fk">FK.</a>
         <nav class="navbar">
             <a href="#" class="ativado">Home</a>
             <a href="#">Sobre mim</a>
@@ -25,7 +25,7 @@
         <section class="Index">
             <div class="Conteudo-Index">
                 <h6>Olá, eu sou</h6>
-                <h1>FERNANDO KOHN</h1>
+                <h1 class="fernandokohn">FERNANDO KOHN</h1>
                 <h2>Eu desenvolvo para web</h2>
                 <h4>Estudante de Ciencia da computação <br> & Desenvolvedor Front-End</h4>
                 <div class="mais-sobre-mim">
@@ -44,5 +44,17 @@
         </section>
     </main>
 </body>
+
+<div id="cursor"></div>
+
+<script>
+    var cursor = document.getElementById("cursor")
+
+    document.onmousemove = function(e) {
+        cursor.style.left = (e.pageX + 1.5) + "px";
+        cursor.style.top = (e.pageY + 1.5) + "px";
+        cursor.style.display = "block";
+    }
+</script>
 
 </html>
