@@ -8,7 +8,7 @@
     <title>Fernando Kohn</title>
     <link rel="stylesheet" href="/estilos/main.css">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
-
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
 </head>
 
 <body>
@@ -26,7 +26,7 @@
             <div class="Conteudo-Index">
                 <h6>Olá, eu sou</h6>
                 <h1 class="fernandokohn">FERNANDO KOHN</h1>
-                <h2>Eu desenvolvo para web</h2>
+                <h2>Eu <span class="Efeito-digitado"></span></h2>
                 <h4>Estudante de Ciencia da computação <br> & Desenvolvedor Front-End</h4>
                 <div class="mais-sobre-mim">
                     <a href="#">
@@ -44,17 +44,23 @@
         </section>
     </main>
 </body>
-
 <div id="cursor"></div>
-
 <script>
     var cursor = document.getElementById("cursor")
 
-    document.onmousemove = function(e) {
-        cursor.style.left = (e.pageX + 1.5) + "px";
-        cursor.style.top = (e.pageY + 1.5) + "px";
-        cursor.style.display = "block";
-    }
+document.onmousemove = function (e) {
+    cursor.style.left = (e.pageX + 1.5) + "px";
+    cursor.style.top = (e.pageY + 1.5) + "px";
+    cursor.style.display = "block";
+}
+
+var typed = new Typed(".Efeito-digitado", {
+    strings: ["desenvolvo para web"],
+    typeSpeed: 100,
+    backSpeed: 100,
+    backDelay: 1000,
+    loop: true
+})
 </script>
 
 </html>

@@ -1,10 +1,12 @@
 @charset "UTF-8";
 @import url('https://fonts.googleapis.com/css2?family=Archivo+Black&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Baloo+Thambi+2:wght@700&display=swap');
 
 * {
     padding: 0;
     margin: 0;
-    font-family: 'Archivo Black', sans-serif;
+    /*font-family: 'Archivo Black', sans-serif; */
+    font-family: 'Baloo Thambi 2', sans-serif;
     box-sizing: border-box;
     cursor: url("/fotos/radio-circle-regular-24.png"), auto;
 }
@@ -13,13 +15,13 @@
 #cursor {
     height: 20px;
     width: 20px;
-    background: #e7c82fa9;
+    background: rgba(0, 0, 0, 0.61);
     border-radius: 50%;
     position: absolute;
     display: none;
     transition-duration: 0.3s;
     transition-timing-function: ease-out;
-    z-index: 101;
+    z-index: 999;
     pointer-events: none;
 }
 
@@ -29,25 +31,36 @@ a {
 }
 
 body {
-    background-color: rgb(110, 110, 110);
+    padding-top: 10px;
+    padding-right: 10px;
+    padding-left: 10px;
+    background-color: rgb(0, 0, 0);
     cursor: url("/fotos/radio-circle-regular-24.png"), auto;
+    overflow: hidden;
 }
 
+
 header {
-    background-color:#292B2E;
-    width: 100vw;
+    background-color:#c4c4c4;
+    width: 99vw;
     height: 70px;
     display: flex;
     align-items: center;
-    border-radius: 0px 0px 4px 4px;
     justify-content: space-between;
-    position: fixed;
-    z-index: 100;
+    border-radius: 7px 7px 0px 0px;
+    border-bottom: 4px solid #000;
+}
+
+main {
+    background-color: rgb(255, 0, 0);
+    position: relative;
+    width: 99vw;
+    height: 100vh;
 }
 
 .fk {
     position: relative;
-    color: #EDEAE0;
+    color: black;
     padding: 0 10%;
     font-size: 1.7em;
 }
@@ -59,7 +72,7 @@ header {
     right: 0;
     width: 100%;
     height: 100%;
-    background: #292B2E;
+    background: #c4c4c4;
     animation: showRight 1s ease forwards;
     animation-delay: .4s;
 }
@@ -68,26 +81,51 @@ header {
 
 .navbar {
     padding: 15px 5%;
+    position: relative;
 }
+
+.navbar::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    background: #c4c4c4;
+    animation: showRight 1s ease forwards;
+    animation-delay: 1.8s;
+}
+
 
 .navbar a {
-    color: #EDEAE0;
-    margin-left: 40px;
+    color: #000000;
+    padding: 18.52px 20px 19px;
+    font-size: 1.5em;
 }
 
+.navbar a:hover {
+    background-color: #000000;
+    color: white;
+}
+
+
 .navbar a.ativado {
-    color: #C4BFBA;
+    color: #A1A194;
 }
 
 .Index {
-    height: 100vh;
+    background-color: #ffffff;
     display: flex;
+    height: 900px;
     align-items: center;
     padding: 0 10%;
 }
 
 .Conteudo-Index{
     color: #EDEAE0;
+    transform: scale(1.4);
+    margin: 6% 0 5% 6%;
+    position: relative;
 }
 
 .Conteudo-Index::before {
@@ -97,14 +135,15 @@ header {
     right: 0;
     width: 100%;
     height: 100%;
-    background: rgb(110, 110, 110);
+    background: rgb(255, 255, 255);
     animation: showRight 1s ease forwards;
     animation-delay: .8s;
 }
 
 .Conteudo-Index h4 {
-    font-size: 16px;
-    margin: 20px 0 40px;  
+    color: black;
+    font-size: 20px;
+    margin: 0px 0 20px;  
     position: relative;  
 }
 
@@ -115,7 +154,7 @@ header {
     right: 0;
     width: 100%;
     height: 100%;
-    background: rgb(110, 110, 110);
+    background: rgb(255, 255, 255);
     animation: showRight 1s ease forwards;
     animation-delay: 1.6s;
 }
@@ -123,11 +162,13 @@ header {
 
 .Conteudo-Index h6 {
     font-size: 1.2em;
+    color: black;
 }
 
 .fernandokohn {
     font-size:2.8em;
     position: relative;
+    color: #C70F1F;
 }
 
 .fernandokohn::before {
@@ -137,21 +178,26 @@ header {
     right: 0;
     width: 100%;
     height: 100%;
-    background: rgb(110, 110, 110);
+    background: rgb(255, 255, 255);
     animation: showRight 1s ease forwards;
     animation-delay: 1s;
 }
 
 
 .fernandokohn:hover {
-    color: crimson;
+    color: #292B2E;
     transition: .7s;
 }
 
+.Efeito-digitado {
+    color: #C13A4B;
+}
+
 .Conteudo-Index h2 {
+    padding-top: 10px;
     position: relative;
     font-size: 1.7em;
-    color: #E8DED4;
+    color: black;
 }
 
 .Conteudo-Index h2::before {
@@ -161,7 +207,7 @@ header {
     right: 0;
     width: 100%;
     height: 100%;
-    background: rgb(110, 110, 110);
+    background: rgb(255, 255, 255);
     animation: showRight 1s ease forwards;
     animation-delay: .8s;
 }
@@ -169,6 +215,7 @@ header {
 
 .mais-sobre-mim {
     position: relative;
+    overflow: hidden;
 }
 
 .mais-sobre-mim::before {
@@ -178,7 +225,7 @@ header {
     right: 0;
     width: 100%;
     height: 100%;
-    background: rgb(110, 110, 110);
+    background: rgb(255, 255, 255);
     animation: showRight 1s ease forwards;
     animation-delay: 1.8s;
     z-index: 2;
@@ -186,16 +233,15 @@ header {
 
 .mais-sobre-mim h1{
     position: relative;
-    color: white;
-    background-color: #292B2E ;
+    color: #000000;
+    background-color:#C4C4C4 ;
     font-size: 1.8em;
-    margin: 30px 0px 30px 0px;
+    margin: 0px 0px 20px 0px;
     padding: 10px 0px 10px 0px;
     border-style:solid;
-    border-width: 1px;
-    border-radius: 30px;
+    border-width: 3px;
     text-align: center;
-    border-color: #292B2E;
+    border-color:rgb(0, 0, 0);
     z-index: 1;
     overflow: hidden;
     transition: .2s;
@@ -203,8 +249,8 @@ header {
 
 
 .mais-sobre-mim h1:hover {
-    border-color: rgb(232, 222, 212);  
-    color: #292B2E;
+    border-color: black;  
+    color: white;
 }
 
 
@@ -215,7 +261,7 @@ header {
     left: 0;
     width: 0;
     height: 100%;
-    background-color: #e8ded4; 
+    background-color: #A1A194; 
     z-index: -1;
     transition: .5s;
 }
@@ -239,7 +285,7 @@ header {
     right: 0;
     width: 100%;
     height: 100%;
-    background: rgb(110, 110, 110);
+    background: rgb(255, 255, 255);
     animation: showRight 1s ease forwards;
     animation-delay: 1.8s;
 }
@@ -254,26 +300,19 @@ header {
 
 
 .caixa-butao i:hover{
-    color: white;
+    color: #C13A4B;
     transition: 1s;
 }
 
 .foto-perfil {
-    margin-left: 50vh;
+    /* background-image: url("https://assets.website-files.com/ 5e87e737ee7085b9ba02c101/5e87e737ee7085fccd02c10d_pattern-grey.svg"); */
+    background-size: 6px;
+    border-radius: 10%;
+    margin: 4% auto 5% 30%; 
+    opacity: 0;
     position: relative;
-    width: 400px;
-}
-
-.foto-perfil::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    right: 0;
-    width: 100%;
-    height: 100%;
-    background: rgb(110, 110, 110);
-    animation: showRight 1s ease forwards;
-    animation-delay: 1.8s;
+    animation: zoomIn 1s ease forwards, floatImage 5s ease-in-out infinite;
+    animation-delay: 2s, 3s;
 }
 
 
@@ -283,5 +322,32 @@ header {
     }
 }
 
+@keyframes zoomIn {
+    0% {
+        transform: scale(0);
+        opacity: 0;
+    }
+
+    100% {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+@keyframes floatImage {
+    0% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-24px);
+    }
+
+    100% {
+        transform: translateY(0);
+    }
+
+
+}
 
 
