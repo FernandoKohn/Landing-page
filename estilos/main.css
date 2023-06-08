@@ -31,10 +31,11 @@ a {
 }
 
 body {
+    background-color: #000000;
     padding-top: 10px;
     padding-right: 10px;
     padding-left: 10px;
-    background-color: rgb(0, 0, 0);
+    height: 100vh;
     cursor: url("/fotos/radio-circle-regular-24.png"), auto;
     overflow: hidden;
 }
@@ -42,21 +43,16 @@ body {
 
 header {
     background-color:#c4c4c4;
-    width: 99vw;
-    height: 70px;
     display: flex;
     align-items: center;
     justify-content: space-between;
     border-radius: 7px 7px 0px 0px;
     border-bottom: 4px solid #000;
+    overflow: hidden;
+    
 }
 
-main {
-    background-color: rgb(255, 0, 0);
-    position: relative;
-    width: 99vw;
-    height: 100vh;
-}
+
 
 .fk {
     position: relative;
@@ -113,18 +109,59 @@ main {
     color: #A1A194;
 }
 
-.Index {
+main {
+    height: 100vh;
+}
+
+#conteudo-total {
+    overflow: auto;
+    height: 100vh;
+    background-color: white;
+}
+
+#conteudo-total::-webkit-scrollbar {
+    width: 25px;
+}
+
+#conteudo-total::-webkit-scrollbar-track {
+    background: url("https://assets.website-files.com/5e83fdebae1ad8747ffce684/5e864de332df030389abf5bd_pattern-grey.svg");
+    background-size: 6px;
+    border-left: 4px solid #000000;
+}
+
+#conteudo-total::-webkit-scrollbar-thumb {
+    background: #c4c4c4;
+    border: 4px solid #000000;
+    border-right: none;
+}
+
+#conteudo-total::-webkit-scrollbar-thumb:hover {
     background-color: #ffffff;
+}
+
+#conteudo-total::-webkit-scrollbar-thumb:active {
+    background-color: white;
+}
+
+section {
+    min-height: 100vh;
+}
+
+.Index {
     display: flex;
-    height: 900px;
     align-items: center;
-    padding: 0 10%;
+    padding: 0 0 0 10%;
+    margin-bottom: 5px;
+    background-color: #ffffff;
+    border-bottom: black;
+
 }
 
 .Conteudo-Index{
+    max-width: 60rem;
     color: #EDEAE0;
-    transform: scale(1.4);
-    margin: 6% 0 5% 6%;
+    transform: scale(1.5);
+    margin: 1% 0 5% 6%;
     position: relative;
 }
 
@@ -305,14 +342,20 @@ main {
 }
 
 .foto-perfil {
-    /* background-image: url("https://assets.website-files.com/ 5e87e737ee7085b9ba02c101/5e87e737ee7085fccd02c10d_pattern-grey.svg"); */
-    background-size: 6px;
-    border-radius: 10%;
-    margin: 4% auto 5% 30%; 
+    /*background-image: url("https://assets.website-files.com/ 5e87e737ee7085b9ba02c101/5e87e737ee7085fccd02c10d_pattern-grey.svg"); */ 
+    margin: 2% auto 7% 30%; 
     opacity: 0;
-    position: relative;
     animation: zoomIn 1s ease forwards, floatImage 5s ease-in-out infinite;
     animation-delay: 2s, 3s;
+}
+
+.foto-perfil img {
+    width: 500px;
+}
+
+.sobre {
+    background-image: url(https://assets.website-files.com/5e87e737ee7085b9ba02c101/5e87e737ee7085fccd02c10d_pattern-grey.svg) ;
+    background-size: 6px;
 }
 
 

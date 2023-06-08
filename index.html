@@ -12,35 +12,41 @@
 </head>
 
 <body>
-    <header>
-        <a href="index.html" class="fk">FK.</a>
-        <nav class="navbar">
-            <a href="#" class="ativado">Home</a>
-            <a href="#">Sobre mim</a>
-            <a href="#">Projetos</a>
-            <a href="#">Contatos</a>
-        </nav>
-    </header>
     <main>
-        <section class="Index">
-            <div class="Conteudo-Index">
-                <h6>Olá, eu sou</h6>
-                <h1 class="fernandokohn">FERNANDO KOHN</h1>
-                <h2>Eu <span class="Efeito-digitado"></span></h2>
-                <h4>Estudante de Ciencia da computação <br> & Desenvolvedor Front-End</h4>
-                <div class="mais-sobre-mim">
-                    <a href="#">
-                        <h1>Mais sobre mim</h1>
-                    </a>
+        <header>
+            <a href="index.html" class="fk">FK.</a>
+            <nav class="navbar">
+                <a href="#" class="ativado">Home</a>
+                <a href="#">Sobre mim</a>
+                <a href="#">Projetos</a>
+                <a href="#">Contatos</a>
+            </nav>
+        </header>
+
+        <section class="conteudo-total" id="conteudo-total">
+            <section class="Index">
+                <div class="Conteudo-Index">
+                    <h6>Olá, eu sou</h6>
+                    <h1 class="fernandokohn">FERNANDO KOHN</h1>
+                    <h2>Eu <span class="Efeito-digitado"></span></h2>
+                    <h4>Estudante de Ciencia da computação <br> & Desenvolvedor Front-End</h4>
+                    <div class="mais-sobre-mim">
+                        <a href="#">
+                            <h1>Mais sobre mim</h1>
+                        </a>
+                    </div>
+                    <div class="caixa-butao">
+                        <a href="#"><i class='bx bxl-github'></i></a>
+                        <a href="#"><i class='bx bxl-linkedin-square'></i></a>
+                    </div>
                 </div>
-                <div class="caixa-butao">
-                    <a href="#"><i class='bx bxl-github'></i></a>
-                    <a href="#"><i class='bx bxl-linkedin-square' ></i></a>
+                <div class="foto-perfil">
+                    <img src="fotos/foto de perfil do site.png" alt="">
                 </div>
-            </div>
-            <div class="foto-perfil">
-                <img src="fotos/foto de perfil do site.png" alt="">
-            </div>
+            </section>
+            <section class="sobre" id="sobre">
+                
+            </section>
         </section>
     </main>
 </body>
@@ -48,19 +54,19 @@
 <script>
     var cursor = document.getElementById("cursor")
 
-document.onmousemove = function (e) {
-    cursor.style.left = (e.pageX + 1.5) + "px";
-    cursor.style.top = (e.pageY + 1.5) + "px";
-    cursor.style.display = "block";
-}
+    document.onmousemove = function (e) {
+        cursor.style.left = (e.pageX + 1.5) + "px";
+        cursor.style.top = (e.pageY + 1.5) + "px";
+        cursor.style.display = "block";
+    }
 
-var typed = new Typed(".Efeito-digitado", {
-    strings: ["desenvolvo para web"],
-    typeSpeed: 100,
-    backSpeed: 100,
-    backDelay: 1000,
-    loop: true
-})
+    var typed = new Typed(".Efeito-digitado", {
+        strings: ["desenvolvo para web"],
+        typeSpeed: 100,
+        backSpeed: 100,
+        backDelay: 1000,
+        loop: true
+    })
 </script>
 
 </html>
