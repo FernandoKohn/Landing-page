@@ -45,7 +45,10 @@
                 </div>
             </section>
             <section class="sobre" id="sobre">
-                
+                <div class="Botao-sobre">
+                    <h1>Sobre</h1>
+                    <i class='bx bx-down-arrow-alt' id="seta-botao-sobre"></i>
+                </div>
             </section>
         </section>
     </main>
@@ -55,8 +58,8 @@
     var cursor = document.getElementById("cursor")
 
     document.onmousemove = function (e) {
-        cursor.style.left = (e.pageX + 1.5) + "px";
-        cursor.style.top = (e.pageY + 1.5) + "px";
+        cursor.style.left = (e.pageX - 0) + "px";
+        cursor.style.top = (e.pageY + 0) + "px";
         cursor.style.display = "block";
     }
 
