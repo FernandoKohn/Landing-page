@@ -394,9 +394,6 @@ section {
     border-bottom: 3px solid black;
 }
 
-.janela-sobre-header img {
-    margin-left: 3%;
-}
 
 .janela-sobre-header h1 {
     font-size: 1.6em;
@@ -418,15 +415,70 @@ section {
     display: flex;
 }
 
-.citacoes {
+.habilidades {
     background-color: #A1A194;
-    width: 40%;
-    height: 450px;
+    width: 45%;
+    height: 350px;
     margin-left: 5%;
-    margin-top: 2%;
+    margin-top: 5%;
+    border: 3px solid black;
+    box-shadow: 8px 8px 0 0 #000;
 }
 
+.habilidades-header {
+    background-color: #C4C4C4;
+    align-items: center;
+    display: flex;
+    height: 50px;
+    border-bottom: 3px solid black;
+}
 
+.habilidades-header h1 {
+    font-size: 1.6em;
+    margin-left: 26%;
+}
+
+.habilidades-conteudo-janela {
+    background-color: rgb(255, 255, 255);
+    width: 500px;
+    height: 235px;
+}
+
+.habilidades-conteudo-janela-header {
+    background-color: #C4C4C4;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    height: 50px;
+    border-bottom: 3px solid black;
+}
+
+.habilidades-conteudo-index {
+    display: flex;
+    justify-content: space-around;
+}
+
+.habilidades-conteudo-index img {
+    width: 100px;
+}
+
+.barra {
+    width: 100px;
+    border: 2px solid rgb(0, 0, 0);
+    height: 15px;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.barra span {
+    display: block;
+    background-color: #C13A4B;
+    height: 100%;
+}
+
+.porcentagem {
+    text-align: center;
+}
 
 @keyframes showRight {
     100% {
