@@ -13,7 +13,7 @@
 
 <body>
     <main>
-        <header>
+        <header class="menu-fixo">
             <a href="index.html" class="fk">FK.</a>
             <nav class="navbar">
                 <a href="#" class="ativado">Home</a>
@@ -49,6 +49,34 @@
                     <h1>Sobre</h1>
                     <i class='bx bx-down-arrow-alt' id="seta-botao-sobre"></i>
                 </div>
+                <div class="conteudo-sobre">
+                    <div class="janela-sobre">
+                        <header class="janela-sobre-header">
+                            <img src="fotos/Butoes.png" alt="Botões">
+                            <h1>Sobre mim.html</h1>
+                        </header>
+                        <div class="conteudo-janela-sobre">
+                            <p> Aos meus 14 anos minha mãe me disse: " Meu filho, você usa tanto esse computador, por que não faz programação? Tem tudo a ver com você! ".
+                            Eu sempre achei que não tinha " tudo a ver comigo" ate anos depois fazer meu primeiro curso de desenvolvimento de sistemas. <br>
+                                
+                            <p>Foi meu primeiro curso técnico na área, alguns anos após descidi começar minha faculdade de ciencia da computação e mergulhar de cabeça no mundo de desenvolvedor. Foi amor a primeira vista! Sou apaixonado por aprender e ver resultados no meu código.</p>
+    
+                            <p>Sou autodidata, minha fluencia em inglês me proporciona adiquirir o melhor das melhores fontes, tenho me esforçado para aprimorar meus conhecimentos na área e me preparar para iniciar uma carreira.</p>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="citacoes">
+                        <div class="citacoes-senai">
+                            <h1>Desenvolvimento de sistemas</h1>
+                            <h2>Senai</h2>
+                            <h3>2018-2020</h3>
+                        </div>
+                        <div class="citacoes-unifacs"></div>
+                        <div class="citacoes-tbd"></div>
+                        <div class="citacoes-tbd"></div>
+                    </div>
+                </div>
+                
             </section>
         </section>
     </main>
@@ -58,8 +86,8 @@
     var cursor = document.getElementById("cursor")
 
     document.onmousemove = function (e) {
-        cursor.style.left = (e.pageX - 0) + "px";
-        cursor.style.top = (e.pageY + 0) + "px";
+        cursor.style.left = (e.pageX - 1.8) + "px";
+        cursor.style.top = (e.pageY -2) + "px";
         cursor.style.display = "block";
     }
 

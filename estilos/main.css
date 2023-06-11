@@ -40,15 +40,15 @@ body {
 }
 
 
-header {
-    background-color:#c4c4c4;
+.menu-fixo {
+    background-color: #c4c4c4;
     display: flex;
     align-items: center;
     justify-content: space-between;
     border-radius: 7px 7px 0px 0px;
     border-bottom: 4px solid #000;
     overflow: hidden;
-    
+
 }
 
 
@@ -112,10 +112,10 @@ main {
     height: 100vh;
 }
 
-#conteudo-total { 
+#conteudo-total {
     height: 100vh;
     background-color: white;
-    overflow: auto; 
+    overflow: auto;
 }
 
 #conteudo-total::-webkit-scrollbar {
@@ -151,10 +151,10 @@ section {
     align-items: center;
     padding: 0 0 0 10%;
     background-color: #ffffff;
-    border-bottom:7px solid black;
+    border-bottom: 7px solid black;
 }
 
-.Conteudo-Index{
+.Conteudo-Index {
     color: #EDEAE0;
     transform: scale(1.2);
     margin: 1% 0 5% 3%;
@@ -176,8 +176,8 @@ section {
 .Conteudo-Index h4 {
     color: black;
     font-size: 20px;
-    margin: 0px 0 20px;  
-    position: relative;  
+    margin: 0px 0 20px;
+    position: relative;
 }
 
 .Conteudo-Index h4::before {
@@ -199,7 +199,7 @@ section {
 }
 
 .fernandokohn {
-    font-size:2.5em;
+    font-size: 2.5em;
     position: relative;
     color: #C70F1F;
 }
@@ -263,17 +263,17 @@ section {
     z-index: 2;
 }
 
-.mais-sobre-mim h1{
+.mais-sobre-mim h1 {
     position: relative;
     color: #000000;
-    background-color:#C4C4C4 ;
+    background-color: #C4C4C4;
     font-size: 1.8em;
     margin: 0px 0px 20px 0px;
     padding: 10px 0px 10px 0px;
-    border-style:solid;
+    border-style: solid;
     border-width: 3px;
     text-align: center;
-    border-color:rgb(0, 0, 0);
+    border-color: rgb(0, 0, 0);
     z-index: 1;
     overflow: hidden;
     transition: .2s;
@@ -281,7 +281,7 @@ section {
 
 
 .mais-sobre-mim h1:hover {
-    border-color: black;  
+    border-color: black;
     color: white;
 }
 
@@ -293,7 +293,7 @@ section {
     left: 0;
     width: 0;
     height: 100%;
-    background-color: #A1A194; 
+    background-color: #A1A194;
     z-index: -1;
     transition: .5s;
 }
@@ -306,7 +306,7 @@ section {
     position: relative;
     margin: auto;
     width: 130px;
-    display:flex;
+    display: flex;
     justify-content: space-between;
 }
 
@@ -331,13 +331,13 @@ section {
 }
 
 
-.caixa-butao i:hover{
+.caixa-butao i:hover {
     color: #C13A4B;
     transition: 1s;
 }
 
 .foto-perfil {
-    /*background-image: url("https://assets.website-files.com/ 5e87e737ee7085b9ba02c101/5e87e737ee7085fccd02c10d_pattern-grey.svg"); */  
+    /*background-image: url("https://assets.website-files.com/ 5e87e737ee7085b9ba02c101/5e87e737ee7085fccd02c10d_pattern-grey.svg"); */
     margin: 2% auto 7% 30%;
     opacity: 0;
     animation: zoomIn 1s ease forwards, floatImage 5s ease-in-out infinite;
@@ -360,7 +360,7 @@ section {
     align-items: center;
     position: relative;
     top: -40px;
-    background-color: #C4C4C4 ;
+    background-color: #C4C4C4;
     border: 4px solid black;
     width: 25%;
     padding: 8px;
@@ -374,10 +374,63 @@ section {
     font-size: 40px;
 }
 
+.janela-sobre {
+    background-color: #A1A194;
+    width: 40%;
+    height: 450px;
+    margin-left: 5%;
+    margin-top: 2%;
+    border: 3px solid black;
+    box-shadow: 8px 8px 0 0 #000;
+
+}
+
+
+.janela-sobre-header {
+    background-color: #C4C4C4;
+    align-items: center;
+    display: flex;
+    height: 50px;
+    border-bottom: 3px solid black;
+}
+
+.janela-sobre-header img {
+    margin-left: 3%;
+}
+
+.janela-sobre-header h1 {
+    font-size: 1.6em;
+    margin-left: 18%;
+}
+
+.conteudo-janela-sobre {
+    background-color: #ffffff;
+    padding: 10px;
+    text-align: justify;
+    text-indent: 15px;
+}
+
+.conteudo-janela-sobre p {
+    padding-bottom: 5px;
+}
+
+.conteudo-sobre {
+    display: flex;
+}
+
+.citacoes {
+    background-color: #A1A194;
+    width: 40%;
+    height: 450px;
+    margin-left: 5%;
+    margin-top: 2%;
+}
+
+
 
 @keyframes showRight {
     100% {
-        width: 0%;    
+        width: 0%;
     }
 }
 
@@ -408,5 +461,3 @@ section {
 
 
 }
-
-
