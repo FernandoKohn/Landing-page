@@ -7,8 +7,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Fernando Kohn</title>
     <link rel="stylesheet" href="/estilos/main.css">
-    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
-    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
 </head>
 
 <body>
@@ -72,34 +70,48 @@
                         </div>
                     </div>
                     <div class="habilidades">
-                            <header class="habilidades-header">
+                        <header class="habilidades-header">
+                            <div class="header-wrap">
                                 <img src="fotos/Butoes.png" alt="Botões">
                                 <h1>Skills.desktop</h1>
-                            </header>
-                            <div class="habilidades-conteudo"></div>
-                            <div class="habilidades-conteudo-janela">
-                                <header class="habilidades-conteudo-janela-header">
-                                    <h1>Habilidades</h1>
+                            </div>
+                        </header>
+                        <div class="habilidades-conteudo">
+                            <div class="pasta-habilidade" onload="abrirjanela()">
+                                <img src="fotos/folder.png" alt="">
+                                <h1>Habilidades</h1>
+                            </div>
+                            <div class="habilidades-janela">
+                                <header class="habilidades-janela-header">
+                                    <div class="header-wrap">
+                                        <i class='bx bx-window-close' id="icone-janela" onclick="fecharjanela()"></i>
+                                        <h1>Habilidades</h1>
+                                    </div>
                                 </header>
-                                 <div class="habilidades-conteudo-index">
-                                    <div class="habilidades-conteudo-index-js">
-                                        <img src="fotos/6391683.png" alt="">
+                                <div class="habilidades-janela-index">
+                                    <div class="habilidades-janela-index-js">
+                                        <img src="fotos/6391683.png" alt="icone-janela">
                                         <div class="barra"><span id="barra-js"></span></div>
                                         <div class="porcentagem">40%</div>
                                     </div>
-                                    <div class="habilidades-conteudo-index-html">
+                                    <div class="habilidades-janela-index-html">
                                         <img src="fotos/file_html_format_type_icon_134685.png" alt="">
                                         <div class="barra"><span id="barra-html"></span></div>
                                         <div class="porcentagem">60%</div>
                                     </div>
-                                    <div class="habilidades-conteudo-index-css">
+                                    <div class="habilidades-janela-index-css">
                                         <img src="fotos/free-css-icon-1478-thumb.png" alt="">
                                         <div class="barra"><span id="barra-css"></span></div>
                                         <div class="porcentagem">60%</div>
                                     </div>
-                                 </div>
-
+                                </div>
                             </div>
+                            <footer class="habilidades-rodape">
+                                <img src="fotos/taskbar-iniciar.png" alt="">
+                                <img src="fotos/taskbar-icones.png" alt="">
+                                <h1>ager</h1>
+                            </footer>
+                        </div>
                     </div>
 
             </section>
@@ -107,22 +119,5 @@
     </main>
 </body>
 <div id="cursor"></div>
-<script>
-    var cursor = document.getElementById("cursor")
-
-    document.onmousemove = function (e) {
-        cursor.style.left = (e.pageX - 1.8) + "px";
-        cursor.style.top = (e.pageY - 2) + "px";
-        cursor.style.display = "block";
-    }
-
-    var typed = new Typed(".Efeito-digitado", {
-        strings: ["desenvolvo para web"],
-        typeSpeed: 100,
-        backSpeed: 100,
-        backDelay: 1000,
-        loop: true
-    })
-</script>
-
 </html>
+<script src="script.js"></script>

@@ -202,6 +202,7 @@ section {
     font-size: 2.5em;
     position: relative;
     color: #C70F1F;
+    transition: 0.9s;
 }
 
 .fernandokohn::before {
@@ -374,6 +375,10 @@ section {
     font-size: 40px;
 }
 
+.conteudo-sobre {
+    display: flex;
+}
+
 .janela-sobre {
     background-color: #A1A194;
     width: 40%;
@@ -382,6 +387,8 @@ section {
     margin-top: 2%;
     border: 3px solid black;
     box-shadow: 8px 8px 0 0 #000;
+    display: flex;
+    flex-direction: column;
 
 }
 
@@ -397,7 +404,7 @@ section {
 
 .janela-sobre-header h1 {
     font-size: 1.6em;
-    margin-left: 18%;
+    margin: 0 30% 0 auto;
 }
 
 .conteudo-janela-sobre {
@@ -411,9 +418,6 @@ section {
     padding-bottom: 5px;
 }
 
-.conteudo-sobre {
-    display: flex;
-}
 
 .habilidades {
     background-color: #A1A194;
@@ -423,42 +427,108 @@ section {
     margin-top: 5%;
     border: 3px solid black;
     box-shadow: 8px 8px 0 0 #000;
+    display: flex; 
+    flex-direction: column; 
+    overflow: hidden;
 }
+
 
 .habilidades-header {
     background-color: #C4C4C4;
-    align-items: center;
-    display: flex;
     height: 50px;
     border-bottom: 3px solid black;
+}
+
+.header-wrap {
+    height: 100%;
+    width: 100%;
+    background-color: #d494ff;
+    align-items: center;
+    display: flex;
 }
 
 .habilidades-header h1 {
     font-size: 1.6em;
-    margin-left: 26%;
+    margin: 0 35% 0 auto;
 }
 
-.habilidades-conteudo-janela {
+.habilidades-conteudo {
+    width: 100%;
+    height: 100%;
+    background-color: #fffdfd;
+    background: url(../fotos/desktop-background-teste2.jpg);
+    position: relative;
+    z-index: 0;
+}
+
+.pasta-habilidade {
+    width: 20%;
+    height: 25%;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    margin: 15px 0 0 10px;
+    position: absolute;
+    z-index: 1;
+}
+
+.pasta-habilidade:hover {
+    background-color: #cacaca31;
+    border-radius: 7%;
+}
+
+.pasta-habilidade img {
+    width: 40%;
+    padding-bottom: 8px;
+}
+
+.pasta-habilidade h1 {
+    font-size: 0.9em;
+}
+
+
+.habilidades-janela {
     background-color: rgb(255, 255, 255);
     width: 500px;
     height: 235px;
+    border: 3px solid black;
+    border-radius: 5px;
+    display: none;
+    position: absolute;
+    z-index: 2;
+    transform: scale(0.8);
 }
 
-.habilidades-conteudo-janela-header {
+.habilidades-janela-header {
     background-color: #C4C4C4;
-    align-items: center;
-    justify-content: center;
-    display: flex;
-    height: 50px;
-    border-bottom: 3px solid black;
+    height: 30px;
+    border-bottom: 2px solid black;
 }
 
-.habilidades-conteudo-index {
+#icone-janela {
+    font-size: 1.5em;
+    margin-left: 20px;
+}
+
+#icone-janela:hover {
+    color: red;
+    transition: 0.3s;
+}
+
+.habilidades-janela-header h1 {
+    margin: 0 40% 0 auto;  
+}
+
+
+.habilidades-janela-index {
+    padding-top: 22px;
     display: flex;
     justify-content: space-around;
 }
 
-.habilidades-conteudo-index img {
+.habilidades-janela-index img {
     width: 100px;
 }
 
@@ -478,6 +548,27 @@ section {
 
 .porcentagem {
     text-align: center;
+}
+
+#barra-js {
+    width: 45px;
+}
+
+#barra-html, #barra-css {
+    width: 60px;
+}
+
+.habilidades-rodape {
+    display: flex;
+    width: 100%;
+    background-color: #c8c8c8;
+    margin-top: 50%;
+    position: absolute;
+}
+
+.habilidades-rodape img {
+    margin: 0;
+    padding: 0;
 }
 
 @keyframes showRight {
