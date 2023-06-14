@@ -507,15 +507,19 @@ section {
     border-bottom: 2px solid black;
 }
 
-#icone-janela {
-    font-size: 1.5em;
-    margin-left: 20px;
-}
+.material-symbols-outlined {
+    font-variation-settings:
+    'FILL' 0,
+    'wght' 400,
+    'GRAD' 0,
+    'opsz' 48;
+    transition: 0.5s;
+    margin-left: 10px;
+  }
 
-#icone-janela:hover {
+  .material-symbols-outlined:hover {
     color: red;
-    transition: 0.3s;
-}
+  }
 
 .habilidades-janela-header h1 {
     margin: 0 40% 0 auto;  
@@ -544,6 +548,7 @@ section {
     display: block;
     background-color: #C13A4B;
     height: 100%;
+
 }
 
 .porcentagem {
@@ -562,13 +567,29 @@ section {
     display: flex;
     width: 100%;
     background-color: #c8c8c8;
-    margin-top: 50%;
+    margin-top: 51%;
     position: absolute;
 }
 
 .habilidades-rodape img {
     margin: 0;
     padding: 0;
+}
+
+.relogio-data {
+    display: flex;
+    flex-direction: column;
+    
+}
+
+#relogio {
+    font-size: 10px;
+}
+
+#data {
+    font-size: 10px;
+    position: absolute;
+    top: 8px;
 }
 
 @keyframes showRight {
