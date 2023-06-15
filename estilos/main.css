@@ -155,11 +155,15 @@ section {
 }
 
 .Conteudo-Index {
+    display: flex;
+    flex-direction: column;
+    width: 37.5%;
+    height: 500px;
+    margin-bottom: 3%;
     color: #EDEAE0;
-    transform: scale(1.2);
-    margin: 1% 0 5% 3%;
     position: relative;
 }
+
 
 .Conteudo-Index::before {
     content: "";
@@ -173,37 +177,36 @@ section {
     animation-delay: .8s;
 }
 
-.Conteudo-Index h4 {
+
+.Conteudo-Index h6 {
+    font-size: 2.2em;
     color: black;
-    font-size: 20px;
-    margin: 0px 0 20px;
     position: relative;
+    z-index: 1;
+
 }
 
-.Conteudo-Index h4::before {
+.Conteudo-Index h6::before {
     content: "";
     position: absolute;
     top: 0;
     right: 0;
     width: 100%;
     height: 100%;
-    background: rgb(255, 255, 255);
-    animation: showRight 1s ease forwards;
-    animation-delay: 1.6s;
-}
-
-
-.Conteudo-Index h6 {
-    font-size: 1.2em;
-    color: black;
+    background-color: #ffffff;
+    animation: showRight 2s ease forwards;
+    transition-delay: 2s;
+    
 }
 
 .fernandokohn {
-    font-size: 2.5em;
+    font-size: 5em;
     position: relative;
+    bottom: 5%;
     color: #C70F1F;
     transition: 0.9s;
 }
+
 
 .fernandokohn::before {
     content: "";
@@ -218,20 +221,19 @@ section {
 }
 
 
+
 .fernandokohn:hover {
     color: #292B2E;
     transition: .7s;
 }
 
-.Efeito-digitado {
-    color: #C13A4B;
-}
-
 .Conteudo-Index h2 {
     position: relative;
-    font-size: 1.7em;
+    font-size: 3.2em;
+    bottom: 8%;
     color: black;
 }
+
 
 .Conteudo-Index h2::before {
     content: "";
@@ -246,10 +248,44 @@ section {
 }
 
 
+
+.Conteudo-Index h4 {
+    text-align: justify;
+    color: black;
+    font-size: 2.2em;
+    bottom: 6%;
+    position: relative;
+}
+
+
+.Conteudo-Index h4::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    background: rgb(255, 255, 255);
+    animation: showRight 1s ease forwards;
+    animation-delay: 1.6s;
+}
+
+
+
+
+.Efeito-digitado {
+    color: #C13A4B;
+}
+
+
 .mais-sobre-mim {
+    margin: auto;
     position: relative;
     overflow: hidden;
+    width: 500px;
 }
+
+
 
 .mais-sobre-mim::before {
     content: "";
@@ -263,6 +299,8 @@ section {
     animation-delay: 1.8s;
     z-index: 2;
 }
+
+
 
 .mais-sobre-mim h1 {
     position: relative;
@@ -287,6 +325,7 @@ section {
 }
 
 
+
 .mais-sobre-mim h1::before {
     content: "";
     position: absolute;
@@ -299,17 +338,20 @@ section {
     transition: .5s;
 }
 
+
+
 .mais-sobre-mim h1:hover::before {
     width: 100%;
 }
 
 .caixa-butao {
+    width: 20%;
     position: relative;
     margin: auto;
-    width: 130px;
     display: flex;
     justify-content: space-between;
 }
+
 
 .caixa-butao::before {
     content: "";
@@ -322,6 +364,7 @@ section {
     animation: showRight 1s ease forwards;
     animation-delay: 1.8s;
 }
+
 
 .caixa-butao a {
     color: #292B2E;
@@ -339,14 +382,14 @@ section {
 
 .foto-perfil {
     /*background-image: url("https://assets.website-files.com/ 5e87e737ee7085b9ba02c101/5e87e737ee7085fccd02c10d_pattern-grey.svg"); */
-    margin: 2% auto 7% 30%;
+    margin: 2% auto 7% auto;
     opacity: 0;
     animation: zoomIn 1s ease forwards, floatImage 5s ease-in-out infinite;
     animation-delay: 2s, 3s;
 }
 
 .foto-perfil img {
-    width: 400px;
+    width: 500px;
 }
 
 .sobre {
@@ -382,7 +425,7 @@ section {
 .janela-sobre {
     background-color: #A1A194;
     width: 40%;
-    height: 450px;
+    height: 700px;
     margin-left: 5%;
     margin-top: 2%;
     border: 3px solid black;
@@ -403,26 +446,30 @@ section {
 
 
 .janela-sobre-header h1 {
-    font-size: 1.6em;
-    margin: 0 30% 0 auto;
+    font-size: 1.9em;
+    margin: 0 37% 0 auto;
 }
 
 .conteudo-janela-sobre {
     background-color: #ffffff;
+    height: 100%;
     padding: 10px;
     text-align: justify;
     text-indent: 15px;
+    font-size: 1.7em;
+
 }
 
 .conteudo-janela-sobre p {
-    padding-bottom: 5px;
+    margin-bottom: 12px;
+
 }
 
 
 .habilidades {
     background-color: #A1A194;
     width: 45%;
-    height: 350px;
+    height: 550px;
     margin-left: 5%;
     margin-top: 5%;
     border: 3px solid black;
@@ -448,8 +495,8 @@ section {
 }
 
 .habilidades-header h1 {
-    font-size: 1.6em;
-    margin: 0 35% 0 auto;
+    font-size: 1.9em;
+    margin: 0 40% 0 auto;
 }
 
 .habilidades-conteudo {
@@ -491,8 +538,8 @@ section {
 
 .habilidades-janela {
     background-color: rgb(255, 255, 255);
-    width: 500px;
-    height: 235px;
+    width: 550px;
+    height: 300px;
     border: 3px solid black;
     border-radius: 5px;
     display: none;
@@ -501,28 +548,27 @@ section {
     transform: scale(0.8);
 }
 
+
+
 .habilidades-janela-header {
     background-color: #C4C4C4;
-    height: 30px;
+    height: 50px;
     border-bottom: 2px solid black;
 }
 
-.material-symbols-outlined {
-    font-variation-settings:
-    'FILL' 0,
-    'wght' 400,
-    'GRAD' 0,
-    'opsz' 48;
-    transition: 0.5s;
+#botao-fechar {
     margin-left: 10px;
-  }
+    font-size: 2.5em;
+    transition: 1s;
+}
 
-  .material-symbols-outlined:hover {
+#botao-fechar:hover {
     color: red;
-  }
+}
 
 .habilidades-janela-header h1 {
-    margin: 0 40% 0 auto;  
+    margin: 0 37% 0 auto;  
+    font-size: 1.7em;
 }
 
 
@@ -533,13 +579,16 @@ section {
 }
 
 .habilidades-janela-index img {
-    width: 100px;
+    width: 140px;
+    -webkit-user-drag: none;
 }
 
 .barra {
-    width: 100px;
+    transform: scale(1.2);
+    margin-left: 10px;
+    width: 120px;
     border: 2px solid rgb(0, 0, 0);
-    height: 15px;
+    height: 20px;
     border-radius: 10px;
     overflow: hidden;
 }
@@ -553,6 +602,7 @@ section {
 
 .porcentagem {
     text-align: center;
+    font-size: 1.82em;
 }
 
 #barra-js {
@@ -564,32 +614,40 @@ section {
 }
 
 .habilidades-rodape {
+    margin-top: 53%;
     display: flex;
     width: 100%;
-    background-color: #c8c8c8;
-    margin-top: 51%;
+    background-color: #c4c4c4;
     position: absolute;
+    justify-content: space-between;
+}
+
+.desktop-icones {
+    display: flex;
 }
 
 .habilidades-rodape img {
     margin: 0;
     padding: 0;
+    height: 100%;
 }
 
 .relogio-data {
-    display: flex;
+    justify-content: center;
+    text-align: right;
+    display: inline-block;
     flex-direction: column;
-    
+    width: 20%;
+    padding-right: 15px;
 }
 
+
 #relogio {
-    font-size: 10px;
+    font-size: 15px;
 }
 
 #data {
-    font-size: 10px;
-    position: absolute;
-    top: 8px;
+    font-size: 15px;
 }
 
 @keyframes showRight {
