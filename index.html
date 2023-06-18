@@ -23,7 +23,7 @@
                 <a href="#" class="ativado">Home</a>
                 <a href="#">Sobre mim</a>
                 <a href="#">Projetos</a>
-                <a href="#">Contatos</a>
+                <a href="#">Contato</a>
             </nav>
         </header>
 
@@ -88,12 +88,12 @@
                                 <h1>Habilidades</h1>
                             </div>
                             <div class="habilidades-janela">
-                                    <header class="habilidades-janela-header">
-                                        <div class="header-wrap">
-                                            <i class='bx bx-window-close' id="botao-fechar" onclick="fecharjanela()"></i>
-                                            <h1>Habilidades</h1>
-                                        </div>
-                                    </header>
+                                <header class="habilidades-janela-header">
+                                    <div class="header-wrap">
+                                        <i class='bx bx-window-close' id="botao-fechar" onclick="fecharjanela()"></i>
+                                        <h1>Habilidades</h1>
+                                    </div>
+                                </header>
                                 <div class="habilidades-janela-index">
                                     <div class="habilidades-janela-index-js">
                                         <img src="fotos/6391683.png" alt="icone-janela">
@@ -128,6 +128,87 @@
                     </div>
 
             </section>
+            <section class="projetos">
+                <h1 id="projetos-titulo">Projetos</h1>
+                <div class="projetos-container">
+                    <div class="proj-1" onclick="moverjanela1()">
+                        <header>
+                            <div class="projeto-header-wrap">
+                                <div class="projeto-header-i">
+                                    <i class='bx bx-checkbox-minus'></i>
+                                </div>
+                                <div class="projeto-header-error">
+                                    <h1>Error 404</h1>
+                                </div>
+                            </div>
+                        </header>
+                        <div class="projeto-img">
+                            <img src="fotos/em-construção-banner.png" alt="">
+                        </div>
+                        <div class="projeto-sobre">
+                            <H1>Em construção</H1>
+                            <p>Futuros projetos serão adicionados aqui.</p>
+                        </div>
+                    </div>
+                    <div class="proj-2" onclick="moverjanela2()">
+                        <header>
+                            <div class="projeto-header-wrap">
+                                <div class="projeto-header-i">
+                                    <i class='bx bx-checkbox-minus'></i>
+                                </div>
+                                <div class="projeto-header-error">
+                                    <h1>Error 404</h1>
+                                </div>
+                            </div>
+                        </header>
+                        <div class="projeto-img">
+                            <img src="fotos/em-construção-banner.png" alt="">
+                        </div>
+                        <div class="projeto-sobre">
+                            <H1>Em construção</H1>
+                            <p>Futuros projetos serão adicionados aqui</p>
+                        </div>
+                    </div>
+                    <div class="proj-3" onclick="moverjanela3()">
+                        <header>
+                            <div class="projeto-header-wrap">
+                                <div class="projeto-header-i">
+                                    <i class='bx bx-checkbox-minus'></i>
+                                </div>
+                                <div class="projeto-header-error">
+                                    <h1>Error 404</h1>
+                                </div>
+                            </div>
+                        </header>
+                        <div class="projeto-img">
+                            <img src="fotos/em-construção-banner.png" alt="">
+                        </div>
+                        <div class="projeto-sobre">
+                            <H1>Em construção</H1>
+                            <p>Futuros projetos serão adicionados aqui</p>
+                        </div>
+                    </div>
+                    <div class="proj-4" onclick="moverjanela4()">
+                        <header>
+                            <div class="projeto-header-wrap">
+                                <div class="projeto-header-i">
+                                    <i class='bx bx-checkbox-minus'></i>
+                                </div>
+                                <div class="projeto-header-error">
+                                    <h1>Error 404</h1>
+                                </div>
+                            </div>
+                        </header>
+                        <div class="projeto-img">
+                            <img src="fotos/em-construção-banner.png" alt="">
+                        </div>
+                        <div class="projeto-sobre">
+                            <H1>Em construção</H1>
+                            <p>Futuros projetos serão adicionados aqui</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
         </section>
     </main>
 </body>
@@ -137,13 +218,39 @@
 </html>
 <script>
 
-    var cursor = document.getElementById("cursor");
+    const ball = document.querySelector("#cursor");
 
-    document.onmousemove = function (e) {
-        cursor.style.left = (e.pageX + 2) + "px";
-        cursor.style.top = (e.pageY + 2) + "px";
-        cursor.style.display = "block";
+    let mouseX = 0;
+    let mouseY = 0;
+
+    let ballX = 0;
+    let ballY = 0;
+
+    let speed = 0.032;
+
+
+    function animate() {
+
+        let distX = mouseX - ballX;
+        let distY = mouseY - ballY;
+
+
+        ballX = ballX + (distX * speed);
+        ballY = ballY + (distY * speed);
+
+        ball.style.left = ballX + "px";
+        ball.style.top = ballY + "px";
+
+        requestAnimationFrame(animate);
     }
+
+    animate();
+
+    document.addEventListener("mousemove", function (event) {
+        mouseX = event.pageX;
+        mouseY = event.pageY;
+    })
+
 
     var typed = new Typed(".Efeito-digitado", {
         strings: ["desenvolvo para web"],
@@ -154,12 +261,7 @@
     });
 
     function abrirjanela() {
-        if (document.querySelector(".habilidades-janela").style.display == "block") {
-            document.querySelector(".habilidades-janela").style.display = "none"
-        } else {
-            document.querySelector(".habilidades-janela").style.display = "block"
-        }
-
+        document.querySelector(".habilidades-janela").style.display = "block"
     };
 
     function fecharjanela() {
@@ -183,8 +285,8 @@
     var offsetX, offsetY;
 
     var move = (e) => {
-    janela.style.left = `${e.clientX - offsetX}px`;
-    janela.style.top = `${e.clientY - offsetY}px`;
+        janela.style.left = `${e.clientX - offsetX}px`;
+        janela.style.top = `${e.clientY - offsetY}px`;
     }
 
     janela.addEventListener("mousedown", (e) => {
@@ -197,5 +299,30 @@
         document.removeEventListener("mousemove", move);
     });
 
+    var janela1 = document.querySelector(".proj-1")
+    var janela2 = document.querySelector(".proj-2")
+    var janela3 = document.querySelector(".proj-3")
+    var janela4 = document.querySelector(".proj-4")
 
+    function moverjanela1() {
+        janela1.style.zIndex = "5";
+        janela2.style.zIndex = "4"
+    }
+
+    function moverjanela2() {
+        janela2.style.zIndex = "5";
+        janela3.style.zIndex = "4"
+
+    }
+
+    function moverjanela3() {
+        janela3.style.zIndex = "5";
+    }
+
+    function moverjanela4() {
+        janela1.style.zIndex = "1";
+        janela2.style.zIndex = "2";
+        janela3.style.zIndex = "3";
+        janela4.style.zIndex = "4";
+    }
 </script>
