@@ -40,8 +40,8 @@
                         </a>
                     </div>
                     <div class="caixa-butao">
-                        <a href="#"><i class='bx bxl-github'></i></a>
-                        <a href="#"><i class='bx bxl-linkedin-square'></i></a>
+                        <a href="https://github.com/FernandoKohn" target="_blank"><i class='bx bxl-github'></i></a>
+                        <a href="https://www.linkedin.com/in/fernandokohn/" target="_blank"><i class='bx bxl-linkedin-square'></i></a>
                     </div>
                 </div>
                 <div class="foto-perfil">
@@ -214,32 +214,64 @@
                     <h1 class="sobreh1-2">Contato</h1>
                     <i class='bx bx-down-arrow-alt' id="seta-botao-sobre"></i>
                 </div>
-                <div class="contato-janela">
-                    <header>
-                        <div class="contato-janela-headerwrap">
-                            <img src="fotos/Butoes.png" alt="Botões" id="botao-janela">
-                            <h1>Fale comigo</h1>
+                <div class="contato-conteudo">
+                    <div class="redes-sociais-final">
+                        <div class="github">
+                            <a href="https://github.com/FernandoKohn" target="_blank"><img src="fotos/github_8bit_yelotd.png" alt=""></a>
+                            <h1>GitHub</h1>
                         </div>
-                    </header>
-                    <form action="">
-                        <div class="janela-input">
-                            <div class="caixa-input">
-                                <input type="text" placeholder="" required>
-                                <span class="placeholder">Nome completo</span>
+                        <div class="linkedin">
+                            <a href="https://www.linkedin.com/in/fernandokohn/" target="_blank"><img src="fotos/linkedin_pixel_logo_icon_181925.png" alt="" id="linkedin"></a>
+                            <h1>LinkedIn</h1>
+                        </div>
+                        <div class="email" onclick="abriremail()">
+                            <a href="#"><img
+                                    src="fotos/pixel-art-email-notification-envelope-vector-icon-8bit-game-white-background_360488-1408.png"
+                                    alt=""></a>
+                            <h1>Email</h1>
+                        </div>
+                    </div>
+                    <div class="abaemail">
+                       <div class="abaemail-header">
+                            <div class="abaemail-header-wrap">  
+                                <i class='bx bx-window-close' id="botao-fechar-email" onclick="fecharjanelaemail()"></i>   
                             </div>
-                            <div class="caixa-input">
-                                <input type="text" placeholder="" required>
-                                <span class="placeholder">Email</span>
+                       </div> 
+                       <div class="abaemail-conteudo">
+                        <h1>contatofernandokohn@gmail.com</h1>
+                        <span class="material-symbols-outlined">
+                            content_copy
+                        </span>
+                       </div>
+                    </div>
+                    <div class="contato-janela">
+                        <header>
+                            <div class="contato-janela-headerwrap">
+                                <img src="fotos/Butoes.png" alt="Botões" id="botao-janela">
+                                <h1>Fale comigo</h1>
                             </div>
-                        </div>
-                        <div class="texto">
-                            <textarea name="" id="caixa-texto" cols="30" rows="10" placeholder="" required></textarea>
-                            <span class="placeholder">Sua mensagem</span>
-                        </div>
-                        <div class="botao-enviar">
-                            <button type="submit" class="btn">Enviar</button>
-                        </div>
-                    </form>
+                        </header>
+                        <form action="">
+                            <div class="janela-input">
+                                <div class="caixa-input">
+                                    <input type="text" placeholder="" required>
+                                    <span class="placeholder">Nome completo</span>
+                                </div>
+                                <div class="caixa-input">
+                                    <input type="text" placeholder="" required>
+                                    <span class="placeholder">Email</span>
+                                </div>
+                            </div>
+                            <div class="texto">
+                                <textarea name="" id="caixa-texto" cols="30" rows="10" placeholder=""
+                                    required></textarea>
+                                <span class="placeholder">Sua mensagem</span>
+                            </div>
+                            <div class="botao-enviar">
+                                <button type="submit" class="btn">Enviar</button>
+                            </div>
+                        </form>
+                    </div>
                 </div>
             </section>
         </section>
@@ -358,4 +390,13 @@
         janela3.style.zIndex = "3";
         janela4.style.zIndex = "4";
     }
+
+    function abriremail() {
+        document.querySelector(".abaemail").style.display = "block"
+    }
+
+    function fecharjanelaemail() {
+        document.querySelector(".abaemail").style.display = "none"
+    }
+
 </script>
