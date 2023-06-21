@@ -238,10 +238,11 @@
                             </div>
                        </div> 
                        <div class="abaemail-conteudo">
-                        <h1>contatofernandokohn@gmail.com</h1>
-                        <span class="material-symbols-outlined">
+                        <h1 id="emailfernando">contatofernandokohn@gmail.com</h1>
+                        <span class="material-symbols-outlined" id="copiar" onclick="copiar()">
                             content_copy
                         </span>
+                        <i class='bx bx-check' id="checked" onclick="voltarcopiar()"></i>
                        </div>
                     </div>
                     <div class="contato-janela">
@@ -392,11 +393,24 @@
     }
 
     function abriremail() {
-        document.querySelector(".abaemail").style.display = "block"
+        document.querySelector(".abaemail").style.visibility = "visible"
     }
 
     function fecharjanelaemail() {
-        document.querySelector(".abaemail").style.display = "none"
+        document.querySelector(".abaemail").style.visibility = "hidden"
+    }
+
+    var text = document.getElementById("emailfernando")
+     
+    async function copiar() {
+       await navigator.clipboard.writeText(text.innerHTML)
+        document.querySelector("#copiar").style.display = "none"
+        document.querySelector("#checked").style.display = "block"
+    }
+
+    function voltarcopiar() {
+        document.querySelector("#copiar").style.display = "block"
+        document.querySelector("#checked").style.display = "none"
     }
 
 </script>
