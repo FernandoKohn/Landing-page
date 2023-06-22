@@ -60,20 +60,54 @@
                             <h1>Sobre mim.html</h1>
                         </header>
                         <div class="conteudo-janela-sobre">
-                            <p> Aos meus 14 anos minha mãe me disse: " Meu filho, você usa tanto esse computador, por
-                                que não faz programação? Tem tudo a ver com você! ".
-                                Eu sempre achei que não tinha " tudo a ver comigo" ate anos depois fazer meu primeiro
-                                curso de desenvolvimento de sistemas. <br>
-
-                            <p>Foi meu primeiro curso técnico na área, alguns anos após descidi começar minha faculdade
-                                de ciencia da computação e mergulhar de cabeça no mundo de desenvolvedor. Foi amor a
-                                primeira vista! Sou apaixonado por aprender e ver resultados no meu código.</p>
-
-                            <p>Sou autodidata, minha fluencia em inglês me proporciona adiquirir o melhor das melhores
-                                fontes, tenho me esforçado para aprimorar meus conhecimentos na área e me preparar para
-                                iniciar uma carreira.</p>
-                            </p>
+                            <div class="sobre-1">
+                                <div>
+                                    <img src="fotos/arrow.png" alt="" id="seta-mostrar1" onclick="abrirdescricao1(),trocar1()">
+                                    <span class="titulo">Dedicação como diferencial</span>
+                                </div>
+                                <div class="sobre-descricao1">
+                                    <span><img src="fotos/Conector.png" alt=""></span>
+                                    <img src="fotos/arrow.png" alt="">
+                                    <span class="descricao">Sigo meus estudos de forma autoditata. Estudo linguagens Front-End a apena 4 meses e com um mix equilibrado entre ousadia e amor pelo que faço dei inicio a minha jornada com projetos que visam se destacar e chamar atenção.</span>
+                                </div>
+                            </div>
+                            <div class="sobre-2">
+                                <div>
+                                    <img src="fotos/arrow.png" alt="" id="seta-mostrar2" onclick="abrirdescricao2()">
+                                    <span class="titulo">Fluente em inglês</span>
+                                </div>
+                                <div class="sobre-descricao2">
+                                    <span><img src="fotos/Conector.png" alt=""></span>
+                                    <img src="fotos/arrow.png" alt="">
+                                    <span class="descricao">Minha fluencia me permite aprender o melhor das melhores fontes e documentações. Busco futuramente expandir meu espectro profissional á países estrangeiros.</span>
+                                </div>
+                            </div>
+                            <div class="sobre-3">
+                                <div>
+                                    <img src="fotos/arrow.png" alt="" id="seta-mostrar3" onclick="abrirdescricao3()">
+                                    <span class="titulo">Ciência da computação UNIFACS</span>
+                                </div>
+                                <div class="sobre-descricao3">
+                                    <span><img src="fotos/Conector.png" alt=""></span>
+                                    <img src="fotos/arrow.png" alt="">
+                                    <span class="descricao">2022 - 2027
+                                    </span>
+                                </div>
+                            </div>
+                            <div class="sobre-4">
+                                <div>
+                                    <img src="fotos/arrow.png" alt="" id="seta-mostrar4" onclick="abrirdescricao4()">
+                                    <span class="titulo">Desenvolvimento de sistemas SENAI</span>
+                                </div>
+                                <div class="sobre-descricao4">
+                                    <span><img src="fotos/Conector.png" alt=""></span>
+                                    <img src="fotos/arrow.png" alt="">
+                                    <span class="descricao">2018 - 2020
+                                    </span>
+                                </div>
+                            </div>
                         </div>
+                        
                     </div>
                     <div class="habilidades">
                         <header class="habilidades-header">
@@ -126,7 +160,7 @@
                             </footer>
                         </div>
                     </div>
-
+                </div>
             </section>
             <section class="projetos">
                 <h1 id="projetos-titulo">Projetos</h1>
@@ -412,5 +446,49 @@
         document.querySelector("#copiar").style.display = "block"
         document.querySelector("#checked").style.display = "none"
     }
+
+    var seta1 = document.getElementById("seta-mostrar1")
+    var seta2 = document.getElementById("seta-mostrar2")
+    var seta3 = document.getElementById("seta-mostrar3")
+    var seta4 = document.getElementById("seta-mostrar4")
+    
+    function abrirdescricao1() {
+        if (document.querySelector(".sobre-descricao1").style.display == "none") {
+            document.querySelector(".sobre-descricao1").style.display = "block"
+        } else {
+            document.querySelector(".sobre-descricao1").style.display = "none"
+        }
+
+    }
+
+
+    function abrirdescricao2() {
+        if (document.querySelector(".sobre-descricao2").style.display == "none") {
+            document.querySelector(".sobre-descricao2").style.display = "block"
+        } else {
+            document.querySelector(".sobre-descricao2").style.display = "none"
+        }
+    }
+
+    function abrirdescricao3() {
+        if (document.querySelector(".sobre-descricao3").style.display == "none") {
+            document.querySelector(".sobre-descricao3").style.display = "block"
+        } else {
+            document.querySelector(".sobre-descricao3").style.display = "none"
+        }
+    }
+
+    function abrirdescricao4() {
+        if (document.querySelector(".sobre-descricao4").style.display == "none") {
+            document.querySelector(".sobre-descricao4").style.display = "block"
+        } else {
+            document.querySelector(".sobre-descricao4").style.display = "none"
+        }
+    }
+    
+    
+
+    
+
 
 </script>
