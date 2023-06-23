@@ -12,6 +12,7 @@
     /*font-family: 'Archivo Black', sans-serif; */
     font-family: 'Baloo Thambi 2', sans-serif;
     box-sizing: border-box;
+    -webkit-user-drag: none;
 }
 
 #cursor {
@@ -28,6 +29,10 @@
     mix-blend-mode: difference;
 }
 
+::selection {
+    color: #ffffff;
+    background-color: #C70F1F;
+}
 
 a {
     text-decoration: none;
@@ -52,6 +57,7 @@ body {
     border-radius: 7px 7px 0px 0px;
     border-bottom: 4px solid #000;
     overflow: hidden;
+    
 
 }
 
@@ -485,17 +491,20 @@ section {
     padding-bottom: 30px;
 }
 
+.sobre-1 img, .sobre-2 img, .sobre-3 img, .sobre-4 img {
+    width: 3%;
+    padding-right: 4px;
+}
+
 .titulo {
     font-size: 1.8em;
 }
 
-.sobre-descricao1, .sobre-descricao2, .sobre-descricao3, .sobre-descricao4 {
-    display: none;
+
+.descricao1, .descricao2, .descricao3, .descricao4 {
+    font-size: 1.5em;
 }
 
-.descricao {
-    font-size: 1.3em;
-}
 
 .habilidades {
     background-color: #A1A194;
