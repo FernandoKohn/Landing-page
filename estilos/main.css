@@ -399,7 +399,7 @@ section {
 }
 
 .foto-perfil img {
-    width: 500px;
+    width: 750px;
 }
 
 .sobre {
@@ -517,6 +517,8 @@ section {
     display: flex; 
     flex-direction: column; 
     overflow: hidden;
+    position: relative;
+    z-index: 0;
 }
 
 
@@ -545,8 +547,9 @@ section {
     background-color: #fffdfd;
     background: url(../fotos/desktop-background-teste2.jpg);
     position: relative;
-    z-index: 0;
+    z-index: 1;
 }
+
 
 .pasta-habilidade {
     width: 20%;
@@ -584,7 +587,7 @@ section {
     border-radius: 5px;
     display: none;
     position: absolute;
-    z-index: 2;
+    z-index: 3;
     transform: scale(0.8);
 }
 
@@ -653,12 +656,141 @@ section {
     width: 60px;
 }
 
+.taskbar-janelas {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    display: flex;
+    width: 45%;
+    height: 300px;
+    z-index: 2;
+    background-color: #C70F1F;
+}
+
+.iniciar-wrap {
+    display: none;
+}
+
+.iniciar {
+    background-color: #c4c4c4;
+    border-radius: 10px 10px 0px 0px;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.search-box {
+    margin-top: 10px;
+    width: 100%;
+    height: 20%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 5px;
+}
+
+#input-procurar {
+    width: 300px;
+    height: 40px;
+    border-radius: 20px;
+    border: none;
+    text-align: center;
+    background-image: url("/fotos/search-regular-24.png");
+    background-position: 10% 55%;
+    background-size: 25px;
+    background-repeat: no-repeat;
+    outline: none;
+    font-size: 1.0em;
+    
+}
+
+#search-icone {
+    font-size: 1.5em;
+    padding: 5px;
+    color: rgb(0, 0, 0);
+}
+
+
+#aplicacoes-h1 {
+    padding-top: 15px;
+    margin-left: 10px;
+}
+
+.iniciar-conteudo {
+    height: 100%;
+    display: flex;
+    padding-top: 10px;
+    margin-left: 3px;
+}
+
+
+.iniciar-conteudo-habilidades-icone {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100px;
+    height: 90px;
+}
+
+.iniciar-conteudo-habilidades-icone h1 {
+    font-size: 1.0em;
+}
+
+.iniciar-conteudo-habilidades-icone:hover {
+    background-color: #49494931;
+    border-radius: 7%;
+}
+
+#aplicacoes-folder {
+    width: 50px;
+}
+
+.iniciar-usuario {
+    background-color: #818181;;
+    border-top: 2px solid black;
+    height: 50%;
+    font-size: 2em;
+    display: flex;
+    align-items: center;
+    padding-left: 10px;
+}
+
+.iniciar-usuario h1 {
+    font-size: 0.6em;
+    padding-left: 5px;
+}
+
+.iniciar-usuario-hover{
+    display: flex;
+    width: 87%;
+    padding: 5px;
+}
+
+.iniciar-usuario-hover:hover {
+    background-color: #ffffff46;
+    border-radius: 5px;
+}
+
+.geren-taferas-wrap {
+    position: absolute;
+    background-color: #d494ff;
+    display: none;
+}
+
+.geren-tarefas {
+    background-color: #d494ff;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+}
+
 .habilidades-rodape {
-    margin-top: 53%;
     display: flex;
     width: 100%;
     background-color: #c4c4c4;
-    position: absolute;
     justify-content: space-between;
 }
 
@@ -828,8 +960,8 @@ section {
 
 .contato {
     border-top: 3px solid black;
-    /*background-color: #d494ff; */
-    background-color: #A1A194;
+    background-color: #d494ff; 
+    /* background-color: #A1A194;*/
     min-height: 105vh;
     position: relative;
 }

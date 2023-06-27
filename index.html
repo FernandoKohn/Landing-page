@@ -7,12 +7,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Fernando Kohn</title>
     <link rel="stylesheet" href="estilos/main.css">
-    <link rel="stylesheet"
-        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
     <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+    <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
-
-
 </head>
 
 <body onload="displayClock(); ">
@@ -45,7 +43,7 @@
                     </div>
                 </div>
                 <div class="foto-perfil">
-                    <img src="fotos/foto de perfil do site.png" alt="">
+                    <img src="fotos/foto de perfil definitiva.png" alt="">
                 </div>
             </section>
             <section class="sobre" id="sobre">
@@ -78,6 +76,7 @@
                                 </div>
                                 <div class="descricao2">
                                     <span><img src="fotos/Conector.png" alt=""></span>
+                      
                                     <img src="fotos/arrow.png" alt="">
                                     <span>Minha fluencia me permite aprender o melhor das melhores fontes e documentações. Busco futuramente expandir meu espectro profissional á países estrangeiros.</span>
                                 </div>
@@ -109,7 +108,7 @@
                         </div>
                         
                     </div>
-                    <div class="habilidades">
+                    <dv class="habilidades">
                         <header class="habilidades-header">
                             <div class="header-wrap">
                                 <img src="fotos/Butoes.png" alt="Botões">
@@ -146,19 +145,47 @@
                                     </div>
                                 </div>
                             </div>
-                            <footer class="habilidades-rodape">
-                                <div class="desktop-icones">
-                                    <a href="#"><img src="fotos/taskbar-iniciar.png" alt=""></a>
-                                    <a href="#"><img src="fotos/taskbar-barradetarefas.png" alt=""></a>
-                                    <a href="#"><img src="fotos/taskbar-options.png" alt=""></a>
-                                    <a href="#"><img src="fotos/taskbar-folder.png" alt=""></a>
+                            <div class="taskbar-janelas" id="taskbar-janelas"> 
+                                <div class="iniciar-wrap" id="iniciar-wrap">
+                                    <div class="iniciar" id="iniciar">
+                                        <div class="search-box">
+                                            <input type="text" name="Procurar" id="input-procurar" placeholder="Pesquisar" maxlength="10">
+                                        </div>
+                                        <h1 id="aplicacoes-h1">Aplicações</h1>
+                                        <div class="iniciar-conteudo">
+                                            <div class="iniciar-conteudo-habilidades-icone" onclick="abrirjanela()">
+                                                <img src="fotos/folder.png" alt="" id="aplicacoes-folder">
+                                                <h1>Habilidades</h1>
+                                            </div>
+                                        </div>
+                                        <div class="iniciar-usuario">
+                                            <div class="iniciar-usuario-hover">
+                                                <i class='bx bxs-user' ></i>
+                                                <h1 contentEditable="true">Usuário (Click para trocar)</h1>
+                                            </div>
+                                        </div>
+                                        <div class="usuario"></div>
+                                    </div>
                                 </div>
-                                <div class="relogio-data">
-                                    <h1 id="relogio"></h1>
-                                    <h1 id="data"></h1>
+                                <div class="geren-tarefas-wrap" id="geren-tarefas-wrap">
+                                    <div class="geren-tarefas">
+                                        <h1>TESTE</h1>
+                                    </div>
                                 </div>
-                            </footer>
+                            </div>
                         </div>
+                        <footer class="habilidades-rodape">
+                            <div class="desktop-icones">
+                                <a href="#"><img src="fotos/taskbar-iniciar.png" alt="" onclick="abririniciar()"></a>
+                                <a href="#"><img src="fotos/taskbar-barradetarefas.png" alt="" onclick="abrirgerentarefas()"></a>
+                                <a href="#"><img src="fotos/taskbar-options.png" alt=""></a>
+                                <a href="#"><img src="fotos/taskbar-folder.png" alt=""></a>
+                            </div>
+                            <div class="relogio-data">
+                                <h1 id="relogio"></h1>
+                                <h1 id="data"></h1>
+                            </div>
+                        </footer>
                     </div>
                 </div>
             </section>
@@ -447,5 +474,19 @@
         document.querySelector("#checked").style.display = "none"
     }
 
+    function abririniciar() {
+         if (document.querySelector("#iniciar-wrap").style.display == "block") {
+            document.querySelector("#iniciar-wrap").style.display = "none"
+         } else {
+            document.querySelector("#iniciar-wrap").style.display = "block"
+         }
+    }
 
+    function abrirgerentarefas() {
+        if (document.querySelector("#geren-tarefas-wrap").style.display == "block") {
+            document.querySelector("#geren-tarefas-wrap").style.display = "none"
+         } else {
+            document.querySelector("#geren-tarefas-wrap").style.display = "block"
+         }
+    }
 </script>
