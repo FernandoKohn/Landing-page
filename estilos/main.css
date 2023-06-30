@@ -45,7 +45,11 @@ body {
     padding-left: 10px;
     height: 100vh;
     cursor: url("/fotos/icons8-select-cursor-48.png"), auto;
-    overflow: hidden;
+
+}
+
+.main {
+    height: 100vh;
 }
 
 
@@ -57,8 +61,6 @@ body {
     border-radius: 7px 7px 0px 0px;
     border-bottom: 4px solid #000;
     overflow: hidden;
-    
-
 }
 
 
@@ -118,13 +120,9 @@ body {
     color: #A1A194;
 }
 
-main {
-    height: 100vh;
-}
-
 #conteudo-total {
     height: 100vh;
-    background-color: white;
+    background-color:white;
     overflow: auto;
 }
 
@@ -156,12 +154,12 @@ section {
     min-height: 100vh;
 }
 
-.Index {
+#index {
     display: flex;
     align-items: center;
     padding: 0 0 0 10%;
-    background-color: #ffffff;
     border-bottom: 7px solid black;
+    background-color: white;
 }
 
 .Conteudo-Index {
@@ -498,6 +496,10 @@ section {
 
 .titulo {
     font-size: 1.8em;
+    border-radius: 5px;
+    color: black;
+    padding: 5px;
+
 }
 
 
@@ -531,7 +533,7 @@ section {
 .header-wrap {
     height: 100%;
     width: 100%;
-    background-color: #d494ff;
+    background-color :#aa9df0;
     align-items: center;
     display: flex;
 }
@@ -549,6 +551,7 @@ section {
     position: relative;
     z-index: 1;
 }
+
 
 
 .pasta-habilidade {
@@ -750,7 +753,7 @@ section {
 }
 
 .iniciar-usuario {
-    background-color: #818181;
+    background-color: #9c9c9c;
     border-top: 2px solid black;
     height: 50%;
     font-size: 2em;
@@ -776,8 +779,8 @@ section {
 }
 
 .geren-tarefas-wrap {
+    display: none;
     position: absolute;
-    display: block;
     width: 100%;
     height: 100%;
 }
@@ -803,7 +806,7 @@ section {
     border-top: 1px solid black;
     border-bottom: 1px solid black;
     border-collapse: collapse;
-    background-color: #818181;
+    background-color: #9c9c9c;
 }
 
 .table-head-celula-1 {
@@ -826,8 +829,7 @@ section {
 .tabela-conteudo {
     display: flex;
     height: 100%;
-    background-color: #818181;
-    z-index: 2;
+    background-color: #9c9c9c;
 }
 
 .tabela-nome {
@@ -858,7 +860,7 @@ section {
 .tabela-status h3 {
     padding-left: 8px;
     padding-top: 3px;
-    background-color: #cc4b5c;
+
 }
 
 .tabela-cpu {
@@ -877,6 +879,91 @@ section {
     visibility: hidden;
     background-color: aquamarine;
     padding: 4px;
+}
+
+#aplicativo {
+    display: flex;
+    visibility: hidden;
+}
+
+#status {
+    display: none;
+}
+
+#cpu-numero {
+    display: none;
+}
+
+#opcoes-wrap {
+    display: none;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+
+.opcoes {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    color: black;
+    background-color: #c4c4c4;
+    border-radius: 10px 10px 0px 0px;
+}
+
+
+.opcoes-h1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 70px;
+    border-bottom: 2px solid black;
+}
+
+.opcoes-conteudo {
+    padding: 5px 0 0 10px;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    background-color: #9c9c9c;
+}
+
+#papeldeparede {
+    padding-top: 10px;
+}
+
+.opcoes-imagens {
+    display: flex;
+    margin-top: 15px;
+}
+
+.opcoes-imagens img {
+    margin-right: 20px;
+    width: 30%;
+    height: 70px;
+    border: 3px solid rgb(0, 0, 0);
+}
+
+.opcoes-lingua {
+    height: 100%;
+    padding-top: 10px;
+    margin-top: 10px;
+    
+}
+
+#linguas {
+    display: flex;
+    margin-top: 10px;
+}
+
+#linguas h1 {
+    padding-right: 10px;
+}
+
+#pt,#en, #cr {
+    border-radius: 30px;
+    padding-left: 10px;
+    transition: 0.3s;
 }
 
 .habilidades-rodape {
@@ -902,8 +989,7 @@ section {
     display: inline-block;
     flex-direction: column;
     width: 15%;
-    padding-top: 10px;
-    padding-right: 15px;
+    padding: 10px 15px 0 10px;
     border: 2px solid black;
 }
 
@@ -918,7 +1004,7 @@ section {
     font-size: 12px;
 }
 
-.projetos {
+#projetos {
     background-color: white;
     min-height: 112vh;
     display: flex;
@@ -1050,11 +1136,11 @@ section {
     font-size: 25px;
 }
 
-.contato {
+#contato {
     border-top: 3px solid black;
-    background-color: #d494ff; 
+    background-color: #99CC99; 
     /* background-color: #A1A194;*/
-    min-height: 105vh;
+    min-height: 103vh;
     position: relative;
 }
 
@@ -1068,6 +1154,7 @@ section {
 .contato-conteudo {
     display: flex;
     position: relative;
+    padding-top: 25px;
 }
 
 .redes-sociais-final {

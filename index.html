@@ -7,26 +7,26 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Fernando Kohn</title>
     <link rel="stylesheet" href="estilos/main.css">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
     <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
     <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 </head>
 
-<body onload="displayClock(); ">
+<body onload="displayClock();">
     <main>
         <header class="menu-fixo">
             <a href="index.html" class="fk">FK.</a>
             <nav class="navbar">
-                <a href="#" class="ativado">Home</a>
-                <a href="#">Sobre mim</a>
-                <a href="#">Projetos</a>
-                <a href="#">Contato</a>
+                <a href="#index" class="ativado" target="_self">Home</a>
+                <a href="#sobre">Sobre mim</a>
+                <a href="#projetos">Projetos</a>
+                <a href="#contato">Contato</a>
             </nav>
         </header>
-
         <section class="conteudo-total" id="conteudo-total">
-            <section class="Index">
+            <section id="index">
                 <div class="Conteudo-Index">
                     <h6>Olá, eu sou</h6>
                     <h1 class="fernandokohn">FERNANDO KOHN</h1>
@@ -39,7 +39,8 @@
                     </div>
                     <div class="caixa-butao">
                         <a href="https://github.com/FernandoKohn" target="_blank"><i class='bx bxl-github'></i></a>
-                        <a href="https://www.linkedin.com/in/fernandokohn/" target="_blank"><i class='bx bxl-linkedin-square'></i></a>
+                        <a href="https://www.linkedin.com/in/fernandokohn/" target="_blank"><i
+                                class='bx bxl-linkedin-square'></i></a>
                     </div>
                 </div>
                 <div class="foto-perfil">
@@ -66,7 +67,9 @@
                                 <div class="descricao1">
                                     <span><img src="fotos/Conector.png" alt=""></span>
                                     <img src="fotos/arrow.png" alt="" id="imgdescri1">
-                                    <span>Sigo meus estudos de forma autoditata. Estudo linguagens Front-End a apena 4 meses e com um mix equilibrado entre ousadia e amor pelo que faço dei inicio a minha jornada com projetos que visam se destacar e chamar atenção.</span>
+                                    <span>Sigo meus estudos de forma autoditata. Estudo linguagens Front-End a apena 4
+                                        meses e com um mix equilibrado entre ousadia e amor pelo que faço dei inicio a
+                                        minha jornada com projetos que visam se destacar e chamar atenção.</span>
                                 </div>
                             </div>
                             <div class="sobre-2">
@@ -76,14 +79,16 @@
                                 </div>
                                 <div class="descricao2">
                                     <span><img src="fotos/Conector.png" alt=""></span>
-                      
+
                                     <img src="fotos/arrow.png" alt="">
-                                    <span>Minha fluencia me permite aprender o melhor das melhores fontes e documentações. Busco futuramente expandir meu espectro profissional á países estrangeiros.</span>
+                                    <span>Minha fluencia me permite aprender o melhor das melhores fontes e
+                                        documentações. Busco futuramente expandir meu espectro profissional á países
+                                        estrangeiros.</span>
                                 </div>
                             </div>
                             <div class="sobre-3">
                                 <div>
-                                    <img src="fotos/arrow 2.png" alt="" >
+                                    <img src="fotos/arrow 2.png" alt="">
                                     <span class="titulo">Ciência da computação UNIFACS</span>
                                 </div>
                                 <div class="descricao3">
@@ -106,7 +111,7 @@
                                 </div>
                             </div>
                         </div>
-                        
+
                     </div>
                     <dv class="habilidades">
                         <header class="habilidades-header">
@@ -116,52 +121,56 @@
                             </div>
                         </header>
                         <div class="habilidades-conteudo">
-                            <div class="pasta-habilidade" onclick="abrirjanela()">
-                                <img src="fotos/folder.png" alt="">
-                                <h1>Habilidades</h1>
-                            </div>
-                            <div class="habilidades-janela">
-                                <header class="habilidades-janela-header">
-                                    <div class="header-wrap">
-                                        <i class='bx bx-window-close' id="botao-fechar" onclick="fecharjanela()"></i>
-                                        <h1>Habilidades</h1>
-                                    </div>
-                                </header>
-                                <div class="habilidades-janela-index">
-                                    <div class="habilidades-janela-index-js">
-                                        <img src="fotos/6391683.png" alt="icone-janela">
-                                        <div class="barra"><span id="barra-js"></span></div>
-                                        <div class="porcentagem">40%</div>
-                                    </div>
-                                    <div class="habilidades-janela-index-html">
-                                        <img src="fotos/file_html_format_type_icon_134685.png" alt="">
-                                        <div class="barra"><span id="barra-html"></span></div>
-                                        <div class="porcentagem">60%</div>
-                                    </div>
-                                    <div class="habilidades-janela-index-css">
-                                        <img src="fotos/free-css-icon-1478-thumb.png" alt="">
-                                        <div class="barra"><span id="barra-css"></span></div>
-                                        <div class="porcentagem">60%</div>
+                            
+                                <div class="pasta-habilidade" onclick="abrirjanela()">
+                                    <img src="fotos/folder.png" alt="">
+                                    <h1>Habilidades</h1>
+                                </div>
+                                <div class="habilidades-janela">
+                                    <header class="habilidades-janela-header">
+                                        <div class="header-wrap">
+                                            <i class='bx bx-window-close' id="botao-fechar" onclick="fecharjanela()"></i>
+                                            <h1 id="janelah1">Habilidades</h1>
+                                        </div>
+                                    </header>
+                                    <div class="habilidades-janela-index">
+                                        <div class="habilidades-janela-index-js">
+                                            <img src="fotos/6391683.png" alt="icone-janela">
+                                            <div class="barra"><span id="barra-js"></span></div>
+                                            <div class="porcentagem">40%</div>
+                                        </div>
+                                        <div class="habilidades-janela-index-html">
+                                            <img src="fotos/file_html_format_type_icon_134685.png" alt="">
+                                            <div class="barra"><span id="barra-html"></span></div>
+                                            <div class="porcentagem">60%</div>
+                                        </div>
+                                        <div class="habilidades-janela-index-css">
+                                            <img src="fotos/free-css-icon-1478-thumb.png" alt="">
+                                            <div class="barra"><span id="barra-css"></span></div>
+                                            <div class="porcentagem">60%</div>
+                                        </div>
                                     </div>
                                 </div>
-                            </div>
-                            <div class="taskbar-janelas" id="taskbar-janelas"> 
+                            
+                            <div class="taskbar-janelas" id="taskbar-janelas">
                                 <div class="iniciar-wrap" id="iniciar-wrap">
                                     <div class="iniciar" id="iniciar">
                                         <div class="search-box">
-                                            <input type="text" name="Procurar" id="input-procurar" placeholder="Pesquisar" maxlength="10">
+                                            <input type="text" name="Procurar" id="input-procurar"
+                                                placeholder="Pesquisar" maxlength="10">
                                         </div>
                                         <h1 id="aplicacoes-h1">Aplicações</h1>
                                         <div class="iniciar-conteudo">
                                             <div class="iniciar-conteudo-habilidades-icone" onclick="abrirjanela()">
                                                 <img src="fotos/folder.png" alt="" id="aplicacoes-folder">
-                                                <h1>Habilidades</h1>
+                                                <h1 id="h1habilidades">Habilidades</h1>
                                             </div>
                                         </div>
                                         <div class="iniciar-usuario">
                                             <div class="iniciar-usuario-hover">
-                                                <i class='bx bxs-user' ></i>
-                                                <h1 contentEditable="true">Usuário (Click para trocar)</h1>
+                                                <i class='bx bxs-user'></i>
+                                                <h1 contentEditable="true" id="usuario-trocavel">Usuário (Click para
+                                                    trocar)</h1>
                                             </div>
                                         </div>
                                         <div class="usuario"></div>
@@ -170,35 +179,58 @@
                                 <div class="geren-tarefas-wrap" id="geren-tarefas-wrap">
                                     <div class="geren-tarefas">
                                         <h1 class="geren-tarefas-titulo">Processos</h1>
-                                         <div class="table-head">
+                                        <div class="table-head">
                                             <div class="table-head-celula-1">
-                                                <h1>Nome</h1>
+                                                <h1 id="tabelanome">Nome</h1>
                                             </div>
                                             <div class="table-head-celula-2">
-                                                <h1>Status</h1>
+                                                <h1 id="tabelastatus">Status</h1>
                                             </div>
                                             <div class="table-head-celula-3">
-                                                <h1>CPU</h1>
+                                                <h1 id="tabelacpu">CPU</h1>
                                             </div>
-                                         </div>  
-                                         <div class="tabela-conteudo">
+                                        </div>
+                                        <div class="tabela-conteudo">
                                             <div class="tabela-nome">
-                                                <h1>Aplicativos</h1>
-                                                <div>
+                                                <h1 id="tabelaaplicativos">Aplicativos</h1>
+                                                <div id="aplicativo">
                                                     <img src="fotos/folder.png" alt="" id="folder-gerenciador">
                                                     <h3 class="h3-habilidades">Habilidades</h2>
                                                 </div>
-                                            </div> 
+                                            </div>
                                             <div class="tabela-status">
                                                 <h1 class="celula-invisivel">a</h1>
-                                                <h3>a</h3>
-                                            </div> 
+                                                <h3 id="status">Aberto</h3>
+                                            </div>
                                             <div class="tabela-cpu">
                                                 <h1 class="celula-invisivel">a</h1>
-                                                <h3>a</h3>
-                                            </div>                                         
-                                         </div>
-                                         
+                                                <h3 id="cpu-numero"></h3>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                </div>
+                                <div id="opcoes-wrap">
+                                    <div class="opcoes">
+                                        <div class="opcoes-h1">
+                                            <h1 id="h1opcoes">Opções</h1>
+                                        </div>
+                                        <div class="opcoes-conteudo">
+                                            <h1 id="papeldeparede">Papel de parede</h1>
+                                            <div class="opcoes-imagens">
+                                                <img src="fotos/desktop-background-teste2.jpg" alt="" id="img1"
+                                                    onclick="img1()">
+                                                <img src="fotos/estrelas2.gif" alt="" id="img2" onclick="img2()">
+                                            </div>
+                                            <div class="opcoes-lingua">
+                                                <h1 id="linguagemh1">Linguagem</h1>
+                                                <div id="linguas">
+                                                    <h1 id="pt" onclick="ptbr()">Português</h1>
+                                                    <h1 id="en" onclick="en()">Inglês</h1>
+                                                    <h1 id="cr" onclick="cr()">Coreano(한글)</h1>
+                                                </div>
+                                            </div>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
@@ -206,19 +238,20 @@
                         <footer class="habilidades-rodape">
                             <div class="desktop-icones">
                                 <a href="#"><img src="fotos/taskbar-iniciar.png" alt="" onclick="abririniciar()"></a>
-                                <a href="#"><img src="fotos/taskbar-barradetarefas.png" alt="" onclick="abrirgerentarefas()"></a>
-                                <a href="#"><img src="fotos/taskbar-options.png" alt=""></a>
-                                <a href="#"><img src="fotos/taskbar-folder.png" alt=""></a>
+                                <a href="#"><img src="fotos/taskbar-barradetarefas.png" alt=""
+                                        onclick="abrirgerentarefas()"></a>
+                                <a href="#"><img src="fotos/taskbar-options.png" alt="" onclick="abriropcoes()"></a>
+                                
                             </div>
                             <div class="relogio-data">
                                 <h1 id="relogio"></h1>
                                 <h1 id="data"></h1>
                             </div>
                         </footer>
-                    </div>
+                </div>
                 </div>
             </section>
-            <section class="projetos">
+            <section id="projetos">
                 <h1 id="projetos-titulo">Projetos</h1>
                 <div class="projetos-container">
                     <div class="proj-1" onclick="moverjanela1()">
@@ -299,7 +332,7 @@
                     </div>
                 </div>
             </section>
-            <section class="contato">
+            <section id="contato">
                 <div class="Botao-sobre">
                     <h1 class="sobreh1-2">Contato</h1>
                     <i class='bx bx-down-arrow-alt' id="seta-botao-sobre"></i>
@@ -307,11 +340,13 @@
                 <div class="contato-conteudo">
                     <div class="redes-sociais-final">
                         <div class="github">
-                            <a href="https://github.com/FernandoKohn" target="_blank"><img src="fotos/github_8bit_yelotd.png" alt=""></a>
+                            <a href="https://github.com/FernandoKohn" target="_blank"><img
+                                    src="fotos/github_8bit_yelotd.png" alt=""></a>
                             <h1>GitHub</h1>
                         </div>
                         <div class="linkedin">
-                            <a href="https://www.linkedin.com/in/fernandokohn/" target="_blank"><img src="fotos/linkedin_pixel_logo_icon_181925.png" alt="" id="linkedin"></a>
+                            <a href="https://www.linkedin.com/in/fernandokohn/" target="_blank"><img
+                                    src="fotos/linkedin_pixel_logo_icon_181925.png" alt="" id="linkedin"></a>
                             <h1>LinkedIn</h1>
                         </div>
                         <div class="email" onclick="abriremail()">
@@ -322,18 +357,18 @@
                         </div>
                     </div>
                     <div class="abaemail">
-                       <div class="abaemail-header">
-                            <div class="abaemail-header-wrap">  
-                                <i class='bx bx-window-close' id="botao-fechar-email" onclick="fecharjanelaemail()"></i>   
+                        <div class="abaemail-header">
+                            <div class="abaemail-header-wrap">
+                                <i class='bx bx-window-close' id="botao-fechar-email" onclick="fecharjanelaemail()"></i>
                             </div>
-                       </div> 
-                       <div class="abaemail-conteudo">
-                        <h1 id="emailfernando">contatofernandokohn@gmail.com</h1>
-                        <span class="material-symbols-outlined" id="copiar" onclick="copiar()">
-                            content_copy
-                        </span>
-                        <i class='bx bx-check' id="checked" onclick="voltarcopiar()"></i>
-                       </div>
+                        </div>
+                        <div class="abaemail-conteudo">
+                            <h1 id="emailfernando">contatofernandokohn@gmail.com</h1>
+                            <span class="material-symbols-outlined" id="copiar" onclick="copiar()">
+                                content_copy
+                            </span>
+                            <i class='bx bx-check' id="checked" onclick="voltarcopiar()"></i>
+                        </div>
                     </div>
                     <div class="contato-janela">
                         <header>
@@ -418,10 +453,16 @@
 
     function abrirjanela() {
         document.querySelector(".habilidades-janela").style.display = "block"
+        document.querySelector("#cpu-numero").style.display = "block"
+        document.querySelector("#status").style.display = "block"
+        document.querySelector("#aplicativo").style.visibility = "visible"
     };
 
     function fecharjanela() {
         document.querySelector(".habilidades-janela").style.display = "none"
+        document.querySelector("#cpu-numero").style.display = "none"
+        document.querySelector("#status").style.display = "none"
+        document.querySelector("#aplicativo").style.visibility = "hidden"
     };
 
 
@@ -488,12 +529,13 @@
 
     function fecharjanelaemail() {
         document.querySelector(".abaemail").style.visibility = "hidden"
+
     }
 
     var text = document.getElementById("emailfernando")
-     
+
     async function copiar() {
-       await navigator.clipboard.writeText(text.innerHTML)
+        await navigator.clipboard.writeText(text.innerHTML)
         document.querySelector("#copiar").style.display = "none"
         document.querySelector("#checked").style.display = "block"
     }
@@ -504,18 +546,139 @@
     }
 
     function abririniciar() {
-         if (document.querySelector("#iniciar-wrap").style.display == "block") {
+        if (document.querySelector("#iniciar-wrap").style.display == "block") {
             document.querySelector("#iniciar-wrap").style.display = "none"
-         } else {
+        } else {
             document.querySelector("#iniciar-wrap").style.display = "block"
-         }
+        }
+
+        document.querySelector("#opcoes-wrap").style.display = "none"
+        document.querySelector("#geren-tarefas-wrap").style.display = "none"
+
+    }
+
+    function abriropcoes() {
+        if (document.querySelector("#opcoes-wrap").style.display == "block") {
+            document.querySelector("#opcoes-wrap").style.display = "none"
+        } else {
+            document.querySelector("#opcoes-wrap").style.display = "block"
+        }
+
+        document.querySelector("#iniciar-wrap").style.display = "none"
+        document.querySelector("#geren-tarefas-wrap").style.display = "none"
     }
 
     function abrirgerentarefas() {
         if (document.querySelector("#geren-tarefas-wrap").style.display == "block") {
             document.querySelector("#geren-tarefas-wrap").style.display = "none"
-         } else {
+        } else {
             document.querySelector("#geren-tarefas-wrap").style.display = "block"
-         }
+        }
+        document.querySelector("#opcoes-wrap").style.display = "none"
+        document.querySelector("#iniciar-wrap").style.display = "none"
     }
+
+    setInterval(() => {
+        document.querySelector("#cpu-numero").innerHTML = Math.floor(Math.random() * 100) + " %"
+    }, 1500)
+
+    setInterval(() => {
+        if (parseInt(document.querySelector("#cpu-numero").innerHTML) <= 50) {
+            document.querySelector("#cpu-numero").style.backgroundColor = "#db7885"
+        } else {
+            document.querySelector("#cpu-numero").style.backgroundColor = "#e2203a"
+        }
+    }, 1500);
+
+    function img1() {
+        document.querySelector("#img1").style.borderColor = "white"
+        document.querySelector("#img2").style.borderColor = "black"
+        document.querySelector(".habilidades-conteudo").style.background = "url(../fotos/desktop-background-teste2.jpg)"
+
+    }
+
+    function img2() {
+        document.querySelector("#img2").style.borderColor = "white"
+        document.querySelector("#img1").style.borderColor = "black"
+        document.querySelector(".habilidades-conteudo").style.background = "url(../fotos/estrelas2.gif)"
+        document.querySelector(".habilidades-conteudo").style.backgroundSize = "60%"
+    }
+
+    function ptbr() {
+        document.querySelector(".pasta-habilidade h1").innerHTML = "Habilidades"
+        var procurar = document.getElementsByName("Procurar")[0]
+        procurar.value = ""
+        procurar.placeholder = "Procurar"
+        document.querySelector("#janelah1").innerHTML = "Habilidades"
+        document.querySelector("#aplicacoes-h1").innerHTML = "Aplicações"
+        document.querySelector("#h1habilidades").innerHTML = "Habilidades"
+        document.querySelector("#usuario-trocavel").innerHTML = "Usuário (Click para trocar)"
+        document.querySelector(".geren-tarefas-titulo").innerHTML = "Processos"
+        document.querySelector("#tabelanome").innerHTML = "Nome"
+        document.querySelector("#tabelastatus").innerHTML = "Status"
+        document.querySelector("#tabelacpu").innerHTML = "Cpu"
+        document.querySelector("#tabelaaplicativos").innerHTML = "Apps"
+        document.querySelector(".h3-habilidades").innerHTML = "Habilidades"
+        document.querySelector("#status").innerHTML = "Aberto"
+        document.querySelector("#h1opcoes").innerHTML = "Opções"
+        document.querySelector("#papeldeparede").innerHTML = "Papel de parede"
+        document.querySelector("#linguagemh1").innerHTML = "Linguagem"
+
+        document.querySelector("#pt").style.backgroundColor = "#646464a4"
+        document.querySelector("#en").style.backgroundColor = ""
+        document.querySelector("#cr").style.backgroundColor = ""
+
+    }
+
+    function en() {
+        document.querySelector(".pasta-habilidade h1").innerHTML = "Skills"
+        var procurar = document.getElementsByName("Procurar")[0]
+        procurar.value = ""
+        procurar.placeholder = "Search" 
+        document.querySelector("#janelah1").innerHTML = "Skills"
+        document.querySelector("#aplicacoes-h1").innerHTML = "Apps"
+        document.querySelector("#h1habilidades").innerHTML = "Skills"
+        document.querySelector("#usuario-trocavel").innerHTML = "User (Click to change)"
+        document.querySelector(".geren-tarefas-titulo").innerHTML = "Processes"
+        document.querySelector("#tabelanome").innerHTML = "Name"
+        document.querySelector("#tabelastatus").innerHTML = "Status"
+        document.querySelector("#tabelacpu").innerHTML = "Cpu"
+        document.querySelector("#tabelaaplicativos").innerHTML = "Apps"
+        document.querySelector(".h3-habilidades").innerHTML = "Skills"
+        document.querySelector("#status").innerHTML = "Open"
+        document.querySelector("#h1opcoes").innerHTML = "Options"
+        document.querySelector("#papeldeparede").innerHTML = "Wallpaper"
+        document.querySelector("#linguagemh1").innerHTML = "Language"
+
+        document.querySelector("#pt").style.backgroundColor = ""
+        document.querySelector("#en").style.backgroundColor = "#646464a4"
+        document.querySelector("#cr").style.backgroundColor = ""
+    }
+
+    function cr() {
+        document.querySelector(".pasta-habilidade h1").innerHTML = "기술"
+        var procurar = document.getElementsByName("Procurar")[0]
+        procurar.value = ""
+        procurar.placeholder = "찾다" 
+        document.querySelector("#janelah1").innerHTML = "기술"
+        document.querySelector("#aplicacoes-h1").innerHTML = "앱"
+        document.querySelector("#h1habilidades").innerHTML = "기술"
+        document.querySelector("#usuario-trocavel").innerHTML = "사용자 (클릭하여 변경)"
+        document.querySelector(".geren-tarefas-titulo").innerHTML = "프로세스"
+        document.querySelector("#tabelanome").innerHTML = "이름"
+        document.querySelector("#tabelastatus").innerHTML = "상태"
+        document.querySelector("#tabelacpu").innerHTML = "Cpu"
+        document.querySelector("#tabelaaplicativos").innerHTML = "앱"
+        document.querySelector(".h3-habilidades").innerHTML = "기술"
+        document.querySelector("#status").innerHTML = "열려 있는"
+        document.querySelector("#h1opcoes").innerHTML = "옵션"
+        document.querySelector("#papeldeparede").innerHTML = "월러퍼"
+        document.querySelector("#linguagemh1").innerHTML = "언어"
+
+        document.querySelector("#pt").style.backgroundColor = ""
+        document.querySelector("#en").style.backgroundColor = ""
+        document.querySelector("#cr").style.backgroundColor = "#646464a4"
+    }
+
+    
 </script>
