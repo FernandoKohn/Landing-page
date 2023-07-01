@@ -681,4 +681,13 @@
     }
 
     
+    var header = document.querySelector(".menu-fixo").offsetTop;
+    var docTop = window.pageYOffset || document.documentElement.scrollTop || document.body.scrollTop;
+    var adHeight = Number(getStyleValue(elem, "height").replace("px", ""));
+    if ((header - docTop) < 60) {
+      elem.style.position = "fixed";
+      elem.style.top = "60px";
+      document.querySelector(".menu-fixo").style.position = "sticky";
+}
+
 </script>

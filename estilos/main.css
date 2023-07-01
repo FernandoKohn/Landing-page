@@ -40,27 +40,34 @@ a {
 
 body {
     background-color: #000000;
-    padding-top: 10px;
-    padding-right: 10px;
-    padding-left: 10px;
-    height: 100vh;
     cursor: url("/fotos/icons8-select-cursor-48.png"), auto;
-
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    position: relative;
 }
 
-.main {
-    height: 100vh;
+main {
+    padding: 15px;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    position: relative;
 }
 
 
 .menu-fixo {
+    width: 98.5%;
+    position: fixed;
+    top: 3;
     background-color: #c4c4c4;
     display: flex;
     align-items: center;
     justify-content: space-between;
     border-radius: 7px 7px 0px 0px;
     border-bottom: 4px solid #000;
-    overflow: hidden;
+    z-index: 999;
 }
 
 
@@ -101,6 +108,7 @@ body {
     background: #c4c4c4;
     animation: showRight 1s ease forwards;
     animation-delay: 1.8s;
+    border-radius: 7px 7px 0px 0px;
 }
 
 
@@ -121,9 +129,12 @@ body {
 }
 
 #conteudo-total {
-    height: 100vh;
-    background-color:white;
+    height: 100vh; 
+    background-color:#ffffff;
     overflow: auto;
+    display: flex;
+    flex-direction: column;     
+    margin-top: 79px;
 }
 
 #conteudo-total::-webkit-scrollbar {
@@ -151,7 +162,7 @@ body {
 }
 
 section {
-    min-height: 100vh;
+        min-height: 100vh; 
 }
 
 #index {
@@ -168,7 +179,6 @@ section {
     width: 37.5%;
     height: 500px;
     margin-bottom: 3%;
-    color: #EDEAE0;
     position: relative;
 }
 
@@ -1140,7 +1150,7 @@ section {
     border-top: 3px solid black;
     background-color: #99CC99; 
     /* background-color: #A1A194;*/
-    min-height: 103vh;
+    min-height: 106vh;
     position: relative;
 }
 
