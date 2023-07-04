@@ -15,6 +15,11 @@
     -webkit-user-drag: none;
 }
 
+html {
+    scroll-padding-top: 95px; 
+  } 
+
+
 #cursor {
     background-color: #ffffff;
     width: 30px;
@@ -39,35 +44,31 @@ a {
 }
 
 body {
+    padding: 15px;
+    display: flex;
     background-color: #000000;
     cursor: url("/fotos/icons8-select-cursor-48.png"), auto;
     overflow: hidden;
+}
+
+ main {
+    width: 100vw;
+    height: 100vh;
     display: flex;
     flex-direction: column;
     position: relative;
 }
 
-main {
-    padding: 15px;
-    width: 100%;
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-    position: relative;
-}
 
 
 .menu-fixo {
-    width: 98.5%;
-    position: fixed;
-    top: 3;
+    width: 100%;
     background-color: #c4c4c4;
     display: flex;
     align-items: center;
     justify-content: space-between;
     border-radius: 7px 7px 0px 0px;
     border-bottom: 4px solid #000;
-    z-index: 999;
 }
 
 
@@ -92,11 +93,11 @@ main {
 }
 
 
-
 .navbar {
     padding: 15px 5%;
     position: relative;
 }
+
 
 .navbar::before {
     content: "";
@@ -111,6 +112,9 @@ main {
     border-radius: 7px 7px 0px 0px;
 }
 
+.navbar a[aria-current="page"] {
+    color: #A1A194;
+}
 
 .navbar a {
     color: #000000;
@@ -129,12 +133,13 @@ main {
 }
 
 #conteudo-total {
-    height: 100vh; 
+    width: 100%;
+    height: 100%;
     background-color:#ffffff;
-    overflow: auto;
+    overflow: scroll;
+    scroll-behavior: smooth;
     display: flex;
-    flex-direction: column;     
-    margin-top: 79px;
+    flex-direction: column;    
 }
 
 #conteudo-total::-webkit-scrollbar {
@@ -171,6 +176,7 @@ section {
     padding: 0 0 0 10%;
     border-bottom: 7px solid black;
     background-color: white;
+    
 }
 
 .Conteudo-Index {
@@ -415,6 +421,7 @@ section {
     background-size: 6px;
     min-height: 105vh;
     overflow: visible;
+    scroll-margin-top: -40px;
 }
 
 .Botao-sobre {
@@ -492,7 +499,7 @@ section {
 }
 
 
-.sobre-1, .sobre-2, .sobre-3, .sobre-4 {
+.sobre-mim {
     display: flex;
     flex-direction: column;
     width: 100%;
@@ -504,16 +511,15 @@ section {
     padding-right: 4px;
 }
 
-.titulo {
+.titulo-sobre-mim {
     font-size: 1.8em;
-    border-radius: 5px;
+    border-radius: 30px;
     color: black;
     padding: 5px;
-
 }
 
 
-.descricao1, .descricao2, .descricao3, .descricao4 {
+.descricao-sobre {
     font-size: 1.5em;
 }
 
@@ -887,7 +893,6 @@ section {
 
 .celula-invisivel {
     visibility: hidden;
-    background-color: aquamarine;
     padding: 4px;
 }
 
@@ -1020,6 +1025,7 @@ section {
     display: flex;
     flex-direction: column;
     border-top: 3px solid black;
+    scroll-margin-top: -100px;
 }
 
 #projetos-titulo {
@@ -1148,10 +1154,11 @@ section {
 
 #contato {
     border-top: 3px solid black;
-    background-color: #99CC99; 
+    background-color: #aa9df0; 
     /* background-color: #A1A194;*/
     min-height: 106vh;
     position: relative;
+    scroll-margin-top: -50px;
 }
 
 .sobreh1-2 {
