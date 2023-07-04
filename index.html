@@ -380,7 +380,7 @@
                                 <h1>Fale comigo</h1>
                             </div>
                         </header>
-                        <form action="mailto:contatofernandodeoliveira01@gmail.com" method="post" enctype="text/plain" onsubmit="mandaremail(); reset(); return false">
+                        <form action="mailto:contatofernandodeoliveira01@gmail.com" method="post" enctype="text/plain" onsubmit="mandaremail()">
                             <div class="janela-input">
                                 <div class="caixa-input">
                                     <input type="text" name="nome" placeholder="" required>
@@ -413,10 +413,10 @@
 <script>
 
     window.location.hash = 'index';
-
+/*
     function mandaremail() {
         Email.send({
-            Host: "smtp.gmail.com",
+            Host: "smtp.staticemail.com",
             Username: "contatofernandodeoliveira01@gmail.com",
             Password: "password",
             To: 'contatofernandodeoliveira01@gmail.com',
@@ -427,7 +427,7 @@
             message => alert(message)
         );
     }
-
+ */
     const ball = document.querySelector("#cursor");
 
     let mouseX = 0;
