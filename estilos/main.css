@@ -1376,6 +1376,14 @@ section {
     padding-right: 20px;
 }
 
+#seta-voltar {
+        color: black;
+        font-size: 3em;
+        position: absolute;
+        bottom: 80px;
+        right: 10px;
+}
+
 
 @keyframes showRight {
     100% {
