@@ -514,9 +514,11 @@ section {
 
 .titulo-sobre-mim {
     font-size: 1.8em;
-    border-radius: 30px;
+    border-radius: 5px;
     color: black;
     padding: 5px;
+    color: #C13A4B;
+    
 }
 
 
