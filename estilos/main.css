@@ -220,19 +220,22 @@ section {
     height: 100%;
     display: flex;
     align-items: center;
-    gap: 150px;
+    justify-content: space-around;
     border-bottom: 7px solid black;
     background-color: rgb(255, 255, 255);
-    padding-left: 10%;
+    padding-left: 8%;
     padding-bottom: 5%;
+    background-color: #ffffff;
+    
     
 }
 
 .Conteudo-Index {
-    max-width: 630px;
+    width: 700px;
     display: flex;
     flex-direction: column;
     position: relative;
+    background-color: #ffffff;
 }
 
 
@@ -248,9 +251,14 @@ section {
     animation-delay: .8s;
 }
 
+.ola-wrap {
+    background-color: #ffffff;
+    align-items: center;
+    display: flex;
+}
 
 .Conteudo-Index h6 {
-    font-size: 2.2em;
+    font-size: 1.6vw;
     color: black;
     position: relative;
     z-index: 1;
@@ -265,17 +273,20 @@ section {
     width: 100%;
     height: 100%;
     background-color: #ffffff;
-    animation: showRight 2s ease forwards;
-    transition-delay: 2s;
+    animation: showRight 1s ease forwards;
     
 }
 
+.fernando-wrap {
+    align-items: center;
+    display: flex;
+    height: 100px;
+}
+
 .fernandokohn {
-    font-size: 5em;
+    font-size: 5.5em;
     position: relative;
-    bottom: 5%;
-    color: #C70F1F;
-    transition: 0.9s;
+    color: #C13A4B;
 }
 
 
@@ -300,7 +311,7 @@ section {
 
 .Conteudo-Index h2 {
     position: relative;
-    font-size: 3.2em;
+    font-size: 2.7vw;
     bottom: 8%;
     color: black;
 }
@@ -322,8 +333,9 @@ section {
 
 .Conteudo-Index h4 {
     color: black;
-    font-size: 2.2em;
+    font-size: 2vw;
     position: relative;
+    text-align: justify;
 }
 
 
@@ -340,20 +352,20 @@ section {
 }
 
 
-
-
 .Efeito-digitado {
     color: #C13A4B;
 }
 
 
 .mais-sobre-mim {
-    margin: auto;
+    margin: 0 auto;
     position: relative;
     overflow: hidden;
-    width: 500px;
+    width: 30vw;
+    padding-top: 40px;
+    justify-content: center;
+    align-items: center;
 }
-
 
 
 .mais-sobre-mim::before {
@@ -368,7 +380,6 @@ section {
     animation-delay: 1.8s;
     z-index: 2;
 }
-
 
 
 .mais-sobre-mim h1 {
@@ -416,9 +427,9 @@ section {
 .caixa-butao {
     width: 20%;
     position: relative;
-    margin: auto;
     display: flex;
     justify-content: space-between;
+    margin: 0 auto;
 }
 
 
@@ -453,16 +464,17 @@ section {
     /*background-image: url("https://assets.website-files.com/ 5e87e737ee7085b9ba02c101/5e87e737ee7085fccd02c10d_pattern-grey.svg"); */
     opacity: 0;
     animation: zoomIn 1s ease forwards, floatImage 5s ease-in-out infinite;
-    animation-delay: 2s, 3s;
-    background-color: blue;
+    animation-delay: 1s, 2s;
     width: 800px;
     display: flex;
     align-items: center;
     justify-content: center;
+    margin-left: 20px;
+    margin-right: 20px;
 }
 
 .foto-perfil img {
-    
+    width: 100%;
 }
 
 .sobre {
@@ -470,7 +482,7 @@ section {
     background-size: 6px;
     min-height: 105vh;
     overflow: visible;
-    scroll-margin-top: -40px;
+    scroll-margin-top: -75px;
 }
 
 .Botao-sobre {
@@ -1075,7 +1087,7 @@ section {
     display: flex;
     flex-direction: column;
     border-top: 3px solid black;
-    scroll-margin-top: -100px;
+    scroll-margin-top: -125px;
 }
 
 #projetos-titulo {
@@ -1208,7 +1220,7 @@ section {
     /* background-color: #A1A194;*/
     min-height: 106vh;
     position: relative;
-    scroll-margin-top: -50px;
+    scroll-margin-top: -90px;
 }
 
 .sobreh1-2 {
@@ -1485,4 +1497,59 @@ section {
    .menu-lateral{
     visibility: hidden;
    }
+}
+
+@media screen and (max-width: 1806px) {
+    .fernandokohn {
+        font-size: 4em;
+    }
+}
+
+@media screen and (max-width: 1351px) {
+    #index {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .foto-perfil {
+        display: none;
+    }
+
+    .Conteudo-Index {
+        width: 80%;
+        height: 600px;
+    }
+    
+    .Conteudo-Index h6 {
+        font-size: 3.5vw;
+        padding-bottom: 10px;
+    }
+
+    .fernandokohn {
+        font-size: 8vw;
+    }
+
+    .efeito-wrap {
+        margin-top: 30px;
+        height: 50px;
+        display: flex;
+        align-items: center;
+    }
+
+    .Conteudo-Index h2 {
+        font-size: 4.5vw;
+    }
+
+    .Conteudo-Index h4 {
+        font-size: 3vw;
+    }
+
+    .mais-sobre-mim {
+        width: 50vw;
+        padding-top: 60px;
+        margin-bottom: 30px;
+    }
+    
+
 }

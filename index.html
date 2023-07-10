@@ -30,7 +30,7 @@
                 <a href="#projetos" class="navlink">Projetos</a>
             </div>
             <div class="box-lateral">
-                <a href="#contato" class="navlink">Contato</a>   
+                <a href="#contato" class="navlink">Contato</a>
             </div>
         </div>
         <header class="menu-fixo">
@@ -46,10 +46,18 @@
         <section class="conteudo-total" id="conteudo-total">
             <section id="index">
                 <div class="Conteudo-Index">
-                    <h6>Olá, eu sou</h6>
-                    <h1 class="fernandokohn">FERNANDO KOHN</h1>
-                    <h2>Eu <span class="Efeito-digitado"></span></h2>
-                    <h4>Estudante de Ciencia da computação & Desenvolvedor Front-End</h4>
+                    <div class="ola-wrap">
+                        <h6>Olá, eu sou</h6>
+                    </div>
+                    <div class="fernando-wrap">
+                        <h1 class="fernandokohn">FERNANDO KOHN</h1>
+                    </div>
+                    <div class="efeito-wrap">
+                        <h2>Eu <span class="Efeito-digitado"></span></h2>
+                    </div>
+                    <div class="estudante-wrap">
+                        <h4>Estudante de Ciencia da computação & Desenvolvedor Front-End</h4>
+                    </div>
                     <div class="mais-sobre-mim">
                         <a href="#sobre">
                             <h1>Mais sobre mim</h1>
@@ -419,7 +427,7 @@
                     </div>
                 </div>
                 <a href="#index">
-                    <i class='bx bxs-up-arrow-circle' id="seta-voltar"></i> 
+                    <i class='bx bxs-up-arrow-circle' id="seta-voltar"></i>
                 </a>
             </section>
         </section>
@@ -482,7 +490,7 @@
 
 
     var typed = new Typed(".Efeito-digitado", {
-        strings: ["desenvolvo para web"],
+        strings: ["desenvolvo para web :"],
         typeSpeed: 100,
         backSpeed: 100,
         backDelay: 1000,
@@ -756,7 +764,7 @@
 
     function abrirhamburguer() {
         if (document.querySelector(".menu-lateral").style.display == "none") {
-            document.querySelector(".menu-lateral").style.display = "flex"   
+            document.querySelector(".menu-lateral").style.display = "flex"
         } else {
             document.querySelector(".menu-lateral").style.display = "none"
         }
