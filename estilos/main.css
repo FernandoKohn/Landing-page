@@ -67,13 +67,12 @@ main {
 
 .menu-lateral {
     width: 300px;
-    height: 35%;
+    height: 380px;
     display: none;
     flex-direction: column;
     position: absolute;
     right: 0;
     top: 82px;
-    background-color: #aa9df0;
     z-index: 9999;
     box-shadow: 8px 8px 0 0 #000;
 
@@ -217,21 +216,22 @@ section {
 }
 
 #index {
+    width: 100%;
+    height: 100%;
     display: flex;
     align-items: center;
-    padding: 0 0 0 10%;
     border-bottom: 7px solid black;
-    background-color: white;
+    background-color: rgb(241, 17, 17);
     
 }
 
 .Conteudo-Index {
     display: flex;
     flex-direction: column;
-    width: 37.5%;
+    width: 800px;
     height: 500px;
-    margin-bottom: 3%;
     position: relative;
+    background-color: #aa9df0;
 }
 
 
@@ -452,10 +452,11 @@ section {
 
 .foto-perfil {
     /*background-image: url("https://assets.website-files.com/ 5e87e737ee7085b9ba02c101/5e87e737ee7085fccd02c10d_pattern-grey.svg"); */
-    margin: 2% auto 7% auto;
     opacity: 0;
     animation: zoomIn 1s ease forwards, floatImage 5s ease-in-out infinite;
     animation-delay: 2s, 3s;
+    background-color: blue;
+    width: 50%;
 }
 
 .foto-perfil img {
