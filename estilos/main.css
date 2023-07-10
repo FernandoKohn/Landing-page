@@ -6,6 +6,7 @@
     src: url(/fontes/Pixel.ttf);
 }
 
+
 * {
     padding: 0;
     margin: 0;
@@ -17,6 +18,7 @@
 
 html {
     height: 100%;
+    width: 100%;
   } 
 
 
@@ -30,7 +32,7 @@ html {
     top: 0;
     left: 0;
     transform: translate(-30%, -30%);
-    z-index: 999;
+    z-index: 99999;
     mix-blend-mode: difference;
 }
 
@@ -45,14 +47,17 @@ a {
 
 body {
     height: 100%;
-    padding: 15px;
+    width: 100%;
+    padding: 15px 15px 0 15px;
     display: flex;
     background-color: #000000;
     cursor: url("/fotos/icons8-select-cursor-48.png"), auto;
     position: fixed;
+    top: 0;
+    left: 0;
 }
 
- main {
+main {
     width: 100%;
     height: 100%;
     display: flex;
@@ -60,10 +65,47 @@ body {
     position: relative;
 }
 
+.menu-lateral {
+    width: 300px;
+    height: 380px;
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    right: 0;
+    top: 82px;
+    z-index: 9999;
+    box-shadow: 8px 8px 0 0 #000;
 
+}
+
+.box-lateral {
+    display: flex;
+    align-items: center;
+    height: 95px;
+    background-color: #c4c4c4;
+    border: 2px solid black;
+}
+
+.box-lateral a {
+    width: 100%;
+    height: 100%;
+    padding-top: 20px;
+    font-size: 2em;
+    color: black;
+    padding-left: 15px;
+    user-select: none;
+    background-color: #c4c4c4;
+
+}
+
+.box-lateral:hover, .box-lateral a:hover {
+    background-color: black;
+    color: white;
+}
 
 .menu-fixo {
     width: 100%;
+    height: 100%;
     background-color: #c4c4c4;
     display: flex;
     align-items: center;
@@ -77,7 +119,7 @@ body {
 .fk {
     position: relative;
     color: black;
-    padding: 0 10%;
+    padding: 15px 10%;
     font-size: 2em;
 }
 
@@ -109,7 +151,7 @@ body {
     height: 100%;
     background: #c4c4c4;
     animation: showRight 1s ease forwards;
-    animation-delay: 1.8s;
+    animation-delay: 0.5s;
     border-radius: 7px 7px 0px 0px;
 }
 
@@ -129,14 +171,16 @@ body {
 }
 
 
-.navbar a.ativado {
-    color: #A1A194;
+#menu-hamburguer {
+    display: none;
+    padding: 15px 10%;
+    font-size: 2em;
 }
 
 #conteudo-total {
     width: 100%;
     height: 100%;
-    background-color:#ffffff;
+    background-color:white;
     overflow: scroll;
     scroll-behavior: smooth;
     display: flex;
@@ -172,21 +216,22 @@ section {
 }
 
 #index {
+    width: 100%;
+    height: 100%;
     display: flex;
     align-items: center;
-    padding: 0 0 0 10%;
     border-bottom: 7px solid black;
-    background-color: white;
+    background-color: rgb(241, 17, 17);
     
 }
 
 .Conteudo-Index {
     display: flex;
     flex-direction: column;
-    width: 37.5%;
+    width: 800px;
     height: 500px;
-    margin-bottom: 3%;
     position: relative;
+    background-color: #aa9df0;
 }
 
 
@@ -407,14 +452,15 @@ section {
 
 .foto-perfil {
     /*background-image: url("https://assets.website-files.com/ 5e87e737ee7085b9ba02c101/5e87e737ee7085fccd02c10d_pattern-grey.svg"); */
-    margin: 2% auto 7% auto;
     opacity: 0;
     animation: zoomIn 1s ease forwards, floatImage 5s ease-in-out infinite;
     animation-delay: 2s, 3s;
+    background-color: blue;
+    width: 50%;
 }
 
 .foto-perfil img {
-    width: 750px;
+    width: 80%;
 }
 
 .sobre {
@@ -1419,4 +1465,22 @@ section {
     }
 
 
+}
+
+
+@media screen and (max-width: 1000px){
+    .navbar {
+        display: none;
+    }
+
+    #menu-hamburguer {
+        display: block;
+    }
+    
+}
+
+@media  screen and (min-width: 1001px) {
+   .menu-lateral{
+    visibility: hidden;
+   }
 }

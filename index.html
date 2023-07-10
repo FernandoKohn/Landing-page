@@ -19,6 +19,20 @@
 
 <body onload="displayClock()">
     <main>
+        <div class="menu-lateral">
+            <div class="box-lateral">
+                <a href="#index">Home</a>
+            </div>
+            <div class="box-lateral">
+                <a href="#sobre" class="navlink">Sobre mim</a>
+            </div>
+            <div class="box-lateral">
+                <a href="#projetos" class="navlink">Projetos</a>
+            </div>
+            <div class="box-lateral">
+                <a href="#contato" class="navlink">Contato</a>   
+            </div>
+        </div>
         <header class="menu-fixo">
             <a href="index.html" class="fk">FK.</a>
             <nav class="navbar">
@@ -27,6 +41,7 @@
                 <a href="#projetos" class="navlink">Projetos</a>
                 <a href="#contato" class="navlink">Contato</a>
             </nav>
+            <i class='bx bx-menu' id="menu-hamburguer" onclick="abrirhamburguer()"></i>
         </header>
         <section class="conteudo-total" id="conteudo-total">
             <section id="index">
@@ -380,7 +395,8 @@
                                 <h1>Fale comigo</h1>
                             </div>
                         </header>
-                        <form action="mailto:contatofernandodeoliveira01@gmail.com" method="post" enctype="text/plain" onsubmit="mandaremail()">
+                        <form action="mailto:contatofernandodeoliveira01@gmail.com" method="post" enctype="text/plain"
+                            onsubmit="mandaremail()">
                             <div class="janela-input">
                                 <div class="caixa-input">
                                     <input type="text" name="nome" placeholder="" required>
@@ -416,21 +432,21 @@
 <script>
 
     window.location.hash = 'index';
-/*
-    function mandaremail() {
-        Email.send({
-            Host: "smtp.staticemail.com",
-            Username: "contatofernandodeoliveira01@gmail.com",
-            Password: "password",
-            To: 'contatofernandodeoliveira01@gmail.com',
-            From: document.getElementById("email").value,
-            Subject: "",
-            Body: document.getElementById("caixa-texto")
-        }).then(
-            message => alert(message)
-        );
-    }
- */
+    /*
+        function mandaremail() {
+            Email.send({
+                Host: "smtp.staticemail.com",
+                Username: "contatofernandodeoliveira01@gmail.com",
+                Password: "password",
+                To: 'contatofernandodeoliveira01@gmail.com',
+                From: document.getElementById("email").value,
+                Subject: "",
+                Body: document.getElementById("caixa-texto")
+            }).then(
+                message => alert(message)
+            );
+        }
+     */
     const ball = document.querySelector("#cursor");
 
     let mouseX = 0;
@@ -736,5 +752,18 @@
         disableScroll()
     })
     */
+
+
+    function abrirhamburguer() {
+        if (document.querySelector(".menu-lateral").style.display == "none") {
+            document.querySelector(".menu-lateral").style.display = "flex"   
+        } else {
+            document.querySelector(".menu-lateral").style.display = "none"
+        }
+    }
+
+
+
+
 
 </script>
