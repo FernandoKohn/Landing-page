@@ -14,6 +14,9 @@
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <script src="node_modules/body-scroll-lock/lib/bodyScrollLock.js"></script>
     <script src="https://smtpjs.com/v3/smtp.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.css" />
+
 
 </head>
 
@@ -56,7 +59,8 @@
                         <h2>Eu <span class="Efeito-digitado"></span></h2>
                     </div>
                     <div class="estudante-wrap">
-                        <h4>Estudante de Ciencia da computação & Desenvolvedor Front-End</h4>
+                        <h4>Estudante de Ciencia da computação</h4>
+                        <h4>& Desenvolvedor Front-End</h4>
                     </div>
                     <div class="mais-sobre-mim">
                         <a href="#sobre">
@@ -71,6 +75,40 @@
                 </div>
                 <div class="foto-perfil">
                     <img src="fotos/foto de perfil definitiva.png" alt="">
+                </div>
+                <div class="swiper-container">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <div class="ola-wrap">
+                                <h6>Olá, eu sou</h6>
+                            </div>
+                            <div class="fernando-wrap">
+                                <h1 class="fernandokohn">FERNANDO KOHN</h1>
+                            </div>
+                            <div class="efeito-wrap">
+                                <h2>Eu <span class="Efeito-digitado-2"></span></h2>
+                            </div>
+                            <div class="estudante-wrap">
+                                <h4>Estudante de Ciencia da computação & Desen-<br>volvedor Front-End </h4>
+                            </div>
+                            <div class="mais-sobre-mim">
+                                <a href="#sobre">
+                                    <h1>Mais sobre mim</h1>
+                                </a>
+                            </div>
+                            <div class="caixa-butao">
+                                <a href="https://github.com/FernandoKohn" target="_blank"><i
+                                        class='bx bxl-github'></i></a>
+                                <a href="https://www.linkedin.com/in/fernandokohn/" target="_blank"><i
+                                        class='bx bxl-linkedin-square'></i></a>
+                            </div>
+                            
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="fotos/foto de perfil definitiva.png" alt="">
+                        </div>
+                    </div>
+                    <div class="swiper-pagination"></div>
                 </div>
             </section>
             <section class="sobre" id="sobre">
@@ -497,6 +535,15 @@
         loop: true
     });
 
+    var typed = new Typed(".Efeito-digitado-2", {
+        strings: ["desenvolvo para web :"],
+        typeSpeed: 100,
+        backSpeed: 100,
+        backDelay: 1000,
+        loop: true
+    });
+
+
     function abrirjanela() {
         document.querySelector(".habilidades-janela").style.display = "block"
         document.querySelector("#cpu-numero").style.display = "block"
@@ -770,6 +817,13 @@
         }
     }
 
+    var swiper = new Swiper(".swiper-container", {
+        
+        pagination: {
+            el: ".swiper-pagination",
+
+        },
+    });
 
 
 
