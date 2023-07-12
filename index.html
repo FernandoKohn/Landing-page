@@ -62,15 +62,19 @@
                         <h4>Estudante de Ciencia da computação</h4>
                         <h4>& Desenvolvedor Front-End</h4>
                     </div>
-                    <div class="mais-sobre-mim">
-                        <a href="#sobre">
-                            <h1>Mais sobre mim</h1>
-                        </a>
+                    <div class="mais-sobre-mim-wrap">
+                        <div class="mais-sobre-mim">
+                            <a href="#sobre">
+                                <h1>Mais sobre mim</h1>
+                            </a>
+                        </div>
                     </div>
-                    <div class="caixa-butao">
-                        <a href="https://github.com/FernandoKohn" target="_blank"><i class='bx bxl-github'></i></a>
-                        <a href="https://www.linkedin.com/in/fernandokohn/" target="_blank"><i
-                                class='bx bxl-linkedin-square'></i></a>
+                    <div class="butao-wrap">
+                        <div class="caixa-butao">
+                            <a href="https://github.com/FernandoKohn" target="_blank"><i class='bx bxl-github'></i></a>
+                            <a href="https://www.linkedin.com/in/fernandokohn/" target="_blank"><i
+                                    class='bx bxl-linkedin-square'></i></a>
+                        </div>
                     </div>
                 </div>
                 <div class="foto-perfil">
@@ -91,24 +95,60 @@
                             <div class="estudante-wrap">
                                 <h4>Estudante de Ciencia da computação & Desen-<br>volvedor Front-End </h4>
                             </div>
+                            <div class="mais-sobre-mim-wrap">
+                                <div class="mais-sobre-mim">
+                                    <a href="#sobre">
+                                        <h1>Mais sobre mim</h1>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="butao-wrap">
+                                <div class="caixa-butao">
+                                    <a href="https://github.com/FernandoKohn" target="_blank"><i
+                                            class='bx bxl-github'></i></a>
+                                    <a href="https://www.linkedin.com/in/fernandokohn/" target="_blank"><i
+                                            class='bx bxl-linkedin-square'></i></a>
+                                </div>
+                            </div>
+                            
+                        </div>
+                        <div class="swiper-slide" id="swipeimg">
+                            <img src="fotos/foto de perfil definitiva.png" alt="">
+                        </div>
+                    </div>
+                    <div class="swiper-pagination"></div>
+                </div>
+                <div class="index-460res">
+                    <div class="conteudo-index-460">
+                        <div class="ola-wrap">
+                            <h6>Olá, eu sou</h6>
+                        </div>
+                        <div class="fernando-wrap">
+                            <h1 class="fernandokohn">FERNANDO KOHN</h1>
+                        </div>
+                        <div class="efeito-wrap">
+                            <h1>Eu</h1>
+                            <h2><span class="Efeito-digitado-3"></span></h2>
+                        </div>
+                        <div class="estudante-wrap">
+                            <h4>Estudante de Ciência da computação & front-end developer </h4>
+                            
+                        </div>
+                        <div class="mais-sobre-mim-wrap">
                             <div class="mais-sobre-mim">
                                 <a href="#sobre">
                                     <h1>Mais sobre mim</h1>
                                 </a>
-                            </div>
+                        </div>
+                        </div>
+                        <div class="butao-wrap">
                             <div class="caixa-butao">
                                 <a href="https://github.com/FernandoKohn" target="_blank"><i
                                         class='bx bxl-github'></i></a>
                                 <a href="https://www.linkedin.com/in/fernandokohn/" target="_blank"><i
                                         class='bx bxl-linkedin-square'></i></a>
                             </div>
-                            
-                        </div>
-                        <div class="swiper-slide">
-                            <img src="fotos/foto de perfil definitiva.png" alt="">
-                        </div>
                     </div>
-                    <div class="swiper-pagination"></div>
                 </div>
             </section>
             <section class="sobre" id="sobre">
@@ -535,12 +575,21 @@
         loop: true
     });
 
-    var typed = new Typed(".Efeito-digitado-2", {
+    var typed2 = new Typed(".Efeito-digitado-2", {
         strings: ["desenvolvo para web :"],
         typeSpeed: 100,
         backSpeed: 100,
         backDelay: 1000,
         loop: true
+    });
+
+    var typed3 = new Typed(".Efeito-digitado-3", {
+        strings: ["deselvolvo<br> para web :"],
+        typeSpeed: 100,
+        backSpeed: 100,
+        backDelay: 1000,
+        loop: true,
+        smartBackspace: true
     });
 
 
