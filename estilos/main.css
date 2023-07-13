@@ -379,7 +379,6 @@ section {
     overflow: hidden;
     justify-content: center;
     align-items: center;
-    background-color: #C13A4B;
 }
 
 
@@ -441,7 +440,8 @@ section {
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 60;
+    width: 100%;
+    padding-top: 15px;
 }
 
 .caixa-butao {
@@ -575,36 +575,44 @@ section {
     top: -40px;
     background-color: #C4C4C4;
     border: 4px solid black;
-    width: 25%;
+    width: 20%;
     height: 65px;
-    padding: 8px;
     display: flex;
     font-size: 1.5em;
-    font-weight: 600;
 }
 
-.sobreh1-1 {
-    position: absolute;
-    left: 42%;
-    font-size: 1.3em;
+.sobreh1-wrap {
+    width: 90%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5vw;
+    padding-left: 10%;
 }
 
-#seta-botao-sobre {
-    font-size: 45px;
-    position: absolute;
-    right: 15px;
+.botao-sobre-wrap {
+    display: flex;
+    width: 15%;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+    font-size: 3vw;
 }
 
 .conteudo-sobre {
     display: flex;
+    position: relative;
+    width: 100%;
+    height: 100%;
+    gap: 150px;
+    padding-left: 5%;
+    padding-top: 2%;
 }
 
 .janela-sobre {
-    background-color: #94a197;
-    width: 40%;
-    min-height: 750px;
-    margin-left: 5%;
-    margin-top: 2%;
+    width: 60%;
+    height: 70%;
     border: 3px solid black;
     box-shadow: 8px 8px 0 0 #000;
     display: flex;
@@ -612,54 +620,73 @@ section {
 
 }
 
+.janela-sobre-total {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    flex-direction: column;
+    background-color: white;
+}
 
 .janela-sobre-header {
     background-color: #C4C4C4;
     align-items: center;
     display: flex;
+    width: 100%;
     height: 50px;
     border-bottom: 3px solid black;
 }
 
 
-.janela-sobre-header h1 {
-    font-size: 1.9em;
-    margin: 0 34% 0 auto;
+.sobre-mim-html-wrap {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5vw;
+    padding-right: 12%;
+
 }
 
-.conteudo-janela-sobre {
-    background-color: #ffffff;
+.janela-sobre-header-img-wrap {
+    width: 10%;
     height: 100%;
-    padding: 20px;
-    text-align: justify;
-    text-indent: 15px;
+    display: flex;
+    align-items: center;
+    font-size: 1.5vw;
+    padding-left: 5px;
+
+}
+
+.sobre-wrap {
     display: flex;
     flex-direction: column;
-
+    width: 100%;
+    height: 100%;
+    background-color: #f0a99d;
 }
-
-.conteudo-janela-sobre img {
-    width: 4%;
-}
-
 
 .sobre-mim {
     display: flex;
     flex-direction: column;
     width: 100%;
-    padding-bottom: 30px;
+    height: 100%;
+    /* background-color: white; */
+    padding: 15px;
+    background-color: #aa9df0;
 }
 
-.sobre-1 img,
-.sobre-2 img,
-.sobre-3 img,
-.sobre-4 img {
-    width: 3%;
-    padding-right: 4px;
+.sobremim-img1 {
+    width: 1.2vw;
+}
+
+.sobremim-img2 {
+    width: 1.5vw;
 }
 
 .titulo-sobre-mim {
-    font-size: 1.8em;
+    font-size: 1.8vw;
     border-radius: 5px;
     color: black;
     padding: 5px;
@@ -669,16 +696,16 @@ section {
 
 
 .descricao-sobre {
-    font-size: 1.5em;
+    font-size: 1.2vw;
 }
 
 
 .habilidades {
     background-color: #A1A194;
     width: 45%;
-    height: 550px;
-    margin-left: 5%;
+    height: 600px;
     margin-top: 5%;
+    margin-right: 3%;
     border: 3px solid black;
     box-shadow: 8px 8px 0 0 #000;
     display: flex;
@@ -1571,29 +1598,22 @@ section {
 
 }
 
-
-@media screen and (max-width: 1000px) {
-    .navbar {
-        display: none;
-    }
-
-    #menu-hamburguer {
-        display: block;
-    }
-
-}
-
-@media screen and (min-width: 1001px) {
-    .menu-lateral {
-        visibility: hidden;
-    }
-}
-
 @media screen and (max-width: 1806px) {
     .fernandokohn {
         font-size: 4em;
     }
 }
+
+@media screen and (max-width:  1500px) {
+    .titulo-sobre-mim{
+        font-size: 2.2vw
+    }
+    
+    .descricao-sobre {
+        font-size: 1.7vw;
+    }
+};
+    
 
 @media screen and (max-width: 1351px) {
 
@@ -1633,7 +1653,6 @@ section {
         width: 100%;
         justify-content: start;
         height: auto;
-        background-color: #C13A4B;
     }
 
     .mais-sobre-mim {
@@ -1645,6 +1664,12 @@ section {
 
     }
 
+    .butao-wrap {
+        justify-content: start;
+        padding-top: 30px;
+        padding-left: 8%;
+    }
+
     .foto-perfil {
         display: none;
     }
@@ -1654,6 +1679,37 @@ section {
     }
 
 }
+
+@media screen and (max-width: 1000px) {
+    .navbar {
+        display: none;
+    }
+
+    #menu-hamburguer {
+        display: block;
+    }
+
+    .Botao-sobre {
+        width: 30%;
+    }
+
+    .sobreh1-wrap {
+        font-size: 2.5vw;
+    }
+
+    .botao-sobre-wrap {
+        font-size: 4.3vw;
+    }
+
+
+}
+
+@media screen and (min-width: 1001px) {
+    .menu-lateral {
+        visibility: hidden;
+    }
+}
+
 
 
 @media screen and (max-width:830px) {
@@ -1674,9 +1730,12 @@ section {
         font-size: 8vw;
     }
 
+    .mais-sobre-mim-wrap {
+        width: 40vw;
+    }
+
     .mais-sobre-mim {
-        padding-right: 8vw;
-        padding-top: 30px;
+        width: 100%;
     }
 
     .caixa-butao {
@@ -1685,6 +1744,10 @@ section {
 
     .caixa-butao a {
         font-size: 5vw;
+    }
+
+    .butao-wrap {
+        padding-left: 20%;
     }
 
     .swiper-pagination-bullet {
@@ -1705,12 +1768,25 @@ section {
         width: 80vw;
     }
     
+    .Botao-sobre {
+        width: 45%;
+    }
+
+    .sobreh1-wrap {
+        font-size: 4vw;
+    }
+
+    .botao-sobre-wrap {
+        font-size: 6vw;
+    }
+
+
 }
 
 @media screen and (max-width:460px) {
 
     section {
-        min-height: 120vh;
+        min-height: 110vh;
     }
 
     .index-460res {
@@ -1789,17 +1865,12 @@ section {
     }
 
     .mais-sobre-mim-wrap {
-        background-color: #aa9df0;
         display: flex;
+        width: 100%;
+        padding: 5px;
+        justify-content: center;
     }
 
-    .mais-sobre-mim {
-        
-        width: 100%;
-        height: 10%;
-        padding-left: 40px;
-        position: relative;
-    }
 
     .mais-sobre-mim h1 {
         padding: 15px 20px;
@@ -1807,4 +1878,20 @@ section {
         font-size: 5vw;
     }
 
+    .butao-wrap {
+        padding: 0;
+        margin: 0;
+    }
+
+    .caixa-butao {
+        width: 100%;
+        height: 100%;
+        padding: 0;
+        margin: 0;
+        padding-top: 15px;
+    }
+
+    .caixa-butao a{
+        font-size: 10vw;
+    }
 }
