@@ -107,7 +107,6 @@ main {
 
 .menu-fixo {
     width: 100%;
-    height: 100%;
     background-color: #c4c4c4;
     display: flex;
     align-items: center;
@@ -216,11 +215,9 @@ main {
 
 section {
     min-height: 100vh;
-}
+}  
 
 #index {
-    width: 100%;
-    height: 100%;
     display: flex;
     align-items: center;
     justify-content: space-around;
@@ -563,7 +560,7 @@ section {
 .sobre {
     background-image: url(https://assets.website-files.com/5e87e737ee7085b9ba02c101/5e87e737ee7085fccd02c10d_pattern-grey.svg);
     background-size: 6px;
-    min-height: 105vh;
+    height: 105vh;
     overflow: visible;
     scroll-margin-top: -75px;
 }
@@ -602,103 +599,76 @@ section {
 
 .conteudo-sobre {
     display: flex;
-    position: relative;
     width: 100%;
     height: 100%;
-    gap: 150px;
-    padding-left: 5%;
-    padding-top: 2%;
+    gap: 100px;
 }
 
 .janela-sobre {
-    width: 60%;
-    height: 70%;
+    background-color: #94a197;
+    width: 750px;
+    height: 750px;
+    margin-left: 5%;
+    margin-top: 2%;
     border: 3px solid black;
     box-shadow: 8px 8px 0 0 #000;
     display: flex;
     flex-direction: column;
-
-}
-
-.janela-sobre-total {
-    display: flex;
-    width: 100%;
-    height: 100%;
-    flex-direction: column;
-    background-color: white;
 }
 
 .janela-sobre-header {
     background-color: #C4C4C4;
     align-items: center;
     display: flex;
-    width: 100%;
     height: 50px;
     border-bottom: 3px solid black;
+    position: relative;
+    justify-content: center;
 }
 
+.janela-sobre-header h1 {
+    font-size: 1.9em;
+}
 
-.sobre-mim-html-wrap {
-    width: 100%;
+.janela-sobre-header img {
+    position: absolute;
+    left: 0;
+}
+
+.conteudo-janela-sobre {
+    background-color: #ffffff;
     height: 100%;
-    display: flex;
+    width: 100%;
+    text-align: justify;
     align-items: center;
     justify-content: center;
-    font-size: 1.5vw;
-    padding-right: 12%;
-
-}
-
-.janela-sobre-header-img-wrap {
-    width: 10%;
-    height: 100%;
     display: flex;
-    align-items: center;
-    font-size: 1.5vw;
-    padding-left: 5px;
+    flex-direction: column;
+
 
 }
 
-.sobre-wrap {
+.conteudo-janela-sobre img {
+    width: 30px;
+}
+
+.sobre-1, .sobre-2, .sobre-3, .sobre-4 {
     display: flex;
     flex-direction: column;
     width: 100%;
     height: 100%;
-    background-color: #f0a99d;
+    padding: 10px;
 }
 
-.sobre-mim {
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-    height: 100%;
-    /* background-color: white; */
-    padding: 15px;
-    background-color: #aa9df0;
-}
 
-.sobremim-img1 {
-    width: 1.2vw;
-}
-
-.sobremim-img2 {
-    width: 1.5vw;
-}
-
-.titulo-sobre-mim {
-    font-size: 1.8vw;
-    border-radius: 5px;
-    color: black;
-    padding: 5px;
+.titulo {   
+    font-size: 35px;
     color: #C13A4B;
-
 }
 
-
-.descricao-sobre {
-    font-size: 1.2vw;
+.descricao {
+    font-size: 25px;
 }
-
 
 .habilidades {
     background-color: #A1A194;
@@ -719,6 +689,7 @@ section {
 .habilidades-header {
     background-color: #C4C4C4;
     height: 50px;
+    width: 100%;
     border-bottom: 3px solid black;
 }
 
@@ -728,6 +699,7 @@ section {
     background-color: #aa9df0;
     align-items: center;
     display: flex;
+    justify-content: center;
 }
 
 .habilidades-header h1 {
@@ -1598,24 +1570,28 @@ section {
 
 }
 
-@media screen and (max-width: 1806px) {
+@media screen and (max-width: 1851px) {
     .fernandokohn {
         font-size: 4em;
     }
+
+    .conteudo-janela-sobre img {
+        width: 24px;
+    }
+
+    
 }
 
-@media screen and (max-width:  1500px) {
-    .titulo-sobre-mim{
-        font-size: 2.2vw
+@media screen and (max-width: 1557px) {
+    .janela-sobre {
+        width: 750px;
+        height: 800px;
     }
-    
-    .descricao-sobre {
-        font-size: 1.7vw;
-    }
-};
+
+}
     
 
-@media screen and (max-width: 1351px) {
+@media screen and (max-width: 1381px) {
 
     .Conteudo-Index {
         display: none;
@@ -1676,6 +1652,30 @@ section {
 
     .caixa-butao a {
         font-size: 4vw;
+    }
+
+    .sobre {
+        min-height: 190vh;
+    }
+
+    .conteudo-sobre {
+        flex-direction: column;
+        gap: 0;
+    }
+
+    .janela-sobre {
+        margin: 30px auto;
+        width: 90vw;
+        height: 85vh;
+    }
+
+    .titulo {   
+        font-size: 40px;
+        color: #C13A4B;
+    }
+    
+    .descricao {
+        font-size: 35px;
     }
 
 }
