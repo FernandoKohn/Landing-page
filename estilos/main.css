@@ -215,7 +215,7 @@ main {
 
 section {
     min-height: 100vh;
-}  
+}
 
 #index {
     display: flex;
@@ -256,7 +256,7 @@ section {
     align-items: center;
     display: flex;
     height: 30px;
-    
+
 }
 
 .Conteudo-Index h6 {
@@ -652,7 +652,10 @@ section {
     width: 30px;
 }
 
-.sobre-1, .sobre-2, .sobre-3, .sobre-4 {
+.sobre-1,
+.sobre-2,
+.sobre-3,
+.sobre-4 {
     display: flex;
     flex-direction: column;
     width: 100%;
@@ -661,7 +664,7 @@ section {
 }
 
 
-.titulo {   
+.titulo {
     font-size: 35px;
     color: #C13A4B;
 }
@@ -714,9 +717,9 @@ section {
 .habilidades-conteudo {
     width: 100%;
     height: 490px;
-    background: url(../fotos/desktop-background-teste2.jpg);
     z-index: 1;
     display: flex;
+    background: url(../fotos/desktop-background-teste2.jpg);
 }
 
 
@@ -830,7 +833,7 @@ section {
 
 .taskbar-janelas {
     position: absolute;
-    bottom: 60px;
+    bottom: 58px;
     left: 0;
     display: flex;
     width: 45%;
@@ -1113,6 +1116,8 @@ section {
 }
 
 .opcoes-lingua {
+    display: flex;
+    flex-direction: column;
     height: 100%;
     padding-top: 10px;
     margin-top: 10px;
@@ -1122,17 +1127,17 @@ section {
 #linguas {
     display: flex;
     margin-top: 10px;
+    gap: 10px;
 }
 
 #linguas h1 {
-    padding-right: 10px;
+    padding: 10px;
 }
 
 #pt,
 #en,
 #cr {
     border-radius: 30px;
-    padding-left: 10px;
     transition: 0.3s;
 }
 
@@ -1155,8 +1160,10 @@ section {
 .relogio-data {
     display: flex;
     flex-direction: column;
-    justify-content: center; /* Align horizontal */
-    align-items: end; /* Align vertical */   
+    justify-content: center;
+    /* Align horizontal */
+    align-items: end;
+    /* Align vertical */
     width: 15%;
     height: 100%;
     padding: 10px;
@@ -1578,6 +1585,13 @@ section {
 
 }
 
+@media screen and (max-width:1810px) {
+    #linguas {
+        font-size: 0.8vw;
+    }
+
+}
+
 @media screen and (max-width: 1851px) {
     .fernandokohn {
         font-size: 4em;
@@ -1591,8 +1605,9 @@ section {
         width: 25%;
     }
 
-    
+
 }
+
 
 @media screen and (max-width: 1557px) {
     .janela-sobre {
@@ -1603,14 +1618,27 @@ section {
     .pasta-habilidade {
         width: 30%;
 
-}
+    }
 
     #tabelaaplicativos {
         font-size: 1em;
     }
 
+    #aplicativo {
+        font-size: 0.8em;
+        padding-top: 7px;
+    }
+
+    .taskbar-janelas {
+        width: 65%;
+    }
+
+    #linguas {
+        font-size: 16px;
+    }
+
 }
-    
+
 
 @media screen and (max-width: 1381px) {
 
@@ -1694,15 +1722,18 @@ section {
         gap: 0;
     }
 
-    .titulo {   
+    .titulo {
         font-size: 40px;
         color: #C13A4B;
     }
 
-    .sobre-1, .sobre-2, .sobre-3, .sobre-4 {
+    .sobre-1,
+    .sobre-2,
+    .sobre-3,
+    .sobre-4 {
         padding: 20px;
     }
-    
+
     .descricao {
         font-size: 2.3vw;
     }
@@ -1716,10 +1747,15 @@ section {
     .pasta-habilidade {
         width: 20%;
 
-}
+    }
 
     .habilidades-conteudo {
         height: 710px;
+    }
+
+    .taskbar-janelas {
+        width: 40%;
+        height: 50%;
     }
 
 }
@@ -1745,10 +1781,10 @@ section {
         font-size: 4.3vw;
     }
 
-    .titulo {   
+    .titulo {
         font-size: 3.3vw;
     }
-    
+
     .descricao {
         font-size: 2.8vw;
     }
@@ -1763,11 +1799,11 @@ section {
 }
 
 @media screen and (max-width: 970px) {
-    .titulo {   
+    .titulo {
         font-size: 3.6vw;
         color: #C13A4B;
     }
-    
+
     .descricao {
         font-size: 3.2vw;
     }
@@ -1824,11 +1860,11 @@ section {
         height: 85vh;
     }
 
-    .titulo {   
+    .titulo {
         font-size: 4vw;
         color: #C13A4B;
     }
-    
+
     .descricao {
         font-size: 3.5vw;
     }
@@ -1836,21 +1872,25 @@ section {
     .pasta-habilidade {
         width: 30%;
 
-}
+    }
+
+    .taskbar-janelas {
+        width: 60%;
+    }
 
 
 }
 
 @media screen and (max-width:670px) {
-    .swiper-container{
+    .swiper-container {
         height: 35%;
         padding-left: 1vw;
     }
 
-    #swipeimg img{
+    #swipeimg img {
         width: 80vw;
     }
-    
+
     .Botao-sobre {
         width: 45%;
     }
@@ -1871,16 +1911,18 @@ section {
         font-size: 1.4em;
     }
 
-    .titulo {   
+    .titulo {
         font-size: 4.8vw;
         color: #C13A4B;
     }
-    
+
     .descricao {
         font-size: 3.6vw;
     }
 
-
+    #linguas {
+        flex-direction: column;
+    }
 
 }
 
@@ -1901,7 +1943,7 @@ section {
         flex-direction: column;
     }
 
-    .swiper-container{
+    .swiper-container {
         display: none;
     }
 
@@ -1962,7 +2004,7 @@ section {
         flex-direction: column;
         font-size: 6vw;
         padding: 10px;
-        text-align:justify;
+        text-align: justify;
     }
 
     .mais-sobre-mim-wrap {
@@ -1992,7 +2034,7 @@ section {
         padding-top: 15px;
     }
 
-    .caixa-butao a{
+    .caixa-butao a {
         font-size: 10vw;
     }
 
@@ -2010,11 +2052,11 @@ section {
         width: 20px;
     }
 
-    .titulo {   
+    .titulo {
         font-size: 4.3w;
         color: #C13A4B;
     }
-    
+
     .descricao {
         font-size: 4vw;
     }
@@ -2024,7 +2066,7 @@ section {
     }
 
     .relogio-data {
-        width:35%;
+        width: 35%;
     }
 
 
@@ -2052,12 +2094,17 @@ section {
 
 @media screen and (max-width:451px) {
     .desktop-icones img {
-        width: 70%;
+        width: 90%;
     }
 
     .relogio-data {
-        width:45%;
+        width: 45%;
     }
+
+    .taskbar-janelas {
+        width: 90%;
+    }
+
 
 }
 
@@ -2071,7 +2118,7 @@ section {
     #botao-redondo {
         width: 10vw;
     }
-    
+
     .conteudo-janela-sobre img {
         width: 10px;
     }

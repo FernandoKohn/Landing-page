@@ -226,7 +226,6 @@
                             </div>
                         </header>
                         <div class="habilidades-conteudo">
-
                             <div class="pasta-habilidade" onclick="abrirjanela()">
                                 <img src="fotos/folder.png" alt="">
                                 <h1>Habilidades</h1>
@@ -706,10 +705,10 @@
     }
 
     function abriropcoes() {
-        if (document.querySelector("#opcoes-wrap").style.display == "block") {
+        if (document.querySelector("#opcoes-wrap").style.display == "flex") {
             document.querySelector("#opcoes-wrap").style.display = "none"
         } else {
-            document.querySelector("#opcoes-wrap").style.display = "block"
+            document.querySelector("#opcoes-wrap").style.display = "flex"
         }
 
         document.querySelector("#iniciar-wrap").style.display = "none"
@@ -749,7 +748,8 @@
         document.querySelector("#img2").style.borderColor = "white"
         document.querySelector("#img1").style.borderColor = "black"
         document.querySelector(".habilidades-conteudo").style.background = "url(../fotos/estrelas2.gif)"
-        document.querySelector(".habilidades-conteudo").style.backgroundSize = "60%"
+        document.querySelector(".habilidades-conteudo").style.backgroundSize = "cover"
+        document.querySelector(".habilidades-conteudo").style.backgroundRepeat = "no-repeat"
     }
 
     function ptbr() {
