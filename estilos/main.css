@@ -1669,18 +1669,32 @@ section {
         height: 85vh;
     }
 
+    .conteudo-janela-sobre {
+        gap: 0;
+    }
+
     .titulo {   
         font-size: 40px;
         color: #C13A4B;
     }
+
+    .sobre-1, .sobre-2, .sobre-3, .sobre-4 {
+        padding: 20px;
+    }
     
     .descricao {
-        font-size: 35px;
+        font-size: 2.3vw;
+    }
+
+    .habilidades {
+        width: 90%;
+        height: 40%;
+        margin: 30px auto;
     }
 
 }
 
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: 1113px) {
     .navbar {
         display: none;
     }
@@ -1701,12 +1715,31 @@ section {
         font-size: 4.3vw;
     }
 
+    .titulo {   
+        font-size: 3.3vw;
+    }
+    
+    .descricao {
+        font-size: 2.8vw;
+    }
+
 
 }
 
 @media screen and (min-width: 1001px) {
     .menu-lateral {
         visibility: hidden;
+    }
+}
+
+@media screen and (max-width: 970px) {
+    .titulo {   
+        font-size: 3.6vw;
+        color: #C13A4B;
+    }
+    
+    .descricao {
+        font-size: 3.2vw;
     }
 }
 
@@ -1755,10 +1788,19 @@ section {
         top: 90px;
     }
 
+    .titulo {   
+        font-size: 4vw;
+        color: #C13A4B;
+    }
+    
+    .descricao {
+        font-size: 3.5vw;
+    }
+
 
 }
 
-@media screen and (max-width:600px) {
+@media screen and (max-width:670px) {
     .swiper-container{
         height: 35%;
         padding-left: 1vw;
