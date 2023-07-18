@@ -214,7 +214,7 @@ main {
 }
 
 section {
-    min-height: 100vh;
+    min-height: 1000px;
 }
 
 #index {
@@ -560,7 +560,7 @@ section {
 .sobre {
     background-image: url(https://assets.website-files.com/5e87e737ee7085b9ba02c101/5e87e737ee7085fccd02c10d_pattern-grey.svg);
     background-size: 6px;
-    height: 105vh;
+    
     overflow: visible;
     scroll-margin-top: -75px;
 }
@@ -1186,11 +1186,11 @@ section {
 
 #projetos {
     background-color: white;
-    min-height: 112vh;
     display: flex;
+    min-height: 1100px;
     flex-direction: column;
     border-top: 3px solid black;
-    scroll-margin-top: -125px;
+    scroll-margin-top: -100px;
 }
 
 #projetos-titulo {
@@ -1321,7 +1321,7 @@ section {
     border-top: 3px solid black;
     background-color: #aa9df0;
     /* background-color: #A1A194;*/
-    min-height: 106vh;
+    min-height: 1050px;
     position: relative;
     scroll-margin-top: -90px;
 }
@@ -1342,7 +1342,7 @@ section {
 .redes-sociais-final {
     position: absolute;
     top: 150px;
-    left: 200px;
+    left: 150px;
     width: 100px;
     height: 400px;
     display: flex;
@@ -1365,7 +1365,7 @@ section {
 .redes-sociais-final img {
     width: 60px;
     -webkit-user-drag: none;
-    -webkit-user-select: none;
+    user-select: none;
 }
 
 
@@ -1546,8 +1546,8 @@ section {
     color: black;
     font-size: 3em;
     position: absolute;
-    bottom: 80px;
-    right: 10px;
+    bottom: 155px;
+    right: 200px;
 }
 
 
