@@ -671,7 +671,6 @@ section {
 }
 
 .habilidades {
-    background-color: #A1A194;
     width: 45%;
     height: 600px;
     margin-top: 5%;
@@ -683,6 +682,7 @@ section {
     overflow: hidden;
     position: relative;
     z-index: 0;
+    background-color: #000000;
 }
 
 
@@ -704,15 +704,19 @@ section {
 
 .habilidades-header h1 {
     font-size: 1.9em;
-    margin: 0 40% 0 auto;
+}
+
+#botao-redondo-header-habilidades {
+    position: absolute;
+    left: 0;
 }
 
 .habilidades-conteudo {
     width: 100%;
-    height: 100%;
-    background-color: #fffdfd;
+    height: 490px;
     background: url(../fotos/desktop-background-teste2.jpg);
     z-index: 1;
+    display: flex;
 }
 
 
@@ -741,7 +745,7 @@ section {
 }
 
 .pasta-habilidade h1 {
-    font-size: 0.9em;
+    font-size: 1.3em;
 }
 
 
@@ -763,10 +767,12 @@ section {
     background-color: #C4C4C4;
     height: 50px;
     border-bottom: 2px solid black;
+    display: flex;
 }
 
 #botao-fechar {
-    margin-left: 10px;
+    position: absolute;
+    left: 5px;
     font-size: 2.5em;
     transition: 1s;
 }
@@ -776,7 +782,6 @@ section {
 }
 
 .habilidades-janela-header h1 {
-    margin: 0 37% 0 auto;
     font-size: 1.7em;
 }
 
@@ -825,7 +830,7 @@ section {
 
 .taskbar-janelas {
     position: absolute;
-    bottom: 47px;
+    bottom: 60px;
     left: 0;
     display: flex;
     width: 45%;
@@ -1132,36 +1137,39 @@ section {
 }
 
 .habilidades-rodape {
-    display: flex;
     width: 100%;
+    height: 60px;
+    display: flex;
     background-color: #c4c4c4;
-    justify-content: space-between;
+    position: relative;
 }
 
 .desktop-icones {
     display: flex;
+    position: absolute;
+    height: 100%;
+    width: 20%;
 }
 
-.habilidades-rodape img {
-    margin: 0;
-    padding: 0;
-    height: 100%;
-}
 
 .relogio-data {
-    justify-content: center;
-    text-align: right;
-    display: inline-block;
+    display: flex;
     flex-direction: column;
+    justify-content: center; /* Align horizontal */
+    align-items: end; /* Align vertical */   
     width: 15%;
-    padding: 10px 15px 0 10px;
+    height: 100%;
+    padding: 10px;
+    padding-top: 15px;
     border: 2px solid black;
+    position: absolute;
+    right: 0;
 }
-
 
 #relogio {
     font-family: "Pixel";
-    font-size: 12px;
+    font-size: 17px;
+    vertical-align: middle;
 }
 
 #data {
@@ -1579,6 +1587,10 @@ section {
         width: 24px;
     }
 
+    .relogio-data {
+        width: 25%;
+    }
+
     
 }
 
@@ -1586,6 +1598,15 @@ section {
     .janela-sobre {
         width: 750px;
         height: 800px;
+    }
+
+    .pasta-habilidade {
+        width: 30%;
+
+}
+
+    #tabelaaplicativos {
+        font-size: 1em;
     }
 
 }
@@ -1655,7 +1676,7 @@ section {
     }
 
     .sobre {
-        min-height: 190vh;
+        min-height: 180vh;
     }
 
     .conteudo-sobre {
@@ -1690,6 +1711,15 @@ section {
         width: 90%;
         height: 40%;
         margin: 30px auto;
+    }
+
+    .pasta-habilidade {
+        width: 20%;
+
+}
+
+    .habilidades-conteudo {
+        height: 710px;
     }
 
 }
@@ -1788,6 +1818,12 @@ section {
         top: 90px;
     }
 
+    .janela-sobre {
+        margin: 30px auto;
+        width: 85vw;
+        height: 85vh;
+    }
+
     .titulo {   
         font-size: 4vw;
         color: #C13A4B;
@@ -1796,6 +1832,11 @@ section {
     .descricao {
         font-size: 3.5vw;
     }
+
+    .pasta-habilidade {
+        width: 30%;
+
+}
 
 
 }
@@ -1822,10 +1863,28 @@ section {
         font-size: 6vw;
     }
 
+    .janela-sobre {
+        height: 90vh;
+    }
+
+    .janela-sobre-header h1 {
+        font-size: 1.4em;
+    }
+
+    .titulo {   
+        font-size: 4.8vw;
+        color: #C13A4B;
+    }
+    
+    .descricao {
+        font-size: 3.6vw;
+    }
+
+
 
 }
 
-@media screen and (max-width:460px) {
+@media screen and (max-width:510px) {
 
     section {
         min-height: 110vh;
@@ -1935,5 +1994,108 @@ section {
 
     .caixa-butao a{
         font-size: 10vw;
+    }
+
+    #sobre {
+        scroll-margin-top: -30px;
+    }
+
+    .janela-sobre {
+        margin: 0 auto;
+        width: 80vw;
+        height: 85vh;
+    }
+
+    .conteudo-janela-sobre img {
+        width: 20px;
+    }
+
+    .titulo {   
+        font-size: 4.3w;
+        color: #C13A4B;
+    }
+    
+    .descricao {
+        font-size: 4vw;
+    }
+
+    .habilidades-header h1 {
+        font-size: 5vw;
+    }
+
+    .relogio-data {
+        width:35%;
+    }
+
+
+    .pasta-habilidade {
+        width: 40%;
+
+    }
+
+    .habilidades-janela {
+        width: 400px;
+        height: 250px;
+    }
+
+    .habilidades-janela-index img {
+        width: 100px;
+        padding-left: 30px;
+    }
+
+    .barra {
+        transform: scale(0.8);
+    }
+
+
+}
+
+@media screen and (max-width:451px) {
+    .desktop-icones img {
+        width: 70%;
+    }
+
+    .relogio-data {
+        width:45%;
+    }
+
+}
+
+@media screen and (max-width: 380px) {
+    .janela-sobre {
+        margin: 0 auto;
+        width: 75vw;
+        height: 70vh;
+    }
+
+    #botao-redondo {
+        width: 10vw;
+    }
+    
+    .conteudo-janela-sobre img {
+        width: 10px;
+    }
+
+    .janela-sobre-header h1 {
+        font-size: 5vw;
+    }
+
+    .titulo {
+        font-size: 4vw;
+    }
+
+    .pasta-habilidade {
+        width: 50%;
+
+    }
+
+    .habilidades-janela {
+        width: 300px;
+        height: 200px;
+    }
+
+    .habilidades-janela-index {
+        transform: scale(0.7);
+        padding: 0;
     }
 }
