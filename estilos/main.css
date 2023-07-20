@@ -560,7 +560,6 @@ section {
 .sobre {
     background-image: url(https://assets.website-files.com/5e87e737ee7085b9ba02c101/5e87e737ee7085fccd02c10d_pattern-grey.svg);
     background-size: 6px;
-    
     overflow: visible;
     scroll-margin-top: -75px;
 }
@@ -568,6 +567,7 @@ section {
 .Botao-sobre {
     margin: auto;
     align-items: center;
+    justify-content: center;
     position: relative;
     top: -40px;
     background-color: #C4C4C4;
@@ -578,23 +578,14 @@ section {
     font-size: 1.5em;
 }
 
-.sobreh1-wrap {
-    width: 90%;
-    height: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 1.5vw;
-    padding-left: 10%;
+.Botao-sobre h1 {
+    position: absolute;
 }
 
-.botao-sobre-wrap {
-    display: flex;
-    width: 15%;
-    height: 100%;
-    align-items: center;
-    justify-content: center;
-    font-size: 3vw;
+.Botao-sobre i {
+    position: absolute;
+    right: 10px;
+    font-size: 50px;
 }
 
 .conteudo-sobre {
@@ -1203,12 +1194,14 @@ section {
     min-height: 700px;
     margin-left: 11%;
     position: relative;
+    display: flex;
 }
 
 .projetos-container header {
     background-color: #C4C4C4;
     height: 100px;
     border-bottom: 5px solid black;
+    display: flex;
 }
 
 .projeto-header-wrap {
@@ -1292,10 +1285,14 @@ section {
 }
 
 .projeto-img {
-    background: url(https://assets.website-files.com/5e87e737ee7085b9ba02c101/5e87e737ee7085fccd02c10d_pattern-grey.svg);
+    background: url(https://assets.website-files.com/5e87e737ee7085b9ba02c101/5e87e737ee7085fccd02c10d_pattern-grey.svg); 
     width: 100%;
     height: 60%;
     border-bottom: 4px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
 }
 
 .projeto-img img {
@@ -1324,31 +1321,57 @@ section {
     min-height: 1050px;
     position: relative;
     scroll-margin-top: -90px;
+    display: flex;
+    flex-direction: column;
+
 }
 
-.sobreh1-2 {
+.Botao-sobre-contato {
+    margin: 0 auto;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    top: -30px;
+    background-color: #C4C4C4;
+    border: 4px solid black;
+    width: 20%;
+    height: 65px;
+    display: flex;
+    font-size: 1.5em;
+}
+
+.Botao-sobre-contato h1 {
     position: absolute;
-    position: absolute;
-    left: 37%;
     font-size: 1.3em;
 }
 
+.Botao-sobre-contato i {
+    position: absolute;
+    right: 0;
+    font-size: 50px;
+}
+
 .contato-conteudo {
+    width: 100%;
+    height: 100%;
     display: flex;
     position: relative;
-    padding-top: 25px;
+    justify-content: center;
+    gap: 10px;
+    padding-top: 4%;
 }
 
 .redes-sociais-final {
-    position: absolute;
-    top: 150px;
-    left: 150px;
     width: 100px;
     height: 400px;
+    gap: 50px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    position: absolute;
+    left: 200px;
+    top: 200px;
 }
 
 
@@ -1357,7 +1380,6 @@ section {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin: 30px;
     text-transform: uppercase;
 
 }
@@ -1384,7 +1406,6 @@ section {
     border-radius: 10px;
     width: 65%;
     height: 800px;
-    margin: auto;
     border: 4px solid black;
     box-shadow: 8px 8px 0 0 #000;
 }
@@ -1409,10 +1430,12 @@ section {
 }
 
 .contato-janela form {
-    width: 80%;
-    height: 60%;
-    margin: 5% auto;
+    width: 100%;
+    height: 100%;
+    padding: 30px;
     text-align: center;
+    display: flex;
+    flex-direction: column;
 }
 
 .janela-input {
@@ -1546,8 +1569,8 @@ section {
     color: black;
     font-size: 3em;
     position: absolute;
-    bottom: 155px;
-    right: 200px;
+    right: 30px;
+    bottom: 0px;
 }
 
 
@@ -1590,6 +1613,10 @@ section {
         font-size: 0.8vw;
     }
 
+    .redes-sociais-final {
+        left: 180px;
+    }
+
 }
 
 @media screen and (max-width: 1851px) {
@@ -1606,6 +1633,12 @@ section {
     }
 
 
+}
+
+@media screen and (max-width: 1650px) {
+    .redes-sociais-final {
+        left: 150px;
+    }
 }
 
 
@@ -1637,6 +1670,14 @@ section {
         font-size: 16px;
     }
 
+
+
+}
+
+@media screen and (max-width:1454px) {
+    .redes-sociais-final {
+        left: 110px;
+    }
 }
 
 
@@ -1704,7 +1745,7 @@ section {
     }
 
     .sobre {
-        min-height: 180vh;
+        min-height: 1800px;
     }
 
     .conteudo-sobre {
@@ -1715,7 +1756,7 @@ section {
     .janela-sobre {
         margin: 30px auto;
         width: 90vw;
-        height: 85vh;
+        height: 850px;
     }
 
     .conteudo-janela-sobre {
@@ -1760,7 +1801,19 @@ section {
 
 }
 
-@media screen and (max-width: 1113px) {
+@media screen and (max-width: 1250px) {
+    .redes-sociais-final {
+        left: 80px;
+    }
+}
+
+@media screen and (max-width: 1132px) {
+    .placeholder {
+        font-size: 20px;
+    }
+}
+
+@media screen and (max-width: 1112px) {
     .navbar {
         display: none;
     }
@@ -1782,14 +1835,20 @@ section {
     }
 
     .titulo {
-        font-size: 3.3vw;
+        font-size: 3vw;
     }
 
     .descricao {
-        font-size: 2.8vw;
+        font-size: 2.5vw;
     }
 
 
+}
+
+@media screen and (max-width: 1070px) {
+    .redes-sociais-final {
+        left: 50px;
+    }
 }
 
 @media screen and (min-width: 1001px) {
@@ -1798,18 +1857,36 @@ section {
     }
 }
 
+@media screen and (max-width: 981px) {
+    .placeholder {
+        font-size: 15px;
+    }
+}
+
 @media screen and (max-width: 970px) {
     .titulo {
-        font-size: 3.6vw;
+        font-size: 3.4vw;
         color: #C13A4B;
     }
 
     .descricao {
-        font-size: 3.2vw;
+        font-size: 3vw;
+    }
+
+    .janela-input {
+        flex-direction: column;
+    }
+    
+    .caixa-input {
+        width: 100%;
     }
 }
 
-
+@media screen and (max-width: 907px) {
+    .redes-sociais-final {
+        left: 20px;
+    }
+}
 
 @media screen and (max-width:830px) {
 
@@ -1857,16 +1934,16 @@ section {
     .janela-sobre {
         margin: 30px auto;
         width: 85vw;
-        height: 85vh;
+        height: 860px;
     }
 
     .titulo {
-        font-size: 4vw;
+        font-size: 3.7vw;
         color: #C13A4B;
     }
 
     .descricao {
-        font-size: 3.5vw;
+        font-size: 3.2vw;
     }
 
     .pasta-habilidade {
@@ -1878,6 +1955,35 @@ section {
         width: 60%;
     }
 
+    .janela-input {
+        gap: 30px;
+    }
+
+    .contato-janela form {
+        gap: 20px;
+    }
+}
+
+@media screen and (max-width: 730px) {
+    .proj-1,.proj-2,.proj-3,.proj-4 {
+        width: 70%;
+    }
+
+    .projetos-container {
+        max-width: 100%;
+        margin-left: 0;
+        margin-top: 4%;
+    }
+}
+
+@media screen and (max-width: 713px) {
+    .redes-sociais-final img {
+        width: 50px;
+    }
+
+    .redes-sociais-final {
+        left: 10px;
+    }
 
 }
 
@@ -1889,6 +1995,10 @@ section {
 
     #swipeimg img {
         width: 80vw;
+    }
+
+    .sobre {
+        min-height: 2000px;
     }
 
     .Botao-sobre {
@@ -1904,7 +2014,8 @@ section {
     }
 
     .janela-sobre {
-        height: 90vh;
+        height: 900px;
+        margin-top: 0;
     }
 
     .janela-sobre-header h1 {
@@ -1912,24 +2023,29 @@ section {
     }
 
     .titulo {
-        font-size: 4.8vw;
+        font-size: 4.5vw;
         color: #C13A4B;
     }
 
     .descricao {
-        font-size: 3.6vw;
+        font-size: 3.4vw;
     }
 
     #linguas {
         flex-direction: column;
     }
 
+    .redes-sociais-final {
+        
+    }
+
+
 }
 
 @media screen and (max-width:510px) {
 
     section {
-        min-height: 110vh;
+        min-height: 1100px;
     }
 
     .index-460res {
@@ -2040,12 +2156,13 @@ section {
 
     #sobre {
         scroll-margin-top: -30px;
+        min-height: 1800px;
     }
 
     .janela-sobre {
-        margin: 0 auto;
+        margin: 0 auto 10px auto;
         width: 80vw;
-        height: 85vh;
+        height: 850px;
     }
 
     .conteudo-janela-sobre img {
@@ -2089,10 +2206,35 @@ section {
         transform: scale(0.8);
     }
 
+    .projetos-container {
+        max-width: 100%;
+        margin-left: 0;
+        margin-top: 7%;
+    }
+
+    .Botao-sobre-contato, .Botao-sobre {
+        width: 70%;
+    }
+
 
 }
 
+@media screen and (max-width: 465px) {
+    .projeto-sobre {
+        font-size: 20px;
+    }
+
+    .projeto-sobre p {
+        font-size: 18px;
+    }
+}
+
 @media screen and (max-width:451px) {
+
+    #index {
+        min-height: 1000px;
+    }
+
     .desktop-icones img {
         width: 90%;
     }
@@ -2105,14 +2247,23 @@ section {
         width: 90%;
     }
 
+    #projetos-titulo {
+        font-size: 50px;
+    }
+
 
 }
 
 @media screen and (max-width: 380px) {
+    
+    #index {
+        min-height: 900px;
+    }
+    
     .janela-sobre {
         margin: 0 auto;
         width: 75vw;
-        height: 70vh;
+        height: 750px;
     }
 
     #botao-redondo {
@@ -2144,5 +2295,13 @@ section {
     .habilidades-janela-index {
         transform: scale(0.7);
         padding: 0;
+    }
+
+    .projeto-header-error h1 {
+        font-size: 20px ;
+    }
+
+    .Botao-sobre-contato h1, .Botao-sobre-contato i, .Botao-sobre h1, .Botao-sobre i {
+        font-size: 20px;
     }
 }
