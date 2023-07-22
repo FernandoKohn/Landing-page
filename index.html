@@ -7,8 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Fernando Kohn</title>
     <link rel="stylesheet" href="estilos/main.css">
-    <link rel="stylesheet"
-        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
     <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
     <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
@@ -120,51 +119,29 @@
                 </div>
                 <div class="index-460res">
                     <div class="conteudo-index-460">
-                        <!-- <div class="ola-wrap">
-                            <h6>Olá, eu sou</h6>
-                        </div>
-                        <div class="fernando-wrap">
-                            <h1 class="fernandokohn">FERNANDO KOHN</h1>
-                        </div>
-                        <div class="efeito-wrap">
-                            <h1>Eu</h1>
-                            <h2><span class="Efeito-digitado-3"></span></h2>
-                        </div>
-                        <div class="estudante-wrap">
-                            <h4>Estudante de Ciência da computação & front-end developer </h4>
-
-                        </div>
-                        <div class="mais-sobre-mim-wrap">
-                            <div class="mais-sobre-mim">
-                                <a href="#sobre">
-                                    <h1>Mais sobre mim</h1>
-                                </a>
-                            </div>
-                        </div>
-                        <div class="butao-wrap">
-                            <div class="caixa-butao">
-                                <a href="https://github.com/FernandoKohn" target="_blank"><i
-                                        class='bx bxl-github'></i></a>
-                                <a href="https://www.linkedin.com/in/fernandokohn/" target="_blank"><i
-                                        class='bx bxl-linkedin-square'></i></a>
-                            </div>
-                        </div> -->
                         <div class="img-460">
                             <img src="fotos/foto de perfil default.jpg" alt="">
                         </div>
                         <div class="bola-460">
                                 <div class="bola-texto">
+                                    <header>
+                                        <img src="fotos/Butoes.png" alt="">
+                                    </header>
                                     <h6>Olá, eu sou</h6>
                                     <h1 >FERNANDO KOHN</h1>
+                                </div>
+                                <div class="efeito-wrap" id="efeito-wrap-460">
+                                    <h1>Eu</h1>
+                                    <h2><span class="Efeito-digitado-3"></span></h2>
                                 </div>
                                 <div class="bola-descri">
                                     <h4>Estudante de Ciência da computação </h4>
                                     <h3>& front-end developer</h3>
                                 </div>
-                                <div class="mais-sobre-mim-wrap" id="mais-sobre-460-wrap">
-                                    <div class="mais-sobre-mim" id="mais-sobre-560">
+                                <div class="sobremim-460-wrap">
+                                    <div class="sobremim-460">
                                         <a href="#sobre">
-                                            <h1>Mais sobre mim</h1>
+                                            Mais sobre mim
                                         </a>
                                     </div>
                                 </div>
@@ -547,7 +524,6 @@
 
 </html>
 <script>
-
     window.location.hash = 'index';
     /*
         function mandaremail() {
@@ -614,13 +590,12 @@
         loop: true
     });
 
-    var typed3 = new Typed(".Efeito-digitado-3", {
-        strings: ["deselvolvo<br> para web :"],
+    var typed2 = new Typed(".Efeito-digitado-3", {
+        strings: ["desenvolvo para web :"],
         typeSpeed: 100,
         backSpeed: 100,
         backDelay: 1000,
-        loop: true,
-        smartBackspace: true
+        loop: true
     });
 
 
@@ -908,8 +883,13 @@
 
 
     document.querySelector("#formulario").addEventListener("submit", () => {
+        document.querySelector("#send-form").style.animation = "zoomOf 1s ease forwards"
+    })
+
+    document.querySelector("#send-form").addEventListener("animationend", () => {
         document.querySelector("#send-form").style.display = "none"
         document.querySelector("#checked-form").style.display = "block"
+        document.querySelector("#checked-form").style.animation = "zoomIn2 1s ease forwards"
     })
 
 

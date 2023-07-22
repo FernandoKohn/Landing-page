@@ -555,43 +555,59 @@ section {
 .index-460res {
     display: none;
     width: 100%;
-    height: 100%;
+    
 }
 
 .img-460 {
-    background-color: #aa9df0;
     display: flex;
-    overflow: hidden;
+    position: absolute;
 }
 
 .img-460 img {
-    transform: scale(1.5);
+    width: 100vw;
 }
 
+
 .bola-460 {
+    margin-top: 400px;
     width: 100%;
-    height: 660px;
+    height: 100%;
     background-color: #C4C4C4;
     display: flex;
     flex-direction: column;
-    align-items: center;
     position: relative;
+    background: url(/fotos/div\ bola\ background.png);
+    background-size: cover;
 }
+
 
 .bola-texto {
     position: absolute;
     top: -80px;
     display: flex;
     flex-direction: column;
+    align-self: center;
     text-align: center;
-    width: 80%;
-    height: 50%;
-    border-radius: 50%;
-    background-color: #000;
+    width: 310px;
+    height: 250px;
     background-color: #fffefe;
-    border-radius: 50%;
     color: rgb(0, 0, 0);
-    padding-top: 40px;
+    box-shadow: 8px 8px 0 0 #000;
+}
+
+.bola-texto header {
+    width: 100%;
+    height: 40px;
+    background-color: #C4C4C4;
+    display: block;
+    border-bottom: 3px solid black;
+}
+
+.bola-texto header img{
+    position: absolute;
+    top: 7px;
+    left: 0;
+    width: 50px;
 }
 
 .bola-texto h6 {
@@ -602,32 +618,59 @@ section {
     font-size: 60px;
     color: #C13A4B;
     line-height: 60px;
-    padding-top: 20px;
+    
+}
+
+#efeito-wrap-460 {
+    display: flex;
+    flex-direction: row;
+    padding-top: 170px;
+    gap: 10px;
+}
+
+#efeito-wrap-460 h2 {
+    font-size: 35px;
 }
 
 .bola-descri {
     display: flex;
     flex-direction: column;
-    position: absolute;
-    bottom: 280px;
+    width: 1;
     font-size: 25px;
-    padding: 10px;
+    text-align: center;
 }
 
 .bola-descri h3 {
     font-size: 41px;
 }
 
-#mais-sobre-460-wrap {
-    position: absolute;
-    bottom: 200px;
-    background-color: white;
-    border-radius: 10px;
+.sobremim-460-wrap {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    padding-top: 20px;
 }
 
+.sobremim-460 {
+    width: 300px;
+    height: 60px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    background-color:  #C4C4C4;
+    border: 3px solid black;
+}
+
+.sobremim-460 a {
+    font-size: 20px;
+    color: black;
+
+}
+
+
 #botao-wrap-460 {
-    position: absolute;
-    bottom: 130px;
     border-radius: 10px;
 }
 
@@ -1392,7 +1435,7 @@ section {
     border-top: 3px solid black;
     background-color: #aa9df0;
     /* background-color: #A1A194;*/
-    min-height: 1050px;
+    min-height: 1100px;
     position: relative;
     scroll-margin-top: -90px;
     display: flex;
@@ -1478,10 +1521,11 @@ section {
     flex-direction: column;
     background-color: #fcfcfc;
     border-radius: 10px;
-    width: 65%;
-    height: 850px;
+    width: 60%;
+    height: 800px;
     border: 4px solid black;
     box-shadow: 8px 8px 0 0 #000;
+    margin-top: 15px;
 }
 
 
@@ -1687,6 +1731,31 @@ section {
     }
 }
 
+@keyframes zoomIn2 {
+    0% {
+        transform: scale(0);
+        opacity: 0;
+    }
+
+    100% {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+@keyframes zoomOf {
+    0% {
+        transform: scale(1);
+        opacity: 1;
+    }
+
+    100% {
+        transform: scale(0);
+        opacity: 0;
+    }
+}
+
+
 @keyframes floatImage {
     0% {
         transform: translateY(0);
@@ -1717,6 +1786,7 @@ section {
         height: 64%;
         top: 10px;
     }
+
 }
 
 
@@ -2000,6 +2070,10 @@ section {
     .caixa-input {
         width: 100%;
     }
+
+    #send-form {
+        width: 60px;
+    }
 }
 
 @media screen and (max-width: 907px) {
@@ -2191,7 +2265,7 @@ section {
     }
 
     .index-460res {
-        display: block;
+        display: flex;
     }
 
     .conteudo-index-460 {
@@ -2199,6 +2273,7 @@ section {
         height: 100%;
         display: flex;
         flex-direction: column;
+        position: relative;
     }
 
     .swiper-container {
@@ -2209,31 +2284,7 @@ section {
         padding: 0;
         margin: 0;
         justify-content: none;
-    }
-
-    .ola-wrap {
-        height: auto;
-        display: flex;
-        justify-content: center;
-        background-color: rgba(255, 0, 0, 0);
-    }
-
-    .ola-wrap h6 {
-        font-size: 7vw;
-    }
-
-    .fernando-wrap {
-        width: 100%;
-        height: 100%;
-        height: auto;
-        display: flex;
-        flex-direction: column;
         align-items: normal;
-        text-align: center;
-    }
-
-    .fernandokohn {
-        font-size: 12vw;
     }
 
     .efeito-wrap {
@@ -2257,27 +2308,6 @@ section {
 
     }
 
-    .estudante-wrap {
-        display: flex;
-        flex-direction: column;
-        font-size: 6vw;
-        padding: 10px;
-        text-align: justify;
-    }
-
-    .mais-sobre-mim-wrap {
-        display: flex;
-        width: 100%;
-        padding: 5px;
-        justify-content: center;
-    }
-
-
-    .mais-sobre-mim h1 {
-        padding: 15px 20px;
-        margin: 0;
-        font-size: 5vw;
-    }
 
     .butao-wrap {
         padding: 0;
@@ -2376,7 +2406,13 @@ section {
     .contato-janela {
         width: 100%;
     }
+
+    .botao-enviar-img img {
+        width: 50px;
+    }
+    
 }
+
 
 @media screen and (max-width: 465px) {
     .projeto-sobre {
@@ -2391,7 +2427,7 @@ section {
 @media screen and (max-width:451px) {
 
     #index {
-        min-height: 1000px;
+        min-height: 1100px;
     }
 
     .desktop-icones img {
@@ -2417,13 +2453,38 @@ section {
 
     .contato-janela-headerwrap {
         font-size: 14px;
-    }   
+    }  
+    
+    .img-460 img {
+        transform: scale(1.2);
+    }
 }
+
+@media screen and (max-width: 400px) {
+    .img-460 img {
+        transform: scale(1.5);
+    }
+}
+
 
 @media screen and (max-width: 380px) {
 
     #index {
-        min-height: 900px;
+        min-height: 1200px;
+    }
+
+    .img-460 {
+        display: flex;
+        background-color: #aa9df0;
+        position: relative;
+    }
+    
+    .img-460 img {
+        display: none;
+    }
+
+    .bola-texto { 
+        transform: scale(0.7);
     }
 
     .janela-sobre {
