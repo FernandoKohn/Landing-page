@@ -1787,6 +1787,10 @@ section {
         top: 10px;
     }
 
+    .menu-lateral {
+        top: 68px;
+    }
+
 }
 
 
@@ -2422,6 +2426,14 @@ section {
     .projeto-sobre p {
         font-size: 18px;
     }
+
+    #efeito-wrap-460 h1{
+        font-size: 30px;
+    }
+
+    #efeito-wrap-460 h2 {
+        font-size: 25px;
+    }
 }
 
 @media screen and (max-width:451px) {
@@ -2458,6 +2470,7 @@ section {
     .img-460 img {
         transform: scale(1.2);
     }
+
 }
 
 @media screen and (max-width: 400px) {
@@ -2546,5 +2559,15 @@ section {
 
     .box-lateral a {
         font-size: 25px;
+    }
+}
+
+@media screen and (max-width: 350px) {
+    #efeito-wrap-460 h1{
+        font-size: 20px;
+    }
+
+    #efeito-wrap-460 h2 {
+        font-size: 20px;
     }
 }
