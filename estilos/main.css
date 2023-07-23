@@ -361,7 +361,7 @@ section {
 }
 
 .mais-sobre-mim-wrap {
-    width: 100%;
+    width: 80%;
     height: 100%;
     display: flex;
     align-items: center;
@@ -371,7 +371,7 @@ section {
 
 
 .mais-sobre-mim {
-    width: 50%;
+    width: 60%;
     height: 100%;
     position: relative;
     overflow: hidden;
@@ -438,7 +438,7 @@ section {
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 100%;
+    width: 80%;
     padding-top: 15px;
 }
 
@@ -470,7 +470,7 @@ section {
     display: inline-flex;
     justify-content: center;
     text-decoration: none;
-    font-size: 2.5vw;
+    font-size: 3.2vw;
 }
 
 
@@ -570,9 +570,8 @@ section {
 
 .bola-460 {
     margin-top: 400px;
-    width: 100%;
+    width: 101%;
     height: 100%;
-    background-color: #C4C4C4;
     display: flex;
     flex-direction: column;
     position: relative;
@@ -659,14 +658,39 @@ section {
     display: flex;
     justify-content: center;
     align-items: center; 
-    background-color:  #C4C4C4;
-    border: 3px solid black;
+    background-color:  #ffffff;
+    border: 4px solid black;
 }
 
 .sobremim-460 a {
     font-size: 20px;
     color: black;
 
+}
+
+.butao-wrap-460 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding-top: 15px;
+}
+
+.caixa-butao-460 {
+    display: flex;
+    justify-content: center;
+    align-self: center;
+    gap: 30px;
+    position: relative;
+    margin-top: 10px;
+}
+
+.caixa-butao-460 a {
+    color: #292B2E;
+    display: inline-flex;
+    justify-content: center;
+    text-decoration: none;
+    font-size: 9vw;
 }
 
 
@@ -1791,6 +1815,41 @@ section {
         top: 68px;
     }
 
+    .contato-janela {
+        height: 600px;
+    }
+
+}
+
+@media screen and (max-height: 715px) {
+    
+    #index {
+        min-height: 800px;
+    }
+    
+    .menu-fixo {
+        height: 60px;
+    }
+
+    .fk::before {
+        height: 55%;
+        top: 15px;
+    }
+
+    .navbar::before {
+        height: 55%;
+        top: 15px;
+    }
+
+    .contato-janela form {  
+        padding: 0;
+        transform: scale(0.7);
+        padding-bottom: 40px;
+    }
+
+    .redes-sociais-final {
+        top: 100px;
+    }
 }
 
 
@@ -2126,7 +2185,7 @@ section {
 
     .swiper-pagination-bullet {
         left: -15px;
-        top: 90px;
+        top: 130px;
     }
 
     .janela-sobre {
@@ -2278,6 +2337,7 @@ section {
         display: flex;
         flex-direction: column;
         position: relative;
+        background-color: #C4C4C4;
     }
 
     .swiper-container {
@@ -2488,12 +2548,11 @@ section {
 
     .img-460 {
         display: flex;
-        background-color: #aa9df0;
-        position: relative;
+        position: absolute;
     }
     
     .img-460 img {
-        display: none;
+        transform: scale(2);
     }
 
     .bola-texto { 
