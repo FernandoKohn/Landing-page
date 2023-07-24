@@ -26,22 +26,23 @@
                 <a href="#index">Home</a>
             </div>
             <div class="box-lateral">
-                <a href="#sobre" class="navlink">Sobre mim</a>
+                <a href="#sobre" class="navlink1">Sobre mim</a>
             </div>
             <div class="box-lateral">
-                <a href="#projetos" class="navlink">Projetos</a>
+                <a href="#projetos" class="navlink2">Projetos</a>
             </div>
             <div class="box-lateral">
-                <a href="#contato" class="navlink">Contato</a>
+                <a href="#contato" class="navlink3">Contato</a>
             </div>
         </div>
         <header class="menu-fixo">
             <a href="index.html" class="fk">FK.</a>
+            <i class='bx bx-moon' id="dark-mode"></i>
             <nav class="navbar">
-                <a href="#index" aria-current="page" class="navlink">Home</a>
-                <a href="#sobre" class="navlink">Sobre mim</a>
-                <a href="#projetos" class="navlink">Projetos</a>
-                <a href="#contato" class="navlink">Contato</a>
+                <a  href="#index" aria-current="page" class="navlink4">Home</a>
+                <a  href="#sobre" class="navlink5">Sobre mim</a>
+                <a  href="#projetos" class="navlink6">Projetos</a>
+                <a  href="#contato" class="navlink7">Contato</a>
             </nav>
             <i class='bx bx-menu' id="menu-hamburguer" onclick="abrirhamburguer()"></i>
         </header>
@@ -49,29 +50,29 @@
             <section id="index">
                 <div class="Conteudo-Index">
                     <div class="ola-wrap">
-                        <h6>Olá, eu sou</h6>
+                        <h6 class="ola-wrap-h6">Olá, eu sou</h6>
                     </div>
                     <div class="fernando-wrap">
                         <h1 class="fernandokohn">FERNANDO KOHN</h1>
                     </div>
                     <div class="efeito-wrap">
-                        <h2>Eu <span class="Efeito-digitado"></span></h2>
+                        <h2 class="efeito-wrap-h2">Eu <span class="Efeito-digitado"></span></h2>
                     </div>
                     <div class="estudante-wrap">
-                        <h4>Estudante de Ciencia da computação</h4>
-                        <h4>& Desenvolvedor Front-End</h4>
+                        <h4 class="Conteudo-Index-h4-1">Estudante de Ciencia da computação</h4>
+                        <h4 class="Conteudo-Index-h4-2">& Desenvolvedor Front-End</h4>
                     </div>
                     <div class="mais-sobre-mim-wrap">
                         <div class="mais-sobre-mim">
                             <a href="#sobre">
-                                <h1>Mais sobre mim</h1>
+                                <h1 class="mais-sobre-mim-h1">Mais sobre mim</h1>
                             </a>
                         </div>
                     </div>
                     <div class="butao-wrap">
                         <div class="caixa-butao">
-                            <a href="https://github.com/FernandoKohn" target="_blank"><i class='bx bxl-github'></i></a>
-                            <a href="https://www.linkedin.com/in/fernandokohn/" target="_blank"><i
+                            <a href="https://github.com/FernandoKohn" target="_blank" class="caixa-butao-a1"><i class='bx bxl-github'></i></a>
+                            <a href="https://www.linkedin.com/in/fernandokohn/" target="_blank" class="caixa-butao-a2"><i
                                     class='bx bxl-linkedin-square'></i></a>
                         </div>
                     </div>
@@ -456,7 +457,7 @@
                                     src="fotos/linkedin_pixel_logo_icon_181925.png" alt="" id="linkedin"></a>
                             <h1>LinkedIn</h1>
                         </div>
-                        <div class="email" onclick="abriremail()">
+                        <div class="email" onclick="abriremail();copiarlowwidth()">
                             <a href="#"><img
                                     src="fotos/pixel-art-email-notification-envelope-vector-icon-8bit-game-white-background_360488-1408.png"
                                     alt=""></a>
@@ -489,7 +490,7 @@
                             <div class="janela-input">
                                 <div class="caixa-input">
                                     <input type="text" name="nome" placeholder="" required>
-                                    <span class="placeholder">Nome completo</span>
+                                    <span class="placeholder" id="place-nome">Nome</span>
                                 </div>
                                 <div class="caixa-input">
                                     <input type="text" name="email" placeholder="" required id="email">
@@ -515,6 +516,11 @@
                         <i class='bx bxs-up-arrow-circle'></i>
                     </a> -->
                 </div>
+                <footer id="copy">
+                    <div>
+                        <h1>© 2023 Fernando Kohn</h1>
+                    </div>
+                </footer>
             </section>
         </section>
     </main>
@@ -525,6 +531,35 @@
 </html>
 <script>
     window.location.hash = 'index';
+
+    var darkmode = document.getElementById("dark-mode")
+    darkmode.addEventListener("click", () => {
+        document.querySelector("#index").classList.toggle("dark")
+        document.querySelector(".Conteudo-Index").classList.toggle("dark")
+        document.querySelector("body").classList.toggle("dark")
+        document.querySelector(".menu-fixo").classList.toggle("dark")
+        document.querySelector(".fk").classList.toggle("dark")
+        document.querySelector(".navlink1").classList.toggle("dark")
+        document.querySelector(".navlink2").classList.toggle("dark")
+        document.querySelector(".navlink3").classList.toggle("dark")
+        document.querySelector(".navlink4").classList.toggle("dark")
+        document.querySelector(".navlink5").classList.toggle("dark")
+        document.querySelector(".navlink6").classList.toggle("dark")
+        document.querySelector(".navlink7").classList.toggle("dark")
+        document.querySelector(".ola-wrap-h6").classList.toggle("dark") 
+        document.querySelector(".fernandokohn").classList.toggle("dark")
+        document.querySelector(".efeito-wrap-h2").classList.toggle("dark") 
+        document.querySelector(".Efeito-digitado").classList.toggle("dark") 
+        document.querySelector(".Conteudo-Index-h4-1").classList.toggle("dark")
+        document.querySelector(".Conteudo-Index-h4-2").classList.toggle("dark") 
+        document.querySelector(".mais-sobre-mim-h1").classList.toggle("dark")
+        document.querySelector(".caixa-butao-a1").classList.toggle("dark") 
+        document.querySelector(".caixa-butao-a2").classList.toggle("dark") 
+        document.querySelector("#dark-mode").classList.toggle("dark") 
+        
+    }) 
+        
+
     /*
         function mandaremail() {
             Email.send({
@@ -687,6 +722,13 @@
 
     var text = document.getElementById("emailfernando")
 
+    function copiarlowwidth() {
+        if (window.innerWidth < 670) {
+            navigator.clipboard.writeText(text.innerHTML)
+            window.alert("Email copiado para área de transferência")
+        }
+    } 
+
     async function copiar() {
         await navigator.clipboard.writeText(text.innerHTML)
         document.querySelector("#copiar").style.display = "none"
@@ -835,7 +877,7 @@
     }
 
     setInterval(() => {
-        document.querySelectorAll(".navlink").forEach(link => {
+        document.querySelectorAll(".navlink1,.navlink2,.navlink3,.navlink4,.navlink5,.navlink6,.navlink7").forEach(link => {
             if (link.href != window.location.href) {
                 link.removeAttribute("aria-current", "page")
             } else {
