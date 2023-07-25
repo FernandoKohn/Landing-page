@@ -398,12 +398,12 @@ main {
 }
 
 .fernandokohn2.dark {
-    color: #E8E8E8;
+    color: #01DBC6;
     transition: 1s;
 }
 
 
-.fernandokohn::before {
+.fernandokohn::before, .fernandokohn2::before {
     content: "";
     position: absolute;
     top: 0;
@@ -415,15 +415,16 @@ main {
     animation-delay: 1s;
 }
 
-.fernandokohn.dark::before {
+.fernandokohn.dark::before, .fernandokohn2.dark::before {
     background: #171717;
     transition: 1s;
 }
 
-.fernandokohn:hover {
+.fernandokohn:hover, .fernandokohn2:hover {
     color: #292B2E;
     transition: .7s;
 }
+
 
 .Conteudo-Index h2 {
     position: relative;
@@ -742,6 +743,11 @@ main {
     justify-content: center;
 }
 
+#swipeimg.dark {
+    background-color: #171717;
+    transition: 1s;
+}
+
 #swipeimg img {
     padding-right: 40px;
     width: 90%;
@@ -776,6 +782,11 @@ main {
     background-size: cover;
 }
 
+.bola-460.dark {
+    background: url(/fotos/divbola2.png);
+    transition: 1s;
+}
+
 
 .bola-texto {
     position: absolute;
@@ -791,12 +802,22 @@ main {
     box-shadow: 8px 8px 0 0 #000;
 }
 
+.bola-texto.dark {
+    background-color: #171717;
+    transition: 1s;
+}
+
 .bola-texto header {
     width: 100%;
     height: 40px;
     background-color: #C4C4C4;
     display: block;
     border-bottom: 3px solid black;
+}
+
+.bola-texto header.dark {
+    background-color: #383838;
+    transition: 1s;
 }
 
 .bola-texto header img{
@@ -810,6 +831,11 @@ main {
     font-size: 40px;
 }
 
+.bola-texto h6.dark {
+    color: #E8E8E8;
+    transition: 1s;
+}
+
 .bola-texto h1 {
     font-size: 60px;
     color: #C13A4B;
@@ -817,15 +843,31 @@ main {
     
 }
 
+.bola-texto h1.dark {
+    color: #01DBC6;
+    transition: 1s;
+}
+
 #efeito-wrap-460 {
     display: flex;
     flex-direction: row;
     padding-top: 170px;
     gap: 10px;
+
+}
+
+#efeito-wrap-460.dark {
+    color: #E8E8E8;
+    transition: 1s;
 }
 
 #efeito-wrap-460 h2 {
     font-size: 35px;
+}
+
+.Efeito-digitado-3.dark {
+    color: #01DBC6;
+    transition: 1s;
 }
 
 .bola-descri {
@@ -834,6 +876,10 @@ main {
     width: 1;
     font-size: 25px;
     text-align: center;
+}
+
+.bola-descri.dark {
+    color: #E8E8E8;
 }
 
 .bola-descri h3 {
@@ -859,11 +905,25 @@ main {
     border: 4px solid black;
 }
 
+.sobremim-460.dark {
+    border-color: #ffffff;
+    background-color:#383838;;
+    color: #E8E8E8;
+    transition: 1s;
+}
+
+
+
 .sobremim-460 a {
     font-size: 20px;
     color: black;
 
 }
+
+.sobremim-460 a.dark {
+    color: #E8E8E8;
+}
+
 
 .butao-wrap-460 {
     display: flex;
@@ -889,6 +949,17 @@ main {
     text-decoration: none;
     font-size: 9vw;
 }
+
+#cx-bt-05.dark,#cx-bt-06.dark {
+    color: #E8E8E8;
+    transition: 1s;
+}
+
+#cx-bt-05.dark:hover, #cx-bt-06.dark:hover  {
+    color: #01DBC6;
+    transition: 1s;
+}
+
 
 
 #botao-wrap-460 {
@@ -2191,7 +2262,7 @@ main {
 }
 
 @media screen and (max-width: 1851px) {
-    .fernandokohn {
+    .fernandokohn, .fernandokohn2 {
         font-size: 4em;
     }
 
@@ -2280,7 +2351,7 @@ main {
         position: relative;
     }
 
-    .fernandokohn {
+    .fernandokohn, .fernandokohn2 {
         font-size: 8vw;
     }
 
@@ -2344,7 +2415,7 @@ main {
         gap: 0;
     }
 
-    .titulo {
+    .titulo1,.titulo2,.titulo3,.titulo4 {
         font-size: 40px;
         color: #C13A4B;
     }
@@ -2378,6 +2449,7 @@ main {
     .taskbar-janelas {
         width: 40%;
         height: 50%;
+        bottom: 52px;
     }
 
     #formulario {
@@ -2427,7 +2499,7 @@ main {
         font-size: 4.3vw;
     }
 
-    .titulo {
+    .titulo1,.titulo2,.titulo3,.titulo4 {
         font-size: 3vw;
     }
 
@@ -2461,7 +2533,16 @@ main {
 }
 
 @media screen and (max-width: 970px) {
-    .titulo {
+    
+    .sobre {
+        min-height: 2000px;
+    }
+
+    .janela-sobre {
+        height: 1000px;
+    }
+    
+    .titulo1, .titulo2, .titulo3, .titulo4  {
         font-size: 3.4vw;
         color: #C13A4B;
     }
@@ -2469,6 +2550,11 @@ main {
     .descricao {
         font-size: 3vw;
     }
+
+    .taskbar-janelas {
+        width: 60%;
+    }
+
 
     .janela-input {
         flex-direction: column;
@@ -2486,6 +2572,11 @@ main {
     #formulario {
         padding: 20px;
     }
+
+    .taskbar-janelas {
+        bottom: 57px;
+    }
+
 }
 
 @media screen and (max-width: 907px) {
@@ -2508,7 +2599,7 @@ main {
         font-size: 5.4vw;
     }
 
-    .fernandokohn {
+    .fernandokohn, .fernandokohn2 {
         font-size: 8vw;
     }
 
@@ -2540,10 +2631,10 @@ main {
     .janela-sobre {
         margin: 30px auto;
         width: 85vw;
-        height: 860px;
+        height: 930px;
     }
 
-    .titulo {
+    .titulo1,.titulo2,.titulo3,.titulo4  {
         font-size: 3.7vw;
         color: #C13A4B;
     }
@@ -2611,6 +2702,12 @@ main {
 
 }
 
+@media screen and (max-width: 678px) {
+    .janela-sobre {
+        height: 950px;
+    }
+}
+
 @media screen and (max-width:670px) {
     .swiper-container {
         height: 35%;
@@ -2635,7 +2732,7 @@ main {
     }
 
     .janela-sobre {
-        height: 900px;
+        height: 930px;
         margin-top: 0;
     }
 
@@ -2643,13 +2740,17 @@ main {
         font-size: 1.4em;
     }
 
-    .titulo {
+    .titulo1,.titulo2,.titulo3,.titulo4 {
         font-size: 4.5vw;
         color: #C13A4B;
     }
 
     .descricao {
         font-size: 3.4vw;
+    }
+
+    .taskbar-janelas {
+        width: 70%;
     }
 
     #linguas {
@@ -2703,10 +2804,37 @@ main {
 
 }
 
+@media screen and (max-width: 585px) {
+    .contato-janela {
+        width: 100%;
+    }
+
+    .relogio-data {
+        width: 35%;
+    }
+}
+
 @media screen and (max-width: 554px) {
     .contato-janela {
         width: 100%;
     }
+    
+    .sobre {
+        min-height: 1800px;
+    }
+
+    .janela-sobre {
+        height: 750px;
+    }
+
+    .habilidades {
+        height: 46%;
+    }
+
+    .taskbar-janelas {
+        bottom: 60px;
+    }
+
 }
 
 @media screen and (max-width:510px) {
@@ -2758,7 +2886,6 @@ main {
 
     }
 
-
     .butao-wrap {
         padding: 0;
         margin: 0;
@@ -2791,7 +2918,7 @@ main {
         width: 20px;
     }
 
-    .titulo {
+    .titulo1,.titulo2,.titulo3,.titulo4 {
         font-size: 4.3w;
         color: #C13A4B;
     }
@@ -2800,8 +2927,17 @@ main {
         font-size: 4vw;
     }
 
+    .habilidades {
+        height: 40%;
+    }
+    
+
     .habilidades-header h1 {
         font-size: 5vw;
+    }
+
+    #linguas {
+        font-size: 9px;
     }
 
     .relogio-data {
@@ -2828,8 +2964,10 @@ main {
         transform: scale(0.8);
     }
 
-    
-
+    .taskbar-janelas {
+        bottom: 50px;
+    }
+                  
     .projetos-container {
         max-width: 100%;
         margin-left: 0;
@@ -2969,7 +3107,7 @@ main {
         font-size: 5vw;
     }
 
-    .titulo {
+    .titulo1,.titulo2,.titulo3,.titulo4 {
         font-size: 4vw;
     }
 
@@ -3020,5 +3158,17 @@ main {
 
     #efeito-wrap-460 h2 {
         font-size: 20px;
+    }
+
+    .janela-sobre {
+        height: 900px;
+    }
+
+    #relogio {
+        font-size: 10px;
+    }
+
+    #data {
+        font-size: 10px;
     }
 }

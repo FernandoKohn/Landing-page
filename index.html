@@ -115,7 +115,7 @@
 
                         </div>
                         <div class="swiper-slide" id="swipeimg">
-                            <img src="fotos/foto de perfil definitiva.png" alt="">
+                            <img src="fotos/foto1.png" id="fotoperfil2">
                         </div>
                     </div>
                     <div class="swiper-pagination"></div>
@@ -151,9 +151,9 @@
                             <div class="butao-wrap-460" id="botao-wrap-460">
                                 <div class="caixa-butao-460">
                                     <a href="https://github.com/FernandoKohn" target="_blank"><i
-                                            class='bx bxl-github'></i></a>
+                                            class='bx bxl-github' id="cx-bt-05"></i></a>
                                     <a href="https://www.linkedin.com/in/fernandokohn/" target="_blank"><i
-                                            class='bx bxl-linkedin-square'></i></a>
+                                            class='bx bxl-linkedin-square' id="cx-bt-06"></i></a>
                                 </div>
                             </div>
                         </div>
@@ -594,15 +594,32 @@
         document.querySelector(".Botao-sobre-contato").classList.toggle("dark")
         document.querySelector("#contato").classList.toggle("dark") 
         document.querySelector(".swiper-slide").classList.toggle("dark")
+        document.querySelector("#swipeimg").classList.toggle("dark")
         document.querySelector(".swipeh6").classList.toggle("dark") 
         document.querySelector(".swipeh4").classList.toggle("dark") 
         document.querySelector(".swipeh2").classList.toggle("dark")
-        document.querySelector(".Efeito-digitado-2").classList.toggle("dark")
+        document.querySelector(".Efeito-digitado-2").classList.toggle("dark")  
+        document.querySelector(".Efeito-digitado-3").classList.toggle("dark")
+        document.querySelector(".bola-460").classList.toggle("dark")
+        document.querySelector(".bola-texto").classList.toggle("dark")
+        document.querySelector(".bola-texto header").classList.toggle("dark")
+        document.querySelector(".bola-texto h6").classList.toggle("dark")
+        document.querySelector(".bola-texto h1").classList.toggle("dark")
+        document.querySelector("#efeito-wrap-460").classList.toggle("dark") 
+        document.querySelector(".bola-descri").classList.toggle("dark")
+        document.querySelector(".sobremim-460").classList.toggle("dark")
+        document.querySelector(".sobremim-460 a").classList.toggle("dark") 
+        document.querySelector("#cx-bt-05").classList.toggle("dark")
+        document.querySelector("#cx-bt-06").classList.toggle("dark") 
         var fotoP = document.querySelector("#fotoperfil1")
-        if (fotoP.src.match("fotos/foto1.png")) {
+        var fotoP2 = document.querySelector("#fotoperfil2")
+        if (fotoP.src.match("fotos/foto1.png") || fotoP2.src.match("fotos/foto1.png")) {
             fotoP.src = "fotos/foto2.png"
+            fotoP2.src = "fotos/foto2.png"
+
         } else {
             fotoP.src = "fotos/foto1.png"
+            fotoP2.src = "fotos/foto1.png"
         }
     
     })
