@@ -83,7 +83,7 @@ main {
     display: none;
     flex-direction: column;
     position: absolute;
-    right: 0;
+    right: 7px;
     top: 82px;
     z-index: 9999;
     box-shadow: 8px 8px 0 0 #000;
@@ -94,7 +94,6 @@ main {
     display: flex;
     align-items: center;
     height: 95px;
-    background-color: #c4c4c4;
     border: 2px solid black;
 }
 
@@ -107,7 +106,13 @@ main {
     padding-left: 15px;
     user-select: none;
     background-color: #c4c4c4;
+    transition: 1s;
 
+}
+
+.box-lateral a.dark {
+    background-color: #282828;
+    transition: 1s;
 }
 
 .box-lateral:hover,
@@ -136,6 +141,26 @@ main {
     display: flex;
     height: 100%;
     width: 20%;
+    z-index: 0;
+}
+
+.header-fk-darkmode::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    background: #C4C4C4;
+    animation: showRight 1s ease forwards;
+    animation-delay: .4s;
+    z-index: 1;
+    border-radius: 7px 7px 0px 0px;
+}
+
+.header-fk-darkmode.dark::before {
+    background-color: #282828;
+    transition: 1s;
 }
 
 .header-fk-darkmode-wrap {
@@ -144,13 +169,12 @@ main {
     display: flex;
     align-items: center;
     gap: 30px;
-    padding-left: 15%;
+    padding-left: 20%;
 }
 
 .fk {
     position: relative;
     color: black;
-    margin: 15px 0 15px 10%;
     font-size: 2em;
 }
 
@@ -165,23 +189,6 @@ main {
 }
 
 
-.fk::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    right: 0;
-    width: 100%;
-    height: 100%;
-    background: #c4c4c4;
-    animation: showRight 1s ease forwards;
-    animation-delay: .4s;
-}
-
-
-#dark-mode {
-    font-size: 1.35em;
-}
-
 #dark-mode.dark {
     color: white;
     transition: 1s;
@@ -193,7 +200,7 @@ main {
     padding-bottom: 80px;
 }
 
-label {
+#label-botao-dark {
     position: absolute;
     width: 200px;
     height: 100px;
@@ -202,7 +209,9 @@ label {
     cursor: pointer;
 }
 
-input {
+
+
+#dark-mode {
     position: absolute;
     display: none;
 }
@@ -215,7 +224,7 @@ input {
     transition: 0.3s;
 }
 
-input:checked~.slider {
+#dark-mode:checked~.slider {
     background-color: var(--dark);
 }
 
@@ -231,11 +240,11 @@ input:checked~.slider {
     transition: 0.3s;
 }
 
-input:checked~.slider::before {
+#dark-mode:checked~.slider::before {
     transform: translateX(95px);
     background-color: var(--dark);
     box-shadow: inset 28px -4px 0px 0px var(--light);
-    
+
 }
 
 
@@ -264,22 +273,20 @@ input:checked~.slider::before {
 }
 
 .navbar a[aria-current="page"] {
-    color: #A1A194;
+    color: #a1a19f;
 }
 
+.navbar a.dark[aria-current="page"] {
+    color: #01DBC6;
+}
 
-.navlink1,
-.navlink2,
-.navlink3,
-.navlink4,
-.navlink5,
-.navlink6,
-.navlink7 {
+    .navlink1, .navlink2, .navlink3, .navlink4, .navlink5, .navlink6, .navlink7 {
     color: #000000;
-    padding: 18.52px 20px 19px;
+    padding: 10.5px 20px;
     font-size: 1.8em;
 }
 
+#navlink0.dark,
 .navlink1.dark,
 .navlink2.dark,
 .navlink3.dark,
@@ -315,6 +322,10 @@ input:checked~.slider::before {
     flex-direction: column;
     position: relative;
     border-radius: 0px 0px 5px 5px;
+}
+
+#conteudo-total.dark {
+    background-color: #282828;
 }
 
 #conteudo-total.dark::-webkit-scrollbar-thumb {
@@ -2286,7 +2297,7 @@ input:checked~.slider::before {
     }
 
     .menu-lateral {
-        top: 68px;
+        top: 70px;
     }
 
     .contato-janela {
@@ -2323,13 +2334,30 @@ input:checked~.slider::before {
         min-height: 800px;
     }
 
+    .menu-lateral {
+        top: 60px;
+    }
+
 
     .menu-fixo {
         height: 60px;
     }
 
+
+    .navlink1,
+    .navlink2,
+    .navlink3,
+    .navlink4,
+    .navlink5,
+    .navlink6,
+    .navlink7 {
+        color: #000000;
+        padding: 5.5px 20px;
+        font-size: 1.8em;
+    }
+
     .fk::before {
-        height: 55%;
+        height: 60%;
         top: 15px;
     }
 
@@ -2634,7 +2662,7 @@ input:checked~.slider::before {
     }
 }
 
-@media screen and (min-width: 1001px) {
+@media screen and (min-width: 1112px) {
     .menu-lateral {
         visibility: hidden;
     }
@@ -3273,7 +3301,7 @@ input:checked~.slider::before {
     }
 
     .menu-lateral {
-        width: 150px;
+        width: 180px;
     }
 
     .box-lateral a {

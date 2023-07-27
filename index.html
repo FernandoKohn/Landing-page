@@ -24,7 +24,7 @@
     <main>
         <div class="menu-lateral">
             <div class="box-lateral">
-                <a href="#index">Home</a>
+                <a href="#index" id="navlink0">Home</a>
             </div>
             <div class="box-lateral">
                 <a href="#sobre" class="navlink1">Sobre mim</a>
@@ -42,7 +42,7 @@
                     <a href="index.html" class="fk">FK.</a>
                     <div class="toggle-swith-wrap">
                         <div class='toggle-switch'>
-                            <label>
+                            <label id="label-botao-dark">
                                 <input type='checkbox' id="dark-mode">
                                 <span class='slider'></span>
                             </label>
@@ -554,8 +554,9 @@
         document.querySelector(".Conteudo-Index").classList.toggle("dark")
         document.querySelector("body").classList.toggle("dark")
         document.querySelector(".menu-fixo").classList.toggle("dark")
+        document.querySelector(".box-lateral a").classList.toggle("dark")
         document.querySelector(".fk").classList.toggle("dark")
-        document.querySelector(".navbar").classList.toggle("dark")
+        document.querySelector(".navbar").classList.toggle("dark") 
         document.querySelector(".navlink1").classList.toggle("dark")
         document.querySelector(".navlink2").classList.toggle("dark")
         document.querySelector(".navlink3").classList.toggle("dark")
@@ -622,7 +623,8 @@
         document.querySelector(".sobremim-460").classList.toggle("dark")
         document.querySelector(".sobremim-460 a").classList.toggle("dark")
         document.querySelector("#cx-bt-05").classList.toggle("dark")
-        document.querySelector("#cx-bt-06").classList.toggle("dark")
+        document.querySelector("#cx-bt-06").classList.toggle("dark") 
+        document.querySelector(".header-fk-darkmode").classList.toggle("dark")
         var fotoP = document.querySelector("#fotoperfil1")
         var fotoP2 = document.querySelector("#fotoperfil2")
         if (fotoP.src.match("fotos/foto1.png") || fotoP2.src.match("fotos/foto1.png")) {
@@ -957,7 +959,7 @@
     }
 
     setInterval(() => {
-        document.querySelectorAll(".navlink1,.navlink2,.navlink3,.navlink4,.navlink5,.navlink6,.navlink7").forEach(link => {
+        document.querySelectorAll(".navlink0,.navlink1,.navlink2,.navlink3,.navlink4,.navlink5,.navlink6,.navlink7").forEach(link => {
             if (link.href != window.location.href) {
                 link.removeAttribute("aria-current", "page")
             } else {
