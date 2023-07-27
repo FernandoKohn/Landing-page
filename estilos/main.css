@@ -52,6 +52,10 @@ a {
     text-decoration: none;
 }
 
+a:hover {
+    cursor: pointer;
+}
+
 body {
     height: 100%;
     width: 100%;
@@ -64,9 +68,12 @@ body {
     left: 0;
 }
 
+
+
 body.dark {
     background-color: #3f3f3f;
     transition: 1s;
+    cursor: url("/fotos/cursor2.png"), auto;
 }
 
 main {
@@ -84,17 +91,18 @@ main {
     flex-direction: column;
     position: absolute;
     right: 7px;
-    top: 82px;
+    top: 83.5px;
     z-index: 9999;
     box-shadow: 8px 8px 0 0 #000;
+    background-color: black;
 
 }
 
 .box-lateral {
     display: flex;
     align-items: center;
-    height: 95px;
-    border: 2px solid black;
+    height: 100%;
+    border: 3px solid rgb(0, 0, 0);
 }
 
 .box-lateral a {
