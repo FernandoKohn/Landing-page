@@ -259,15 +259,15 @@
                                 <div class="habilidades-janela-index">
                                     <div class="habilidades-janela-index-js">
                                         <img src="fotos/6391683.png" alt="icone-janela">
-                                    
+
                                     </div>
                                     <div class="habilidades-janela-index-html">
                                         <img src="fotos/file_html_format_type_icon_134685.png" alt="">
-                                        
+
                                     </div>
                                     <div class="habilidades-janela-index-css">
                                         <img src="fotos/free-css-icon-1478-thumb.png" alt="">
-                                        
+
                                     </div>
                                 </div>
                             </div>
@@ -553,7 +553,7 @@
         document.querySelector(".menu-fixo").classList.toggle("dark")
         document.querySelector(".box-lateral a").classList.toggle("dark")
         document.querySelector(".fk").classList.toggle("dark")
-        document.querySelector(".navbar").classList.toggle("dark") 
+        document.querySelector(".navbar").classList.toggle("dark")
         document.querySelector(".navlink1").classList.toggle("dark")
         document.querySelector(".navlink2").classList.toggle("dark")
         document.querySelector(".navlink3").classList.toggle("dark")
@@ -620,8 +620,8 @@
         document.querySelector(".sobremim-460").classList.toggle("dark")
         document.querySelector(".sobremim-460 a").classList.toggle("dark")
         document.querySelector("#cx-bt-05").classList.toggle("dark")
-        document.querySelector("#cx-bt-06").classList.toggle("dark") 
-        document.querySelector(".header-fk-darkmode").classList.toggle("dark") 
+        document.querySelector("#cx-bt-06").classList.toggle("dark")
+        document.querySelector(".header-fk-darkmode").classList.toggle("dark")
         document.querySelector(".contato-janela").classList.toggle("dark")
         var fotoP = document.querySelector("#fotoperfil1")
         var fotoP2 = document.querySelector("#fotoperfil2")
@@ -743,18 +743,22 @@
 
     var desktop = document.querySelector(".habilidades-conteudo")
     var desktopLimite = desktop.getBoundingClientRect()
-    var janela = document.querySelector(".habilidades-janela");
-    var janelaLimite = janela.getBoundingClientRect()
+    var janela = document.querySelector(".habilidades-janela")
     var offsetX, offsetY;
 
     var move = (e) => {
-        janela.style.left = `${e.clientX - offsetX}px`;
-        janela.style.top = `${e.clientY - offsetY}px`;
+        if ((e.clientX >= desktopLimite.left && (e.clientX + document.querySelector(".habilidades-janela").getBoundingClientRect().width <= desktopLimite.right)) && (e.clientY >= desktopLimite.top && (e.clientY + document.querySelector(".habilidades-janela").getBoundingClientRect().height <= desktopLimite.bottom))
+            //+draggableRect.height and +draggableRect.height accounts for the size of ball itself
+        ) {
+            janela.style.left = `${e.clientX - offsetX}px`;
+            janela.style.top = `${e.clientY - offsetY}px`;
+        }
     }
 
 
     janela.addEventListener("mousedown", (e) => {
-        offsetX = e.clientX - janela.offsetLeft;
+        if (janela.offsetLeft > 0 && janela.offsetLeft > !285)
+            offsetX = e.clientX - janela.offsetLeft;
         offsetY = e.clientY - janela.offsetTop;
         document.addEventListener("mousemove", move);
     });
