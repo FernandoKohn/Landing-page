@@ -746,20 +746,25 @@
     var janela = document.querySelector(".habilidades-janela")
     var offsetX, offsetY;
 
+    var mouseDifX = 0
+    var mouseDifY = 0
+
     var move = (e) => {
-        if ((e.clientX >= desktopLimite.left && (e.clientX + document.querySelector(".habilidades-janela").getBoundingClientRect().width <= desktopLimite.right)) && (e.clientY >= desktopLimite.top && (e.clientY + document.querySelector(".habilidades-janela").getBoundingClientRect().height <= desktopLimite.bottom))
-            //+draggableRect.height and +draggableRect.height accounts for the size of ball itself
-        ) {
-            janela.style.left = `${e.clientX - offsetX}px`;
-            janela.style.top = `${e.clientY - offsetY}px`;
-        }
+        mouseDifX = e.clientX - desktopLimite.left;
+        mouseDifY = e.clientY - desktopLimite.top;
+
+        if (mouseDifX <= (offsetX + janela.offsetLeft)) {
+            janela.style.left = `${mouseDifX}px`;
+        } else janela.style.left = "0px"
+
+        if (mouseDifY <= (offsetY + janela.offsetTop)) {
+            janela.style.top = `${mouseDifY}px`;
+        } else janela.style.top = "0px"
     }
 
-
-    janela.addEventListener("mousedown", (e) => {
-        if (janela.offsetLeft > 0 && janela.offsetLeft > !285)
-            offsetX = e.clientX - janela.offsetLeft;
-        offsetY = e.clientY - janela.offsetTop;
+    janela.addEventListener("mousedown", (e) => { 
+        offsetX = e.clientX - janela.offsetLeft - desktopLimite.left;
+        offsetY = e.clientY - janela.offsetTop - desktopLimite.top;
         document.addEventListener("mousemove", move);
     });
 
