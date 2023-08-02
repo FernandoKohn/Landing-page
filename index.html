@@ -257,17 +257,14 @@
                                     </div>
                                 </header>
                                 <div class="habilidades-janela-index">
-                                    <div class="habilidades-janela-index-js">
-                                        <img src="fotos/6391683.png" alt="icone-janela">
-
+                                    <div class="habilidade">
+                                        <i class='bx bxs-right-arrow bx-flashing' id="cmd-arrow"></i> <h1>HTML 5</h1> <i class='bx bxl-html5 btn-hab' ></i>
                                     </div>
-                                    <div class="habilidades-janela-index-html">
-                                        <img src="fotos/file_html_format_type_icon_134685.png" alt="">
-
+                                    <div class="habilidade">
+                                        <i class='bx bxs-right-arrow bx-flashing' id="cmd-arrow"></i> <h1>JAVASCRIPT</h1> <i class='bx bxl-javascript btn-hab' ></i>
                                     </div>
-                                    <div class="habilidades-janela-index-css">
-                                        <img src="fotos/free-css-icon-1478-thumb.png" alt="">
-
+                                    <div class="habilidade">
+                                        <i class='bx bxs-right-arrow bx-flashing' id="cmd-arrow"></i> <h1>CSS</h1> <i class='bx bxl-css3 btn-hab' ></i>
                                     </div>
                                 </div>
                             </div>
@@ -750,21 +747,23 @@
     var mouseDifY = 0
 
     var move = (e) => {
-        mouseDifX = e.clientX - desktopLimite.left;
-        mouseDifY = e.clientY - desktopLimite.top;
+        // mouseDifX = e.clientX - desktopLimite.left;
+        // mouseDifY = e.clientY - desktopLimite.top;
 
-        if (mouseDifX <= (offsetX + janela.offsetLeft)) {
-            janela.style.left = `${mouseDifX}px`;
-        } else janela.style.left = "0px"
+        // if (mouseDifX <= (offsetX + janela.offsetLeft)) {
+        //     janela.style.left = `${mouseDifX}px`;
+        // } else janela.style.left = "0px"
 
-        if (mouseDifY <= (offsetY + janela.offsetTop)) {
-            janela.style.top = `${mouseDifY}px`;
-        } else janela.style.top = "0px"
+        // if (mouseDifY <= (offsetY + janela.offsetTop)) {
+        //     janela.style.top = `${mouseDifY}px`;
+        // } else janela.style.top = "0px"    
+        janela.style.left = `${Math.abs(e.clientX - offsetX)}px`;
+        janela.style.top = `${Math.abs(e.clientY - offsetY)}px`;
     }
 
     janela.addEventListener("mousedown", (e) => { 
-        offsetX = e.clientX - janela.offsetLeft - desktopLimite.left;
-        offsetY = e.clientY - janela.offsetTop - desktopLimite.top;
+        offsetX = e.clientX - janela.offsetLeft;
+        offsetY = e.clientY - janela.offsetTop;
         document.addEventListener("mousemove", move);
     });
 

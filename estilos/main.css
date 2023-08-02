@@ -1327,9 +1327,9 @@ main {
 
 
 .habilidades-janela {
-    background-color: rgb(255, 255, 255);
-    width: 550px;
-    height: 150 px;
+    background-color: rgb(0, 0, 0);
+    width: 300px;
+    height: 175px;
     border: 3px solid black;
     border-radius: 5px;
     display: none;
@@ -1371,17 +1371,26 @@ main {
 
 
 .habilidades-janela-index {
+
     display: flex;
-    gap: 30px;
-    height: 100%;
-    align-items: center;
-    background-color: white;
-    justify-content: center;
+    flex-direction: column;
+    background-color: rgb(0, 0, 0);
+    padding: 10px;
 }
 
-.habilidades-janela-index img {
-    width: 140px;
-    -webkit-user-drag: none;
+.btn-hab {
+    font-size: 30px;
+}
+
+#cmd-arrow {
+    color: white;
+}
+
+.habilidade {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    color: white;
 }
 
 .taskbar-janelas {
