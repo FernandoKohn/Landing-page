@@ -20,7 +20,7 @@
 
 </head>
 
-<body onload="displayClock()">
+<body onload="displayClock()" onmousedown="divCursorOn()" onmouseup="divCursorOff()">
     <main>
         <div class="menu-lateral">
             <div class="box-lateral">
@@ -258,13 +258,16 @@
                                 </header>
                                 <div class="habilidades-janela-index">
                                     <div class="habilidade">
-                                        <i class='bx bxs-right-arrow bx-flashing' id="cmd-arrow"></i> <h1>HTML 5</h1> <i class='bx bxl-html5 btn-hab' ></i>
+                                        <i class='bx bxs-right-arrow bx-flashing' id="cmd-arrow"></i>
+                                        <h1>HTML 5</h1> <i class='bx bxl-html5 btn-hab'></i>
                                     </div>
                                     <div class="habilidade">
-                                        <i class='bx bxs-right-arrow bx-flashing' id="cmd-arrow"></i> <h1>JAVASCRIPT</h1> <i class='bx bxl-javascript btn-hab' ></i>
+                                        <i class='bx bxs-right-arrow bx-flashing' id="cmd-arrow"></i>
+                                        <h1>JAVASCRIPT</h1> <i class='bx bxl-javascript btn-hab'></i>
                                     </div>
                                     <div class="habilidade">
-                                        <i class='bx bxs-right-arrow bx-flashing' id="cmd-arrow"></i> <h1>CSS</h1> <i class='bx bxl-css3 btn-hab' ></i>
+                                        <i class='bx bxs-right-arrow bx-flashing' id="cmd-arrow"></i>
+                                        <h1>CSS</h1> <i class='bx bxl-css3 btn-hab'></i>
                                     </div>
                                 </div>
                             </div>
@@ -738,32 +741,61 @@
         setTimeout(displayClock, 1000);
     }
 
-    var desktop = document.querySelector(".habilidades-conteudo")
-    var desktopLimite = desktop.getBoundingClientRect()
-    var janela = document.querySelector(".habilidades-janela")
+    // var desktop = document.querySelector(".habilidades-conteudo")
+    // var desktopLimite = desktop.getBoundingClientRect()
+    // var janela = document.querySelector(".habilidades-janela")
+    // var offsetX, offsetY;
+
+    // var mouseDifX = 0
+    // var mouseDifY = 0
+
+    // var move = (e) => {
+    //     // mouseDifX = e.clientX - desktopLimite.left;
+    //     // mouseDifY = e.clientY - desktopLimite.top;
+
+    //     // if (mouseDifX <= (offsetX + janela.offsetLeft)) {
+    //     //     janela.style.left = `${mouseDifX}px`;
+    //     // } else janela.style.left = "0px"
+
+    //     // if (mouseDifY <= (offsetY + janela.offsetTop)) {
+    //     //     janela.style.top = `${mouseDifY}px`;
+    //     // } else janela.style.top = "0px"    
+    //     janela.style.left = `${Math.abs(e.clientX - offsetX)}px`;
+    //     janela.style.top = `${Math.abs(e.clientY - offsetY)}px`;
+    // }
+
+    // janela.addEventListener("mousedown", (e) => { 
+    //     offsetX = e.clientX - janela.offsetLeft;
+    //     offsetY = e.clientY - janela.offsetTop;
+    //     document.addEventListener("mousemove", move);
+    // });
+
+    // document.addEventListener("mouseup", () => {
+    //     document.removeEventListener("mousemove", move);
+    // });
+
+    var windowContent = document.querySelector(".habilidades-conteudo");
+    var windowHeader = document.querySelector(".habilidades-janela-header");
+    var littleWindow = document.querySelector(".habilidades-janela");
     var offsetX, offsetY;
 
-    var mouseDifX = 0
-    var mouseDifY = 0
-
     var move = (e) => {
-        // mouseDifX = e.clientX - desktopLimite.left;
-        // mouseDifY = e.clientY - desktopLimite.top;
+        littleWindow.style.left = `${e.clientX - offsetX}px`;
+        littleWindow.style.top = `${e.clientY - offsetY}px`;
 
-        // if (mouseDifX <= (offsetX + janela.offsetLeft)) {
-        //     janela.style.left = `${mouseDifX}px`;
-        // } else janela.style.left = "0px"
+        if (littleWindow.offsetLeft < 0) littleWindow.style.left = "0px";
 
-        // if (mouseDifY <= (offsetY + janela.offsetTop)) {
-        //     janela.style.top = `${mouseDifY}px`;
-        // } else janela.style.top = "0px"    
-        janela.style.left = `${Math.abs(e.clientX - offsetX)}px`;
-        janela.style.top = `${Math.abs(e.clientY - offsetY)}px`;
+        if (littleWindow.offsetTop < 0) littleWindow.style.top = "0px";
+
+        if ((littleWindow.offsetLeft + littleWindow.getBoundingClientRect().width) > windowContent.getBoundingClientRect().width) littleWindow.style.left = `${(windowContent.getBoundingClientRect().width - littleWindow.getBoundingClientRect().width)}px`;
+
+        if ((littleWindow.offsetTop + littleWindow.getBoundingClientRect().height) > (windowContent.getBoundingClientRect().height + windowHeader.getBoundingClientRect().height)) littleWindow.style.top = `${(windowContent.getBoundingClientRect().height + windowHeader.getBoundingClientRect().height - littleWindow.getBoundingClientRect().height)}px`;
     }
 
-    janela.addEventListener("mousedown", (e) => { 
-        offsetX = e.clientX - janela.offsetLeft;
-        offsetY = e.clientY - janela.offsetTop;
+
+    littleWindow.addEventListener("mousedown", (e) => {
+        offsetX = e.clientX - littleWindow.offsetLeft;
+        offsetY = e.clientY - littleWindow.offsetTop;
         document.addEventListener("mousemove", move);
     });
 
@@ -1022,6 +1054,13 @@
         document.querySelector("#checked-form").style.animation = "zoomIn2 1s ease forwards"
     })
 
+    function divCursorOn() {
+        document.querySelector("#cursor").style.animation = "divCursorZoom 0.5s ease forwards"
+    }
+
+    document.querySelector("body").addEventListener("animationend", () => {
+        document.querySelector("#cursor").style.animation = ""
+    })
 
 
 
