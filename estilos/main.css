@@ -760,7 +760,7 @@ main {
 
 .caixa-butao i:hover {
     color: #C13A4B;
-    transition: 1s;
+    transition: 0.5s;
 }
 
 .caixa-butao.dark::before,
@@ -775,6 +775,11 @@ main {
 #cx-bt-a4.dark {
     color: #E8E8E8;
     transition: 1s;
+}
+
+#caixao-botao-dark1.dark:hover, #caixao-botao-dark2.dark:hover  {
+    color: #01DBC6;
+    transition: 1.3s;
 }
 
 .scroll-bola {
