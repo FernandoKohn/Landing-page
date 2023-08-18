@@ -43,14 +43,15 @@ html {
     mix-blend-mode: difference;
 }
 
-/* .inicializador{
-    display: flex;
+.inicializador {
+    display: none;
     position: absolute;
     background-color: #c4c4c4;
     width: 100%;
     height: 100%;
     justify-content: center;
     padding-top: 30px;
+    z-index: 999;
 }
 
 .inicializador-checker {
@@ -61,16 +62,16 @@ html {
     flex-direction: column;
     width: 400px;
     height: 200px;
-    align-self: center;
+    margin-top: 20em;
     text-align: center;
     align-items: center;
     justify-content: center;
+    animation: zoomIn2 1s ease forwards;
 }
 
 .inicializador-checker h1 {
     font-size: 22px;
-    position: absolute;
-    top: 260px;
+    padding-bottom: 1em;
 }
 
 .inicializador-checker img {
@@ -79,13 +80,16 @@ html {
 
 .incializador-conteudo {
     display: none;
+    position: absolute;
     flex-direction: column;
     background-color: #ffffff;
     width: 380px;
     height: 330px;
+    top: 300px;
     border: 4px solid black;
     box-shadow: 8px 8px 0 0 #000;
-    animation: zoomIn2 0.5s ease forwards;
+    animation: zoomIn3  2s ease forwards;
+    
 }
 
 .incializador-conteudo header {
@@ -93,24 +97,23 @@ html {
     border-bottom: 4px solid black;
 }
 
-.incializador-conteudo  div {
+.incializador-conteudo div {
     background-color: #ffffff;
-    height: 100%;
     text-align: center;
 }
 
-.incializador-conteudo  div h1 {
+.incializador-conteudo div h1 {
     font-size: 30px;
     padding: 10px;
 }
 
-.incializador-conteudo  div img {
+.incializador-conteudo div img {
     width: 90px;
 }
 
 .incializador-conteudo header h1 {
     text-align: center;
-} */
+}
 
 ::selection {
     color: #ffffff;
@@ -151,7 +154,6 @@ main {
     display: flex;
     flex-direction: column;
     position: relative;
-    /* visibility: hidden; */
 }
 
 .menu-lateral {
@@ -358,7 +360,13 @@ main {
     color: #01DBC6;
 }
 
-    .navlink1, .navlink2, .navlink3, .navlink4, .navlink5, .navlink6, .navlink7 {
+.navlink1,
+.navlink2,
+.navlink3,
+.navlink4,
+.navlink5,
+.navlink6,
+.navlink7 {
     color: #000000;
     padding: 10.5px 20px;
     font-size: 1.8em;
@@ -847,7 +855,8 @@ main {
     transition: 1s;
 }
 
-#caixao-botao-dark1.dark:hover, #caixao-botao-dark2.dark:hover  {
+#caixao-botao-dark1.dark:hover,
+#caixao-botao-dark2.dark:hover {
     color: #01DBC6;
     transition: 1.3s;
 }
@@ -2264,7 +2273,7 @@ main {
     text-align: center;
     align-items: center;
     justify-content: space-between;
-    
+
 }
 
 .abaemail-conteudo h1 {
@@ -2349,6 +2358,15 @@ main {
         opacity: 1;
     }
 }
+@keyframes zoomIn3 {
+    0% {
+        transform: scale(0.5);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+}
 
 @keyframes zoomOf {
     0% {
@@ -2361,6 +2379,20 @@ main {
         opacity: 0;
     }
 }
+
+@keyframes zoomOf2 {
+    0% {
+        transform: scale(1);
+        
+    }
+
+    100% {
+        transform: scale(0);
+        
+    }
+}
+
+
 
 
 @keyframes floatImage {
@@ -2379,13 +2411,23 @@ main {
 
 }
 
+@keyframes fadeOut {
+    0% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0;
+    }
+}
+
 @media screen and (max-height: 970px) {
-    
+
     .caixa-butao-460 {
         padding: 0;
         margin: 0;
     }
-    
+
     .menu-fixo {
         height: 70px;
     }

@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="estilos/main.css">
     <link rel="stylesheet"
         href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
-    <script type="module" src="scripts/inicializador.js"></script>
+    <!-- <script type="module" src="scripts/inicializador.js"></script> -->
     <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
     <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
@@ -22,7 +22,7 @@
 </head>
 
 <body onload="displayClock()" onmousedown="divCursorOn()" onmouseup="divCursorOff()">
-    <!-- <div class="inicializador">
+    <div class="inicializador">
         <div class="inicializador-checker">
             <h1><span class="Efeito-digitado-4"></span></h1>
             <img src="fotos/loading_circle.png" alt="loading gif">
@@ -36,7 +36,7 @@
                 <img src="fotos/computador_icone.png" alt="icone computador">
             </div>
         </div>
-    </div> -->
+    </div>
     <main>
         <div class="menu-lateral">
             <div class="box-lateral">
@@ -102,7 +102,8 @@
                             <a href="https://github.com/FernandoKohn" target="_blank" class="caixa-butao-a1"><i
                                     class='bx bxl-github' id="caixao-botao-dark1"></i></a>
                             <a href="https://www.linkedin.com/in/fernandokohn/" target="_blank"
-                                class="caixa-butao-a2"><i class='bx bxl-linkedin-square' id="caixao-botao-dark2"></i></a>
+                                class="caixa-butao-a2"><i class='bx bxl-linkedin-square'
+                                    id="caixao-botao-dark2"></i></a>
                         </div>
                     </div>
                 </div>
@@ -122,7 +123,8 @@
                                 <h2 class="swipeh2">Eu <span class="Efeito-digitado-2"></span></h2>
                             </div>
                             <div class="estudante-wrap">
-                                <h4 class="swipeh4">Estudante de Ciencia da computação & Desen-<br>volvedor Front-End
+                                <h4 class="swipeh4">Estudante de Ciencia da computação & Desen-<br>volvedor
+                                    Front-End
                                 </h4>
                             </div>
                             <div class="mais-sobre-mim-wrap">
@@ -208,7 +210,8 @@
                                     <span><img src="fotos/Conector.png" alt=""></span>
                                     <img src="fotos/arrow.png" alt="">
                                     <span class="descricao">Sigo meus estudos de forma autodidata. Estudo linguagens
-                                        Front-End a apena 4 meses e com um mix equilibrado entre ousadia e amor pelo que
+                                        Front-End a apena 4 meses e com um mix equilibrado entre ousadia e amor pelo
+                                        que
                                         faço dei inicio a minha jornada com projetos que visam se destacar e chamar
                                         atenção.</span>
                                 </div>
@@ -222,7 +225,8 @@
                                     <span><img src="fotos/Conector.png" alt=""></span>
                                     <img src="fotos/arrow.png" alt="">
                                     <span class="descricao">Minha fluência me permite aprender o melhor das melhores
-                                        fontes e documentações. Busco futuramente expandir meu espectro profissional á
+                                        fontes e documentações. Busco futuramente expandir meu espectro profissional
+                                        á
                                         países estrangeiros.</span>
                                 </div>
                             </div>
@@ -557,6 +561,37 @@
 
 </html>
 <script>
+ //corpo.style.display = "flex"
+ //inicializador.style.animation = "fadeOut 1.5s ease forwards"
+    var inicializador = document.querySelector(".inicializador")
+    var inicializadorConteudo = document.querySelector(".incializador-conteudo")
+    var inicializadorChecker = document.querySelector(".inicializador-checker")
+    var corpo = document.querySelector("main")
+    var tamanhoTela = screen.width
+
+    function Inicializador() {
+            inicializador.style.display = "flex"
+            corpo.style.display = "none"
+            if (tamanhoTela < 510) {setTimeout(() => {
+                inicializadorChecker.style.animation = "zoomOf2  0.5s ease forwards"
+                inicializadorConteudo.style.display = "block"
+                
+            }, 4000)
+            setTimeout(() => {
+                corpo.style.display = "flex"
+                inicializador.style.animation = "fadeOut 0.5s ease forwards"
+            }, 6000)
+
+             
+        } else {
+            setTimeout(() => {
+                corpo.style.display = "flex"
+                inicializador.style.animation = "fadeOut 1s ease forwards"
+            }, 4000)
+        }
+}
+
+    Inicializador()
 
 
     //Diretório padrão de incialização
@@ -569,7 +604,7 @@
     darkmode.addEventListener("click", () => {
         document.querySelectorAll("#index, #dark-mode, #conteudo-total, .Conteudo-Index, body, .menu-fixo, .box-lateral a, .fk, .navbar, .navlink1, .navlink2, .navlink3, .navlink4, .navlink5, .navlink6, .navlink7, .ola-wrap-h6, .fernandokohn, .fernandokohn2, .efeito-wrap-h2, .Efeito-digitado, .Conteudo-Index-h4-1, .Conteudo-Index-h4-2, .mais-sobre-mim, #mais-sobre-mim2, .mais-sobre-mim-h1, #mais-sobre-mim2-h1, .caixa-butao, #cx-bt2, #cx-bt-a3, #cx-bt-a4, .caixa-butao-a1, .caixa-butao-a2, #caixao-botao-dark1, #caixao-botao-dark2, .sobre, .Botao-sobre, .janela-sobre, .janela-sobre-header, .conteudo-janela-sobre, .titulo1, .titulo2, .titulo3, .titulo4, .sobre-descricao1, .sobre-descricao2, .sobre-descricao3, .sobre-descricao4, .header-wrap1, .header-wrap2, #botao-fechar, #projetos, #projetos-titulo, .projetos-container, .projeto-header1, .projeto-header2, .projeto-header3, .projeto-header4, .Botao-sobre-contato, #contato, .swiper-slide, #swipeimg, .swipeh6, .swipeh4, .swipeh2, .Efeito-digitado-2, .Efeito-digitado-3, .bola-460, .bola-texto, .bola-texto header, .bola-texto h6, .bola-texto h1, #efeito-wrap-460, .sobremim-460 a, #cx-bt-05, #cx-bt-06, .header-fk-darkmode, .contato-janela").forEach(classe => {
             classe.classList.toggle("dark")
-        })        
+        })
         var fotoP = document.querySelector("#fotoperfil1")
         var fotoP2 = document.querySelector("#fotoperfil2")
         if (fotoP.src.match("fotos/foto1.png") || fotoP2.src.match("fotos/foto1.png")) {
@@ -662,12 +697,12 @@
     });
 
     var typed2 = new Typed(".Efeito-digitado-4", {
-        strings: ["Botando tudo no lugar...", "Limpando a bagunça...", "Pesquisando como centralizar divs..." ],
+        strings: ["Botando tudo no lugar...", "Limpando a bagunça...", "Pesquisando como centralizar divs..."],
         typeSpeed: 100,
         backSpeed: 100,
         backDelay: 1000,
-        shuffle:true,
-        smartBackspace:false,
+        shuffle: true,
+        smartBackspace: false,
         loop: true
     });
 
