@@ -2349,7 +2349,7 @@ main {
 }
 
 .Mine_dos_bons_tempos {
-    display: flex;
+    display: none;
     flex-direction: column;
     position: absolute;
     z-index: 999;
@@ -2372,8 +2372,12 @@ main {
     text-align: center;
     gap: 20px;
     justify-content: center;
-    animation: zoomIn 1s ease forwards, floatImage 5s ease-in-out infinite;
     
+    
+}
+
+.Mine_dos_bons_tempos .section1 {
+    animation: zoomIn 1s ease forwards, floatImage 5s ease-in-out infinite;
 }
 
 .Mine_dos_bons_tempos .section1 img {
