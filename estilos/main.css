@@ -46,12 +46,15 @@ html {
 .inicializador {
     display: none;
     position: absolute;
+    top: 0;
+    left: 0;
     background-color: #c4c4c4;
     width: 100%;
     height: 100%;
     justify-content: center;
-    padding-top: 30px;
     z-index: 999;
+    border-radius: 5px;
+    pointer-events: none;
 }
 
 .inicializador-checker {
@@ -62,7 +65,7 @@ html {
     flex-direction: column;
     width: 400px;
     height: 200px;
-    margin-top: 20em;
+    margin-top: 10em;
     text-align: center;
     align-items: center;
     justify-content: center;
@@ -85,7 +88,7 @@ html {
     background-color: #ffffff;
     width: 380px;
     height: 330px;
-    top: 300px;
+    top: 100px;
     border: 4px solid black;
     box-shadow: 8px 8px 0 0 #000;
     animation: zoomIn3  2s ease forwards;
@@ -1348,7 +1351,8 @@ main {
 
 
 .header-wrap1,
-.header-wrap2 {
+.header-wrap2,
+.header-wrap3 {
     height: 100%;
     width: 100%;
     background-color: #aa9df0;
@@ -1358,7 +1362,8 @@ main {
 }
 
 .header-wrap1.dark,
-.header-wrap2.dark {
+.header-wrap2.dark,
+.header-wrap3.dark {
     background-color: #01DBC6;
     color: #3f3f3f;
     transition: 1s;
@@ -1396,6 +1401,8 @@ main {
     z-index: 1;
 }
 
+
+
 .pasta-habilidade:hover {
     background-color: #cacaca31;
     border-radius: 7%;
@@ -1411,7 +1418,7 @@ main {
 }
 
 
-.habilidades-janela {
+.habilidades-janela, .habilidades-janela2 {
     background: url("/fotos/desktop-janela-background.png");
     width: 300px;
     height: 175px;
@@ -1426,36 +1433,49 @@ main {
     user-select: none;
 }
 
+.habilidades-janela2 span {
+    display: flex;
+    gap: 10px;
+}
 
+.habilidades-janela2 input {
+    width: 110px;
+    border: none;
+    border-radius: 10px;
+}
 
-.habilidades-janela-header {
+#plc {
+    text-align: center;
+}
+
+.habilidades-janela-header, .habilidades-janela-header2 {
     height: 50px;
     border-bottom: 3px solid black;
     display: flex;
 }
 
-#botao-fechar {
+#botao-fechar, #botao-fechar2 {
     position: absolute;
     left: 5px;
     font-size: 2.5em;
     transition: 1s;
 }
 
-#botao-fechar.dark {
+#botao-fechar.dark, .botao-fechar2.dark {
     color: black;
 
 }
 
-#botao-fechar:hover {
+#botao-fechar:hover, #botao-fechar2:hover {
     color: red;
 }
 
-.habilidades-janela-header h1 {
+.habilidades-janela-header h1, .habilidades-janela-header2 h1 {
     font-size: 1.7em;
 }
 
 
-.habilidades-janela-index {
+.habilidades-janela-index, .habilidades-janela-index2  {
     display: flex;
     flex-direction: column;
     padding: 10px;
@@ -1465,11 +1485,11 @@ main {
     font-size: 30px;
 }
 
-#cmd-arrow {
+#cmd-arrow, #cmd-arrow2 {
     color: white;
 }
 
-.habilidade {
+.habilidade, .habilidade2 {
     display: flex;
     align-items: center;
     gap: 10px;
@@ -1544,6 +1564,7 @@ main {
     display: flex;
     padding-top: 10px;
     margin-left: 3px;
+    gap: 2px;
 }
 
 
@@ -1554,6 +1575,14 @@ main {
     justify-content: center;
     width: 100px;
     height: 90px;
+}
+
+#pasta2 i {
+    font-size: 2.6em;
+}
+
+#lockpng2 {
+    font-size: 2em;
 }
 
 .iniciar-conteudo-habilidades-icone h1 {
@@ -1664,7 +1693,7 @@ main {
     padding: 5px;
 }
 
-#folder-gerenciador {
+#folder-gerenciador, #folder-gerenciador2 {
     width: 20%;
     padding: 5px;
 }
@@ -1697,16 +1726,15 @@ main {
     padding: 4px;
 }
 
-#aplicativo {
-    display: flex;
-    visibility: hidden;
+#aplicativo, #aplicativo2 {
+    display: none;
 }
 
 #status {
     display: none;
 }
 
-#cpu-numero {
+#cpu-numero, #cpu-numero2 {
     display: none;
 }
 
@@ -2312,6 +2340,48 @@ main {
     font-size: 20px;
 }
 
+.section1, .section2, .section3 {
+    min-height: 100%;
+}
+
+.section2 img {
+    width: 32%;
+}
+
+.Mine_dos_bons_tempos {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    z-index: 999;
+    width: 100%;
+    height: 100%;
+    background-color:#3f3f3f;
+    top: 0;
+    left: 0;
+    scroll-behavior: auto;
+    overflow: auto;
+    gap: 50px;
+}
+
+.Mine_dos_bons_tempos div {
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    text-align: center;
+    gap: 20px;
+    justify-content: center;
+    animation: zoomIn 1s ease forwards, floatImage 5s ease-in-out infinite;
+    
+}
+
+.Mine_dos_bons_tempos .section1 img {
+    width: 20%;
+    border-radius: 100%;
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.397);
+}
+
 @keyframes divCursorZoom {
     0% {
         width: 30px;
@@ -2586,7 +2656,7 @@ main {
         font-size: 1em;
     }
 
-    #aplicativo {
+    #aplicativo, #aplicativo2 {
         font-size: 0.8em;
         padding-top: 7px;
     }
@@ -3255,7 +3325,7 @@ main {
 
     }
 
-    .habilidades-janela {
+    .habilidades-janela, .habilidades-janela2 {
         width: 250px;
         height: 250px;
     }
@@ -3325,6 +3395,28 @@ main {
 
 @media screen and (max-width:451px) {
 
+    .inicializador-checker {
+        width: 280px;
+    }
+
+    .inicializador-checker h1 {
+        font-size: 18px;
+    }
+
+    .inicializador-checker img {
+        width: 30px ;
+    }
+
+    .incializador-conteudo {
+        width: 300px;
+        height: 320px;
+    }
+
+    .incializador-conteudo div h1 {
+        font-size: 1.5em;
+    }
+
+
     #index {
         min-height: 1100px;
     }
@@ -3392,11 +3484,11 @@ main {
         height: 750px;
     }
 
-    #botao-fechar {
+    #botao-fechar, #botao-fechar2 {
         font-size: 25px;
     }
 
-    #janelah1 {
+    #janelah1, #janelah1-2 {
         font-size: 20px;
     }
 
@@ -3424,12 +3516,12 @@ main {
 
     }
 
-    .habilidades-janela {
+    .habilidades-janela, .habilidades-janela2 {
         width: 190px;
         height: 200px;
     }
 
-    .habilidades-janela-index {
+    .habilidades-janela-index, .habilidades-janela-index2 {
         padding: 0;
     }
 
@@ -3477,5 +3569,10 @@ main {
 
     #data {
         font-size: 10px;
+    }
+
+    .incializador-conteudo {
+        width: 260px;
+        height: 300px;
     }
 }
