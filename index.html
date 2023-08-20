@@ -20,28 +20,29 @@
 
 </head>
 
-<body onload="displayClock()" onmousedown="divCursorOn()" onmouseup="divCursorOff()">
+<body onload="displayClock()" onmousedown="divCursorOn()">
     <div class="Mine_dos_bons_tempos">
         <div class="section1">
             <img src="fotos/zig2.png" alt="">
             <h1>Em homenagem ao meu melhor amigo Zig <br> obrigado por sempre me ajudar quando eu peciso.</h1>
             <h1>"ZIIIIIIIIIIG"</h1>
         </div>
-        <div class="section2">
-            <h1>A lenda analizando meu site antes de lançar 😎</h1>
-            <img src="fotos/zig3.jpg" alt="">
+        <div class="ps" onclick="voltar()">
+            <img src="fotos/m.png" alt="">
         </div>
-        <div class="section3">
-            <h1>tmj corno❤️</h1>
-            <img src="fotos/a1.jpg">
+        <!-- <div class="f">
+            <div class="fc">
+                <img src="fotos/zig3.jpg" alt="">
+                <img src="fotos/a1.jpg" alt="">
+            </div>
+        </div> -->
 
-        </div>
     </div>
 
-    <div class=" inicializador">
+    <div class="inicializador">
         <div class="inicializador-checker">
             <h1><span class="Efeito-digitado-4"></span></h1>
-            <img src="fotos/loading_circle.png" alt="loading gif">
+            <h1><span class="Efeito-digitado-5"></span></h1>
         </div>
         <div class="incializador-conteudo">
             <header>
@@ -634,9 +635,29 @@
         }
     }
 
-    Inicializador()
+    // Inicializador()
+
+    const inputEle = document.getElementById('plc');
+
+    function congratulations() {
+        if (document.querySelector("#plc").value == "skywars.net") {
+            document.querySelector(".Mine_dos_bons_tempos").style.display = "flex"
+            document.querySelector("main").style.display = "none"
+        }
+    }
+
+    inputEle.addEventListener('keyup', function (e) {
+        var key = e.which || e.keyCode;
+        if (key == 13) {
+            congratulations()
+        }
+    });
 
 
+    function voltar() {
+        document.querySelector(".Mine_dos_bons_tempos").style.display = "none"
+        document.querySelector("main").style.display = "flex"
+    }
 
     //Diretório padrão de incialização
 
@@ -741,12 +762,21 @@
     });
 
     var typed2 = new Typed(".Efeito-digitado-4", {
-        strings: ["Botando tudo no lugar...", "Limpando a bagunça...", "Pesquisando como centralizar divs..."],
-        typeSpeed: 100,
+        strings: ["Botando tudo no lugar", "Limpando a bagunça", "Pesquisando como centralizar divs"],
+        typeSpeed: 60,
         backSpeed: 100,
         backDelay: 1000,
         shuffle: true,
         smartBackspace: false,
+        loop: true
+    });
+
+    var typed2 = new Typed(".Efeito-digitado-5", {
+        strings: [". . . "],
+        typeSpeed: 100,
+        backSpeed: 100,
+        backDelay: 1000,
+        cursorChar: '',
         loop: true
     });
 

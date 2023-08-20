@@ -1,7 +1,5 @@
-@charset "UTF-8";
 @import url('https://fonts.googleapis.com/css2?family=Archivo+Black&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Baloo+Thambi+2:wght@700&display=swap');
-
 @font-face {
     font-family: "Pixel";
     src: url(/fontes/Pixel.ttf);
@@ -41,6 +39,41 @@ html {
     transform: translate(-30%, -30%);
     z-index: 99999;
     mix-blend-mode: difference;
+}
+
+.ps {
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 1em;
+}
+
+.ps img {
+    width: 2em;
+}
+
+.ps:hover {
+    background-color: #8b8b8b;
+}
+
+.f {
+    position: absolute;
+    width: 400px;
+    height: 300px;
+    display: flex;
+    background-color: #8b8b8b;
+    border-radius: 10px;
+
+}
+
+.fc {
+    height: 100%;
+    width: 100%;
+}
+
+.f img {
+    width: 25%;
+    padding: 10px;
 }
 
 .inicializador {
@@ -698,6 +731,14 @@ main {
 
 .Efeito-digitado-2.dark {
     color: #01DBC6;
+}
+
+.Efeito-digitado-5 {
+    font-size: 40px;
+    align-items: center;
+    display: flex;
+    height: 10px;
+    justify-content: center;
 }
 
 
@@ -2340,12 +2381,8 @@ main {
     font-size: 20px;
 }
 
-.section1, .section2, .section3 {
+.section1 {
     min-height: 100%;
-}
-
-.section2 img {
-    width: 32%;
 }
 
 .Mine_dos_bons_tempos {
@@ -2363,7 +2400,7 @@ main {
     gap: 50px;
 }
 
-.Mine_dos_bons_tempos div {
+.section1 {
     color: white;
     display: flex;
     flex-direction: column;
@@ -2372,8 +2409,6 @@ main {
     text-align: center;
     gap: 20px;
     justify-content: center;
-    
-    
 }
 
 .Mine_dos_bons_tempos .section1 {
