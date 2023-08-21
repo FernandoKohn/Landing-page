@@ -23,20 +23,13 @@
 <body onload="displayClock()" onmousedown="divCursorOn()">
     <div class="Mine_dos_bons_tempos">
         <div class="section1">
-            <img src="fotos/zig2.png" alt="">
-            <h1>Em homenagem ao meu melhor amigo Zig <br> obrigado por sempre me ajudar quando eu peciso.</h1>
-            <h1>"ZIIIIIIIIIIG"</h1>
+            <img src="fotos/TESTE.png" alt="">
+            <h1 class="h1teste"></h1>
+            <h1 class="h1teste2"></h1>
         </div>
         <div class="ps" onclick="voltar()">
             <img src="fotos/m.png" alt="">
         </div>
-        <!-- <div class="f">
-            <div class="fc">
-                <img src="fotos/zig3.jpg" alt="">
-                <img src="fotos/a1.jpg" alt="">
-            </div>
-        </div> -->
-
     </div>
 
     <div class="inicializador">
@@ -635,7 +628,7 @@
         }
     }
 
-    // Inicializador()
+    Inicializador()
 
     const inputEle = document.getElementById('plc');
 
@@ -1090,7 +1083,7 @@
         document.querySelector(".habilidades-conteudo").style.backgroundSize = "cover"
         document.querySelector(".habilidades-conteudo").style.backgroundRepeat = "no-repeat"
     }
-
+    document.querySelector(".h1teste").innerHTML = "Em homenagem ao meu melhor amigo Zig <br> obrigado por sempre me ajudar quando eu peciso."
     // Alteração de línguas do Skill.desktop
 
     function ptbr() {
@@ -1182,6 +1175,7 @@
             }
         })
     }, 200);
+    document.querySelector(".h1teste2").innerHTML = `"ZIIIIIIIIIG"`
 
 
     //Biblioteca do Body-Scroll-lock para travar o scroll (funcionou porem não foi util)
@@ -1226,6 +1220,7 @@
         document.querySelector("#send-form").style.animation = "zoomOf 1s ease forwards"
     })
 
+
     document.querySelector("#send-form").addEventListener("animationend", () => {
         document.querySelector("#send-form").style.display = "none"
         document.querySelector("#checked-form").style.display = "block"
@@ -1240,6 +1235,5 @@
         document.querySelector("#cursor").style.animation = ""
     })
 
-
-//senha: @skywars.net
+    //skywars.net
 </script>
