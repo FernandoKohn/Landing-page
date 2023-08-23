@@ -1,3 +1,4 @@
-<h1>Landing page</h1>
-<h2>Feita em Javascript puro, HTML e CSS</h2>
-[Site](https://o-fernando.com/#index)
+Landing page
+Feita em Javascript puro, HTML e CSS
+
+https://o-fernando.com/#index
