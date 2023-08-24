@@ -289,11 +289,15 @@
                                 <div class="habilidades-janela-index">
                                     <div class="habilidade">
                                         <i class='bx bxs-right-arrow bx-flashing' id="cmd-arrow"></i>
-                                        <h1>HTML 5</h1> <i class='bx bxl-html5 btn-hab'></i>
+                                        <h1>JAVASCRIPT</h1> <i class='bx bxl-javascript btn-hab'></i>
                                     </div>
                                     <div class="habilidade">
                                         <i class='bx bxs-right-arrow bx-flashing' id="cmd-arrow"></i>
-                                        <h1>JAVASCRIPT</h1> <i class='bx bxl-javascript btn-hab'></i>
+                                        <h1>React.js</h1> <i style="font-size:30px" class='bx bxl-react'></i>
+                                    </div>
+                                    <div class="habilidade">
+                                        <i class='bx bxs-right-arrow bx-flashing' id="cmd-arrow"></i>
+                                        <h1>HTML 5</h1> <i class='bx bxl-html5 btn-hab'></i>
                                     </div>
                                     <div class="habilidade">
                                         <i class='bx bxs-right-arrow bx-flashing' id="cmd-arrow"></i>
@@ -435,16 +439,17 @@
                                     <i class='bx bx-checkbox-minus'></i>
                                 </div>
                                 <div class="projeto-header-error">
-                                    <h1>Error 404</h1>
+                                    <h1>Este site!</h1>
                                 </div>
                             </div>
                         </header>
-                        <div class="projeto-img">
-                            <img src="fotos/em-construção-banner.png" alt="">
+                        <div class="projeto-img" id="projeto-img1">
+                            <img src="fotos/proj1foto.png" alt="" id="proj1foto">
+                            <img src="fotos/proj1skills.png" alt="" id="proj1skills">
                         </div>
                         <div class="projeto-sobre">
-                            <H1>Em construção</H1>
-                            <p>Futuros projetos serão adicionados aqui.</p>
+                            <H1>Meu primeiro portifólio!</H1>
+                            <p>Este site foi feito para concretizar meu inicio no front-end. Aprendi muito botando a mão na massa. Feito em aproximadamente 40 dias.
                         </div>
                     </div>
                     <div class="proj-2" onclick="moverjanela2()">
@@ -454,16 +459,19 @@
                                     <i class='bx bx-checkbox-minus'></i>
                                 </div>
                                 <div class="projeto-header-error">
-                                    <h1>Error 404</h1>
+                                    <h1>COSTS</h1>
                                 </div>
                             </div>
                         </header>
-                        <div class="projeto-img">
-                            <img src="fotos/em-construção-banner.png" alt="">
+                        <div class="projeto-img" id="project-img2">
+                            <img src="fotos/costs.png" alt="" id="proj2foto">
+                            <img src="fotos/proj2skills.png" alt="" id="proj2skills">
                         </div>
                         <div class="projeto-sobre">
-                            <H1>Em construção</H1>
-                            <p>Futuros projetos serão adicionados aqui</p>
+                            <span class="costs">
+                                <H1>Crie e gerencie seu projeto!</H1>
+                            </span>
+                            <p>Costs é um gerenciador de projetos onde você pode controlar custos e adicionar serviços facilmente. <a target="_blank" id="costslink" href=""><i style="font-size:30px" class='bx bx-link'></i>Link</a></p>
                         </div>
                     </div>
                     <div class="proj-3" onclick="moverjanela3()">
@@ -477,7 +485,7 @@
                                 </div>
                             </div>
                         </header>
-                        <div class="projeto-img">
+                        <div class="projeto-img" id="projeto-img3">
                             <img src="fotos/em-construção-banner.png" alt="">
                         </div>
                         <div class="projeto-sobre">
@@ -496,7 +504,7 @@
                                 </div>
                             </div>
                         </header>
-                        <div class="projeto-img">
+                        <div class="projeto-img" id="projeto-img4">
                             <img src="fotos/em-construção-banner.png" alt="">
                         </div>
                         <div class="projeto-sobre">
@@ -628,7 +636,7 @@
         }
     }
 
-    Inicializador()
+    // Inicializador()
 
     const inputEle = document.getElementById('plc');
 
@@ -1235,5 +1243,20 @@
         document.querySelector("#cursor").style.animation = ""
     })
 
+    document.querySelector("#proj1foto").addEventListener("mouseover", () => {
+        document.querySelector("#proj1skills").style.display = "block"
+    })
+
+    document.querySelector("#proj1foto").addEventListener("mouseout", () => {
+        document.querySelector("#proj1skills").style.display = "none"
+    })
+
+    document.querySelector("#proj2foto").addEventListener("mouseover", () => {
+        document.querySelector("#proj2skills").style.display = "block"
+    })
+
+    document.querySelector("#proj2foto").addEventListener("mouseout", () => {
+        document.querySelector("#proj2skills").style.display = "none"
+    })
     //skywars.net
 </script>
