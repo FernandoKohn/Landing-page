@@ -1139,9 +1139,8 @@ main {
 }
 
 .sobremim-460.dark {
-    border-color: #ffffff;
     background-color: #383838;
-    ;
+    border-color: white;
     color: #E8E8E8;
     transition: 1s;
 }
