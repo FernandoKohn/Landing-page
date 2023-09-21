@@ -2081,7 +2081,7 @@ main {
     padding-left: 10px;
 }
 
-#projeto-img1, #project-img2 {
+#projeto-img1 {
     background-color: black;
 }
 
@@ -3343,7 +3343,8 @@ main {
 
 @media screen and (max-width: 585px) {
     .contato-janela {
-        width: 100%;
+        width: 90%;
+        margin: 0 auto;
     }
 
     .relogio-data {
@@ -3361,9 +3362,6 @@ main {
 }
 
 @media screen and (max-width: 554px) {
-    .contato-janela {
-        width: 100%;
-    }
 
     .sobre {
         min-height: 1800px;
@@ -3537,8 +3535,7 @@ main {
     }
 
     .contato-janela {
-        width: 100%;
-        height: 530px;
+        height: 510px;
     }
 
     .texto textarea {
