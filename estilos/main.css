@@ -1950,7 +1950,7 @@ main {
 
 .projeto-header-wrap {
     width: 100%;
-    height: 100%;
+    height: 50px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -2035,6 +2035,9 @@ main {
     display: flex;
     justify-content: center;
     align-items: center;
+    background-image: url("/fotos/proj1foto.png");
+    background-size: cover;
+    
 
 }
 
@@ -2091,13 +2094,30 @@ main {
     filter: blur(5px);
 }
 
-#proj1skills, #proj2skills {
+.tecs {
+    width: 50px;
+    height: 45px;
+    display: flex;
+    padding: 10px 0 0 11px;
+    
+}
+
+.tecs i {
+    font-size: 40px;
+}
+
+.tecs i:hover {
+    color: crimson;
+    transition: 0.5s;
+}
+
+/* #proj1skills, #proj2skills {
     display: none;
     height: 100px;
     animation: zoomIn2 0.2s ease forwards;
     position: absolute;
     pointer-events: none;
-}
+} */
 
 #imgproj2 {
     background-color: #222;
@@ -2106,7 +2126,7 @@ main {
 
 #contato {
     border-top: 3px solid black;
-    background-color: #aa9df0;
+    background-color: #d3d2d2;
     /* background-color: #A1A194;*/
     min-height: 1000px;
     position: relative;
@@ -2132,7 +2152,7 @@ main {
     background-color: #C4C4C4;
     border: 4px solid black;
     width: 20%;
-    height: 65px;
+    height: 60px;
     display: flex;
     font-size: 1.5em;
 }
@@ -2164,7 +2184,13 @@ main {
 
 }
 
-.redes-sociais-final {
+.contato-h1 {
+    margin: 70px auto;
+    font-size: 4em;
+    
+}
+
+ .redes-sociais-final {
     width: 100px;
     height: 400px;
     gap: 50px;
@@ -2304,9 +2330,9 @@ main {
     font-family: "Pixel";
     text-transform: uppercase;
     color: #000000;
-}
+} 
 
-/* .botao-enviar {
+ .botao-enviar {
     background-color: #C13A4B;
     width: 230px;
     height: 65px;
@@ -2323,9 +2349,9 @@ main {
     border: 3px solid #C4C4C4;
     background-color: #c4c4c4;
     color: black;
-} */
+} 
 
-.botao-enviar-img {
+ .botao-enviar-img {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -2415,6 +2441,7 @@ main {
     padding-right: 20px;
 }
 
+
 #copy {
     width: 100%;
     height: 40px;
@@ -2427,7 +2454,7 @@ main {
 #copy div {
     color: white;
     font-size: 20px;
-}
+} 
 
 .section1 {
     min-height: 100%;
@@ -2903,14 +2930,35 @@ main {
         top: 600px;
     }
 
-}
+    .projetos-container {
+        width: 100%;
+        height: 100%;
+        flex-direction: column;
+        padding: 0;
+        margin: 0;
+        padding-left: 10%;
+    }
 
-@media screen and (max-width: 1300px) {
-    .proj-1, .proj-2, .proj-3, .proj-4 {
-        width: 600px;
+    .proj-1 {
+        width: 90%;
+        height: 600px;
+        position: relative;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        
+    }
+
+    .proj-2, .proj-3, .proj-4 {
+        display: none;
     }
 
 }
+
+@media screen and (max-width: 1300px) {
+    
+
 
 @media screen and (max-width: 1250px) {
     .redes-sociais-final {
@@ -2925,16 +2973,7 @@ main {
     #projetos {
         min-height: 1000px;
     }
-    
-    .projetos-container{ 
-        transform: scale(0.9);
-        margin: 0;
-    }
 
-    #projetos-titulo {
-        margin: 0;
-        padding-left: 50px;
-    }
 }
 
 
@@ -3057,15 +3096,6 @@ main {
         bottom: 57px;
     }
 
-    #projetos-titulo {
-        margin-bottom: 0;
-    }
-
-    .projetos-container{ 
-        transform: scale(0.8);
-        margin-left: -30px;
-        margin-top: -60px;
-    }
 
 }
 
@@ -3160,42 +3190,8 @@ main {
     }
 }
 
-@media screen and (max-width: 804px) {
-    .projetos-container{ 
-        margin-left: -30px;
-    }
-
-    .proj-1 {
-        width: 800px;
-        height: 500px;
-    }
-
-    .proj-2 {
-        top: 130px;
-        left: 0;
-        width: 800px;
-    }
-
-    .proj-3 {
-        top: 240px;
-        left: 0;
-        width: 800px;
-    }
-    
-    .proj-4 {
-        top: 360px;
-        left: 0;
-        width: 800px;
-    }
-}
 
 @media screen and (max-width:772px) {
-    .proj-1,
-    .proj-2,
-    .proj-3,
-    .proj-4 {
-        width: 750px;
-    }
 
     .janela-sobre {
         height: 895px;
@@ -3203,19 +3199,6 @@ main {
 }
 
 @media screen and (max-width: 730px) {
-
-    .proj-1,
-    .proj-2,
-    .proj-3,
-    .proj-4 {
-        width: 700px;
-    }
-
-    .projetos-container {
-        max-width: 100%;
-        margin-left: 0;
-        
-    }
 
     .Botao-sobre-contato {
         width: 50%;
@@ -3244,12 +3227,6 @@ main {
         left: 10px;
     }
 
-    .proj-1,
-    .proj-2,
-    .proj-3,
-    .proj-4 {
-        width: 670px;
-    }
 
 
 }
@@ -3358,25 +3335,11 @@ main {
         display: none;
     }
 
-    .proj-1,
-    .proj-2,
-    .proj-3,
-    .proj-4 {
-        width: 600px;
-    }
 
 
 }
 
-@media screen and (max-width: 620px) {
-    .proj-1,
-    .proj-2,
-    .proj-3,
-    .proj-4 {
-        width: 570px;
-    }
 
-}
 
 @media screen and (max-width: 585px) {
     .contato-janela {
@@ -3387,13 +3350,13 @@ main {
         width: 35%;
     }
 
-    .proj-1,
-    .proj-2,
-    .proj-3,
-    .proj-4 {
-        width: 530px;
-        margin-left: -15px;
-        padding: 0px;
+}
+
+@media screen and (max-width:614px) {
+    .projeto-img {
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
     }
 }
 
@@ -3418,16 +3381,6 @@ main {
         bottom: 60px;
     }
 
-}
-
-@media screen and (max-width:534px) {
-    .proj-1,
-    .proj-2,
-    .proj-3,
-    .proj-4 {
-        width: 100%;
-        height: 500px;
-    }
 }
 
 @media screen and (max-width:510px) {
@@ -3601,11 +3554,11 @@ main {
 
 @media screen and (max-width: 465px) {
     .projeto-sobre {
-        font-size: 20px;
+        font-size: 30px;
     }
 
     .projeto-sobre p {
-        font-size: 18px;
+        font-size: 20px;
     }
 
     #efeito-wrap-460 {
@@ -3784,7 +3737,7 @@ main {
 
 
     .projeto-header-error h1 {
-        font-size: 20px;
+        font-size: 25px;
     }
 
     .Botao-sobre-contato h1,

@@ -634,11 +634,11 @@ document.querySelector("body").addEventListener("animationend", () => {
     document.querySelector("#cursor").style.animation = ""
 })
 
-document.querySelector("#proj1foto").addEventListener("mouseover", () => {
+document.querySelector("#projeto-img1").addEventListener("mouseover", () => {
     document.querySelector("#proj1skills").style.display = "block"
 })
 
-document.querySelector("#proj1foto").addEventListener("mouseout", () => {
+document.querySelector("#projeto-img1").addEventListener("mouseout", () => {
     document.querySelector("#proj1skills").style.display = "none"
 })
 
