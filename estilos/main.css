@@ -2987,6 +2987,14 @@ main {
     .redes-sociais-final {
         left: 50px;
     }
+
+    #sobre-3 {
+        height: 200px;
+    }
+
+    .janela-sobre {
+        height: 860px;
+    }
 }
 
 @media screen and (min-width: 1112px) {
@@ -3008,7 +3016,7 @@ main {
     }
 
     .janela-sobre {
-        height: 1000px;
+        height: 930px;
     }
 
     .titulo1,
@@ -3114,7 +3122,7 @@ main {
     .janela-sobre {
         margin: 30px auto;
         width: 85vw;
-        height: 930px;
+        height: 940px;
     }
 
     .titulo1,
@@ -3188,6 +3196,10 @@ main {
     .proj-4 {
         width: 750px;
     }
+
+    .janela-sobre {
+        height: 895px;
+    }
 }
 
 @media screen and (max-width: 730px) {
@@ -3213,6 +3225,14 @@ main {
         width: 50%;
     }
 
+    .janela-sobre {
+        height: 830px;
+        background-color: white;
+    }
+    .conteudo-janela-sobre {
+        height: 750px;
+    }
+
 }
 
 @media screen and (max-width: 713px) {
@@ -3236,7 +3256,7 @@ main {
 
 @media screen and (max-width: 678px) {
     .janela-sobre {
-        height: 950px;
+        height: 810px;
     }
 }
 
@@ -3264,7 +3284,7 @@ main {
     }
 
     .janela-sobre {
-        height: 930px;
+        height: 850px;
         margin-top: 0;
     }
 
@@ -3387,7 +3407,7 @@ main {
     }
 
     .janela-sobre {
-        height: 750px;
+        height: 800px;
     }
 
     .habilidades {
@@ -3664,6 +3684,22 @@ main {
 
 }
 
+@media screen and (max-width:436px) {
+    .janela-sobre {
+        height: 800px;
+    }
+}
+
+@media screen and (max-width:410px) {
+    .janela-sobre {
+        height: 750px;
+    }
+
+    .conteudo-janela-sobre {
+        height: 700px;
+    }
+}
+
 @media screen and (max-width: 400px) {
     .img-460 img {
         transform: scale(1.5);
@@ -3698,7 +3734,11 @@ main {
     .janela-sobre {
         margin: 0 auto;
         width: 85vw;
-        height: 750px;
+        height: 700px;
+    }
+
+    .conteudo-janela-sobre {
+        height:600px;
     }
 
     #botao-fechar, #botao-fechar2 {
@@ -3795,5 +3835,11 @@ main {
 
     #projetos-titulo {
         margin-left: -20px;
+    }
+}
+
+@media screen and (max-width:295px) {
+    .sobre-1 {
+        padding-top: 50px;
     }
 }
