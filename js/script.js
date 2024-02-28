@@ -577,25 +577,6 @@ setInterval(() => {
 document.querySelector(".h1teste2").innerHTML = `"ZIIIIIIIIIG"`
 
 
-//Biblioteca do Body-Scroll-lock para travar o scroll (funcionou porem não foi util)
-/* /// Body-Scroll-lock ////
-const targetElement = document.querySelector('.conteudo-total');          
-window.addEventListener("DOMContentLoaded", () => {
-    bodyScrollLock.disableBodyScroll(targetElement);
-}) */
-/* function disableScroll() {
-        scrollTop = window.pageYOffset || document.documentElement.scrollTop;
-        scrollLeft = window.pageXOffset || document.documentElement.scrollLeft,
-        window.onscroll = function() {
-            window.scrollTo(scrollLeft, scrollTop);
-        };
-}
-window.addEventListener("DOMContentLoaded", () => {
-    disableScroll()
-})
-*/
-
-
 function abrirhamburguer() {
     if (document.querySelector(".menu-lateral").style.display == "none") {
         document.querySelector(".menu-lateral").style.display = "flex"
@@ -634,19 +615,4 @@ document.querySelector("body").addEventListener("animationend", () => {
     document.querySelector("#cursor").style.animation = ""
 })
 
-document.querySelector("#projeto-img1").addEventListener("mouseover", () => {
-    document.querySelector("#proj1skills").style.display = "block"
-})
-
-document.querySelector("#projeto-img1").addEventListener("mouseout", () => {
-    document.querySelector("#proj1skills").style.display = "none"
-})
-
-document.querySelector("#proj2foto").addEventListener("mouseover", () => {
-    document.querySelector("#proj2skills").style.display = "block"
-})
-
-document.querySelector("#proj2foto").addEventListener("mouseout", () => {
-    document.querySelector("#proj2skills").style.display = "none"
-})
 //skywars.net
