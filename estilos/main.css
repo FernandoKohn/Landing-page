@@ -490,7 +490,7 @@ main {
 
 #index {
     width: 100%;
-    min-height: 840px;
+    min-height: 800px;
     display: flex;
     align-items: center;
     justify-content: space-around;
@@ -1200,13 +1200,14 @@ main {
 }
 
 .sobre {
-    background-image: url("/fotos/pretopng.png");
-    background-size: 6px;
     overflow: visible;
     scroll-margin-top: -75px;
-    min-height: 1200px;
+    min-height: 930px;
     display: flex;
     flex-direction: column;
+    position: relative;
+    background: url(https://assets.website-files.com/5e87e737ee7085b9ba02c101/5e87e737ee7085fccd02c10d_pattern-grey.svg);
+    background-size:6px;
 
 }
 
@@ -1217,11 +1218,11 @@ main {
 }
 
 .Botao-sobre {
-    margin: auto;
+    position: absolute;
     align-items: center;
     justify-content: center;
-    position: relative;
     top: -40px;
+    left: 39vw;
     background-color: #C4C4C4;
     border: 4px solid black;
     width: 20%;
@@ -1252,138 +1253,22 @@ main {
     display: flex;
     width: 100%;
     height: 100%;
-    gap: 100px;
-}
-
-.janela-sobre {
-    background-color: #94a197;
-    width: 800px;
-    height: 1050px;
-    margin-left: 5%;
-    margin-top: 1%;
-    border: 3px solid black;
-    box-shadow: 8px 8px 0 0 #000;
-    display: flex;
-    flex-direction: column;
-}
-
-.janela-sobre.dark {
-    border-color: #000000;
-    transition: 1s;
-}
-
-.janela-sobre-header {
-    background-color: #C4C4C4;
-    align-items: center;
-    display: flex;
-    height: 50px;
-    border-bottom: 3px solid black;
-    position: relative;
     justify-content: center;
-}
-
-.janela-sobre-header.dark {
-    background-color: #383838;
-    /* border: 3px solid white; MANTER BORDA BRANCA? */
-    color: #E8E8E8;
-    transition: 1s;
-}
-
-.janela-sobre-header h1 {
-    font-size: 1.9em;
-}
-
-.janela-sobre-header img {
-    position: absolute;
-    left: 0;
-}
-
-.conteudo-janela-sobre {
-    background-color: #ffffff;
-    width: 100%;
-    height: 100%;
-    text-align: justify;
-    display: flex;
-    flex-direction: column;
-    padding: 2%;
-    gap: 30px;
-}
-
-.conteudo-janela-sobre div span h1 {
-    font-size: 1.2vw;
-}
-
-.conteudo-janela-sobre div h1 {
-    font-size: 1.4vw;
-}
-
-.conteudo-janela-sobre.dark {
-    background-color: #292B2E;
-    transition: 1s;
-}
-
-.conteudo-janela-sobre img {
-    width: 30px;
-}
-
-.sobre-1,
-.sobre-2,
-.sobre-3,
-.sobre-4 {
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-}
-
-
-.titulo1,
-.titulo2,
-.titulo3,
-.titulo4 {
-    font-size: 35px;
-    color: #C13A4B;
-}
-
-.titulo1.dark,
-.titulo2.dark,
-.titulo3.dark,
-.titulo4.dark {
-    color: #01DBC6;
-    transition: 1s;
-}
-
-.sobre-descricao1.dark,
-.sobre-descricao2.dark,
-.sobre-descricao3.dark,
-.sobre-descricao4.dark {
-    color: #E8E8E8;
-    transition: 1s;
-}
-
-.descricao {
-    font-size: 25px;
+    padding-top: 4%;
+    
 }
 
 .habilidades {
-    width: 45%;
-    height: 600px;
-    margin-top: 8%;
-    margin-right: 3%;
-    border: 3px solid black;
-    box-shadow: 8px 8px 0 0 #000;
+    width: 1300px;
+    height: 750px;
     display: flex;
     flex-direction: column;
-    overflow: hidden;
     position: relative;
-    z-index: 0;
-    background-color: #000000;
     user-select: none;
+    background: url("../fotos/estrelas2.gif");
+    border: 3px solid black;
+    box-shadow: 8px 8px 0 0 #000;
 }
-
-.habilidades-conteudo:hover {
-    cursor: url("/fotos/cursor2.png"), auto;
-}
-
 
 
 .habilidades-header {
@@ -1422,24 +1307,15 @@ main {
     left: 0;
 }
 
-.habilidades-conteudo {
-    width: 100%;
-    height: 490px;
-    z-index: 1;
-    display: flex;
-    background: url(../fotos/desktop-background-teste2.jpg);
-}
-
-
 
 .pasta-habilidade {
-    width: 20%;
-    height: 25%;
+    display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     color: white;
-    display: flex;
-    flex-direction: column;
+    width: 20%;
+    height: 25%;   
     margin: 15px 0 0 10px;
     position: absolute;
     z-index: 1;
@@ -1875,13 +1751,13 @@ main {
     height: 60px;
     display: flex;
     background-color: #c4c4c4;
-    position: relative;
+    justify-content: space-between;
+    position: absolute;
+    bottom: 0;
 }
 
 .desktop-icones {
     display: flex;
-    position: absolute;
-    height: 100%;
     width: 20%;
 }
 
@@ -1890,16 +1766,12 @@ main {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    /* Align horizontal */
     align-items: end;
-    /* Align vertical */
     width: 15%;
     height: 100%;
     padding: 10px;
     padding-top: 15px;
     border: 2px solid black;
-    position: absolute;
-    right: 0;
 }
 
 #relogio {
@@ -1919,8 +1791,7 @@ main {
     flex-direction: column;
     border-top: 3px solid black;
     scroll-margin-top: -100px;
-    background: url(https://assets.website-files.com/5e87e737ee7085b9ba02c101/5e87e737ee7085fccd02c10d_pattern-grey.svg);
-    background-size: 6px;
+    background-color: white;
 }
 
 #projetos.dark {
