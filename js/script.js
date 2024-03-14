@@ -75,6 +75,24 @@ darkmode.addEventListener("click", () => {
 })
 
 
+// Biblioteca de mandar email
+
+/*
+    function mandaremail() {
+        Email.send({
+            Host: "smtp.staticemail.com",
+            Username: "contatofernandodeoliveira01@gmail.com",
+            Password: "password",
+            To: 'contatofernandodeoliveira01@gmail.com',
+            From: document.getElementById("email").value,
+            Subject: "",
+            Body: document.getElementById("caixa-texto")
+        }).then(
+            message => alert(message)
+        );
+    }
+ */
+
 //Bola que segue o mouse
 
 const ball = document.querySelector("#cursor");
@@ -197,6 +215,8 @@ function displayClock() {
     setTimeout(displayClock, 1000);
 }
 
+// Movimento da janela de skills dentro do desktop atrelada aos limites do pai
+
 var windowContent = document.querySelector(".habilidades-conteudo");
 var windowHeader = document.querySelector(".habilidades-janela-header");
 var littleWindow = document.querySelector(".habilidades-janela");
@@ -226,73 +246,13 @@ document.addEventListener("mouseup", () => {
     document.removeEventListener("mousemove", move);
 });
 
-// Movimento da janela email dentro do contato-conteudo atrelada aos limites do pai (Codigo reutilizado)
-
-var windowContent2 = document.querySelector(".contato-conteudo");
-var windowHeader2 = document.querySelector(".abaemail-header-wrap");
-var littleWindow2 = document.querySelector(".abaemail");
-var offsetX2, offsetY2;
-
-var moveDois = (e) => {
-    littleWindow2.style.left = `${e.clientX - offsetX2}px`;
-    littleWindow2.style.top = `${e.clientY - offsetY2}px`;
-
-    if (littleWindow2.offsetLeft < 0) littleWindow2.style.left = "0px";
-
-    if (littleWindow2.offsetTop < 0) littleWindow2.style.top = "0px";
-
-    if ((littleWindow2.offsetLeft + littleWindow2.getBoundingClientRect().width) > windowContent2.getBoundingClientRect().width) littleWindow2.style.left = `${(windowContent2.getBoundingClientRect().width - littleWindow2.getBoundingClientRect().width)}px`;
-
-    if ((littleWindow2.offsetTop + littleWindow2.getBoundingClientRect().height) > (windowContent2.getBoundingClientRect().height + windowHeader.getBoundingClientRect().height)) littleWindow2.style.top = `${(windowContent2.getBoundingClientRect().height + windowHeader.getBoundingClientRect().height - littleWindow2.getBoundingClientRect().height)}px`;
-}
-
-
-littleWindow2.addEventListener("mousedown", (e) => {
-    offsetX2 = e.clientX - littleWindow2.offsetLeft;
-    offsetY2 = e.clientY - littleWindow2.offsetTop;
-    document.addEventListener("mousemove", moveDois);
-});
-
-document.addEventListener("mouseup", () => {
-    document.removeEventListener("mousemove", moveDois);
-});
-
-var windowContent3 = document.querySelector(".habilidades-conteudo");
-var windowHeader3 = document.querySelector(".habilidades-janela-header2");
-var littleWindow3 = document.querySelector(".habilidades-janela2");
-var offsetX, offsetY;
-
-var moveTres = (e) => {
-    littleWindow3.style.left = `${e.clientX - offsetX}px`;
-    littleWindow3.style.top = `${e.clientY - offsetY}px`;
-
-    if (littleWindow3.offsetLeft < 0) littleWindow3.style.left = "0px";
-
-    if (littleWindow3.offsetTop < 0) littleWindow3.style.top = "0px";
-
-    if ((littleWindow3.offsetLeft + littleWindow3.getBoundingClientRect().width) > windowContent3.getBoundingClientRect().width) littleWindow3.style.left = `${(windowContent3.getBoundingClientRect().width - littleWindow3.getBoundingClientRect().width)}px`;
-
-    if ((littleWindow3.offsetTop + littleWindow3.getBoundingClientRect().height) > (windowContent3.getBoundingClientRect().height + windowHeader3.getBoundingClientRect().height)) littleWindow3.style.top = `${(windowContent3.getBoundingClientRect().height + windowHeader3.getBoundingClientRect().height - littleWindow3.getBoundingClientRect().height)}px`;
-}
-
-
-littleWindow3.addEventListener("mousedown", (e) => {
-    offsetX = e.clientX - littleWindow3.offsetLeft;
-    offsetY = e.clientY - littleWindow3.offsetTop;
-    document.addEventListener("mousemove", moveTres);
-});
-
-document.addEventListener("mouseup", () => {
-    document.removeEventListener("mousemove", moveTres);
-});
-
 
 // Movimento das telas dos projetos
 
-var janela1 = document.querySelector(".proj-1")
-var janela2 = document.querySelector(".proj-2")
-var janela3 = document.querySelector(".proj-3")
-var janela4 = document.querySelector(".proj-4")
+var janela1 = document.querySelector("#card-1")
+var janela2 = document.querySelector("#card-2")
+var janela3 = document.querySelector("#card-3")
+var janela4 = document.querySelector("#card-4")
 
 function moverjanela1() {
     janela1.style.zIndex = "5";
@@ -540,17 +500,6 @@ var swiper = new Swiper(".swiper-container", {
 });
 
 
-document.querySelector("#formulario").addEventListener("submit", () => {
-    document.querySelector("#send-form").style.animation = "zoomOf 1s ease forwards"
-})
-
-
-document.querySelector("#send-form").addEventListener("animationend", () => {
-    document.querySelector("#send-form").style.display = "none"
-    document.querySelector("#checked-form").style.display = "block"
-    document.querySelector("#checked-form").style.animation = "zoomIn2 1s ease forwards"
-})
-
 function divCursorOn() {
     document.querySelector("#cursor").style.animation = "divCursorZoom 0.5s ease forwards"
 }
@@ -559,6 +508,7 @@ document.querySelector("body").addEventListener("animationend", () => {
     document.querySelector("#cursor").style.animation = ""
 })
 
+//Click and Drag projetos
 const slider = document.querySelector('.projetos-container');
 let isDown = false;
 let startX;
@@ -584,6 +534,7 @@ slider.addEventListener('mousemove', (e) => {
   const x = e.pageX - slider.offsetLeft;
   const walk = (x - startX) * 3; //scroll-fast
   slider.scrollLeft = scrollLeft - walk;
+  console.log(walk);
 });
 
 //skywars.net
