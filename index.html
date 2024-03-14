@@ -203,140 +203,144 @@
                 </div>
                 <div class="conteudo-sobre">
                     <div class="habilidades">
-                        <div class="pasta-habilidade" onclick="abrirjanela()">
-                            <img src="fotos/folder.png" alt="">
-                            <h1>Habilidades</h1>
-                        </div>
-                        <div class="habilidades-janela">
-                            <header class="habilidades-janela-header">
-                                <div class="header-wrap2">
-                                    <i class='bx bx-window-close' id="botao-fechar" onclick="fecharjanela()"></i>
-                                    <h1 id="janelah1">Habilidades</h1>
-                                </div>
-                            </header>
-                            <div class="habilidades-janela-index">
-                                <div class="habilidade">
-                                    <i class='bx bxs-right-arrow bx-flashing' id="cmd-arrow"></i>
-                                    <h1>JAVASCRIPT</h1> <i class='bx bxl-javascript btn-hab'></i>
-                                </div>
-                                <div class="habilidade">
-                                    <i class='bx bxs-right-arrow bx-flashing' id="cmd-arrow"></i>
-                                    <h1>React.js</h1> <i style="font-size:30px" class='bx bxl-react'></i>
-                                </div>
-                                <div class="habilidade">
-                                    <i class='bx bxs-right-arrow bx-flashing' id="cmd-arrow"></i>
-                                    <h1>Bootstrap</h1> <i style="font-size:30px" class='bx bxl-bootstrap'></i>
+                        <div class="habilidades-conteudo">
+                            <div class="pasta-habilidade" onclick="abrirjanela()">
+                                <img src="fotos/folder.png" alt="">
+                                <h1>Habilidades</h1>
+                            </div>
+
+                            <div class="habilidades-janela">
+                                <header class="habilidades-janela-header">
+                                    <div class="header-wrap2">
+                                        <i class='bx bx-window-close' id="botao-fechar" onclick="fecharjanela()"></i>
+                                        <h1 id="janelah1">Habilidades</h1>
+                                    </div>
+                                </header>
+                                <div class="habilidades-janela-index">
+                                    <h1 class="CommandLine">C:/User/Habilidades></h1>
+                                    <div class="habilidade">
+                                        <i class='bx bxs-right-arrow bx-flashing' id="cmd-arrow"></i>
+                                        <h1>JAVASCRIPT</h1>
+                                        <i class='bx bxl-javascript btn-hab'></i>
+                                    </div>
+                                    <div class="habilidade">
+                                        <i class='bx bxs-right-arrow bx-flashing' id="cmd-arrow"></i>
+                                        <h1>React.js</h1> <i style="font-size:30px" class='bx bxl-react'></i>
+                                    </div>
+                                    <div class="habilidade">
+                                        <i class='bx bxs-right-arrow bx-flashing' id="cmd-arrow"></i>
+                                        <h1>Bootstrap</h1> <i style="font-size:30px" class='bx bxl-bootstrap'></i>
+                                    </div>
                                 </div>
                             </div>
-                        </div>
-                        <div class="habilidades-janela2">
-                            <header class="habilidades-janela-header2">
-                                <div class="header-wrap3">
-                                    <i class='bx bx-window-close' id="botao-fechar2" onclick="fecharjanela2()"></i>
-                                    <h1 id="janelah1-2">CMD</h1>
-                                </div>
-                            </header>
-                            <div class="habilidades-janela-index2">
-                                <div class="habilidade2">
-                                    <span><i class='bx bxs-right-arrow bx-flashing' id="cmd-arrow2"></i><input
-                                            type="password" placeholder="Senha" id="plc" maxlength="12"></span>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="taskbar-janelas" id="taskbar-janelas">
-                            <div class="iniciar-wrap" id="iniciar-wrap">
-                                <div class="iniciar" id="iniciar">
-                                    <div class="search-box">
-                                        <input type="text" name="Procurar" id="input-procurar" placeholder="Pesquisar"
-                                            maxlength="10">
+                            <div class="habilidades-janela2">
+                                <header class="habilidades-janela-header2">
+                                    <div class="header-wrap3">
+                                        <i class='bx bx-window-close' id="botao-fechar2" onclick="fecharjanela2()"></i>
+                                        <h1 id="janelah1-2">CMD</h1>
                                     </div>
-                                    <h1 id="aplicacoes-h1">Aplicações</h1>
-                                    <div class="iniciar-conteudo">
-                                        <div class="iniciar-conteudo-habilidades-icone" onclick="abrirjanela()">
-                                            <img src="fotos/folder.png" alt="" id="aplicacoes-folder">
-                                            <h1 id="h1habilidades">Habilidades</h1>
-                                        </div>
-                                        <div class="iniciar-conteudo-habilidades-icone" id="pasta2"
-                                            onclick="abrirjanela2()">
-                                            <i class='bx bxs-lock-alt' id="lockpng"></i>
-                                            <h1 id="h1habilidades">Confidencial</h1>
-                                        </div>
+                                </header>
+                                <div class="habilidades-janela-index2">
+                                    <div class="habilidade2">
+                                        <span><i class='bx bxs-right-arrow bx-flashing' id="cmd-arrow2"></i><input
+                                                type="password" placeholder="Senha" id="plc" maxlength="12"></span>
                                     </div>
-                                    <div class="iniciar-usuario">
-                                        <div class="iniciar-usuario-hover">
-                                            <i class='bx bxs-user'></i>
-                                            <h1 contentEditable="true" id="usuario-trocavel">Usuário (Click para
-                                                trocar)</h1>
-                                        </div>
-                                    </div>
-                                    <div class="usuario"></div>
                                 </div>
                             </div>
-                            <div class="geren-tarefas-wrap" id="geren-tarefas-wrap">
-                                <div class="geren-tarefas">
-                                    <h1 class="geren-tarefas-titulo">Processos</h1>
-                                    <div class="table-head">
-                                        <div class="table-head-celula-1">
-                                            <h1 id="tabelanome">Nome</h1>
+                            <div class="taskbar-janelas" id="taskbar-janelas">
+                                <div class="iniciar-wrap" id="iniciar-wrap">
+                                    <div class="iniciar" id="iniciar">
+                                        <div class="search-box">
+                                            <input type="text" name="Procurar" id="input-procurar"
+                                                placeholder="Pesquisar" maxlength="10">
                                         </div>
-                                        <div class="table-head-celula-2">
-                                            <h1 id="tabelastatus">Status</h1>
-                                        </div>
-                                        <div class="table-head-celula-3">
-                                            <h1 id="tabelacpu">CPU</h1>
-                                        </div>
-                                    </div>
-                                    <div class="tabela-conteudo">
-                                        <div class="tabela-nome">
-                                            <h1 id="tabelaaplicativos">Aplicativos</h1>
-                                            <div id="aplicativo">
-                                                <img src="fotos/folder.png" alt="" id="folder-gerenciador">
-                                                <h3 class="h3-habilidades">Habilidades</h2>
+                                        <h1 id="aplicacoes-h1">Aplicações</h1>
+                                        <div class="iniciar-conteudo">
+                                            <div class="iniciar-conteudo-habilidades-icone" onclick="abrirjanela()">
+                                                <img src="fotos/folder.png" alt="" id="aplicacoes-folder">
+                                                <h1 id="h1habilidades">Habilidades</h1>
                                             </div>
-                                            <div id="aplicativo2">
-                                                <i class="bx bxs-lock-alt" id="lockpng2"></i>
-                                                <h3 class="h3-habilidades">CMD</h2>
+                                            <div class="iniciar-conteudo-habilidades-icone" id="pasta2"
+                                                onclick="abrirjanela2()">
+                                                <i class='bx bxs-lock-alt' id="lockpng"></i>
+                                                <h1 id="h1habilidades">Confidencial</h1>
                                             </div>
                                         </div>
-                                        <div class="tabela-status">
-                                            <h1 class="celula-invisivel">a</h1>
-                                            <h3 id="status">Aberto</h3>
+                                        <div class="iniciar-usuario">
+                                            <div class="iniciar-usuario-hover">
+                                                <i class='bx bxs-user'></i>
+                                                <h1 contentEditable="true" id="usuario-trocavel">Usuário (Click para
+                                                    trocar)</h1>
+                                            </div>
                                         </div>
-                                        <div class="tabela-cpu">
-                                            <h1 class="celula-invisivel">a</h1>
-                                            <h3 id="cpu-numero"></h3>
-                                            <h3 id="cpu-numero2"></h3>
+                                        <div class="usuario"></div>
+                                    </div>
+                                </div>
+                                <div class="geren-tarefas-wrap" id="geren-tarefas-wrap">
+                                    <div class="geren-tarefas">
+                                        <h1 class="geren-tarefas-titulo">Processos</h1>
+                                        <div class="table-head">
+                                            <div class="table-head-celula-1">
+                                                <h1 id="tabelanome">Nome</h1>
+                                            </div>
+                                            <div class="table-head-celula-2">
+                                                <h1 id="tabelastatus">Status</h1>
+                                            </div>
+                                            <div class="table-head-celula-3">
+                                                <h1 id="tabelacpu">CPU</h1>
+                                            </div>
+                                        </div>
+                                        <div class="tabela-conteudo">
+                                            <div class="tabela-nome">
+                                                <h1 id="tabelaaplicativos">Aplicativos</h1>
+                                                <div id="aplicativo">
+                                                    <img src="fotos/folder.png" alt="" id="folder-gerenciador">
+                                                    <h3 class="h3-habilidades">Habilidades</h2>
+                                                </div>
+                                                <div id="aplicativo2">
+                                                    <i class="bx bxs-lock-alt" id="lockpng2"></i>
+                                                    <h3 class="h3-habilidades">CMD</h2>
+                                                </div>
+                                            </div>
+                                            <div class="tabela-status">
+                                                <h1 class="celula-invisivel">a</h1>
+                                                <h3 id="status">Aberto</h3>
+                                            </div>
+                                            <div class="tabela-cpu">
+                                                <h1 class="celula-invisivel">a</h1>
+                                                <h3 id="cpu-numero"></h3>
+                                                <h3 id="cpu-numero2"></h3>
+                                            </div>
+
                                         </div>
 
                                     </div>
-
                                 </div>
-                            </div>
-                            <div id="opcoes-wrap">
-                                <div class="opcoes">
-                                    <div class="opcoes-h1">
-                                        <h1 id="h1opcoes">Opções</h1>
-                                    </div>
-                                    <div class="opcoes-conteudo">
-                                        <h1 id="papeldeparede">Papel de parede</h1>
-                                        <div class="opcoes-imagens">
-                                            <img src="fotos/desktop-background-teste2.jpg" alt="" id="img1"
-                                                onclick="img1()">
-                                            <img src="fotos/estrelas2.gif" alt="" id="img2" onclick="img2()">
+                                <div id="opcoes-wrap">
+                                    <div class="opcoes">
+                                        <div class="opcoes-h1">
+                                            <h1 id="h1opcoes">Opções</h1>
                                         </div>
-                                        <div class="opcoes-lingua">
-                                            <h1 id="linguagemh1">Linguagem</h1>
-                                            <div id="linguas">
-                                                <h1 id="pt" onclick="ptbr()">Português</h1>
-                                                <h1 id="en" onclick="en()">Inglês</h1>
-                                                <h1 id="cr" onclick="cr()">Coreano(한글)</h1>
+                                        <div class="opcoes-conteudo">
+                                            <h1 id="papeldeparede">Papel de parede</h1>
+                                            <div class="opcoes-imagens">
+                                                <img src="fotos/desktop-background-teste2.jpg" alt="" id="img1"
+                                                    onclick="img1()">
+                                                <img src="fotos/estrelas2.gif" alt="" id="img2" onclick="img2()">
+                                            </div>
+                                            <div class="opcoes-lingua">
+                                                <h1 id="linguagemh1">Linguagem</h1>
+                                                <div id="linguas">
+                                                    <h1 id="pt" onclick="ptbr()">Português</h1>
+                                                    <h1 id="en" onclick="en()">Inglês</h1>
+                                                    <h1 id="cr" onclick="cr()">Coreano(한글)</h1>
+                                                </div>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
-
                         <footer class="habilidades-rodape">
                             <div class="desktop-icones">
                                 <img src="fotos/taskbar-iniciar.png" alt="" onclick="abririniciar()">
@@ -369,7 +373,8 @@
                                     responsiva possuindo código limpo e escalável. Seu endpoit foi desenvolvido em
                                     Node.js.
                                 </p>
-                                <a href="https://jadefy.online/"><button class="projbotao" id="projbotaoJadefy">Ver
+                                <a target="_blank" href="https://jadefy.online/"><button class="projbotao"
+                                        id="projbotaoJadefy">Ver
                                         projeto</button></a>
                             </div>
                         </div>
@@ -386,7 +391,8 @@
                                     responsiva com uma solução inteligente para a versão mobile. Sua interface é fina,
                                     elegante e intuitiva. Completamente desenvolvido em ReactJS.
                                 </p>
-                                <a href="https://a-thais.online/"><button class="projbotao" id="projbotaoThais">Ver
+                                <a target="_blank" href="https://a-thais.online/"><button class="projbotao"
+                                        id="projbotaoThais">Ver
                                         projeto</button></a>
                             </div>
                         </div>

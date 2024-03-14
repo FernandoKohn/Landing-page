@@ -75,24 +75,6 @@ darkmode.addEventListener("click", () => {
 })
 
 
-// Biblioteca de mandar email
-
-/*
-    function mandaremail() {
-        Email.send({
-            Host: "smtp.staticemail.com",
-            Username: "contatofernandodeoliveira01@gmail.com",
-            Password: "password",
-            To: 'contatofernandodeoliveira01@gmail.com',
-            From: document.getElementById("email").value,
-            Subject: "",
-            Body: document.getElementById("caixa-texto")
-        }).then(
-            message => alert(message)
-        );
-    }
- */
-
 //Bola que segue o mouse
 
 const ball = document.querySelector("#cursor");
@@ -214,44 +196,6 @@ function displayClock() {
     data.innerHTML = date.toLocaleDateString("pt-BR", options);
     setTimeout(displayClock, 1000);
 }
-
-
-// Código antigo da janela skills para fazer ela mover que não funcionava
-// var desktop = document.querySelector(".habilidades-conteudo")
-// var desktopLimite = desktop.getBoundingClientRect()
-// var janela = document.querySelector(".habilidades-janela")
-// var offsetX, offsetY;
-
-// var mouseDifX = 0
-// var mouseDifY = 0
-
-// var move = (e) => {
-//     // mouseDifX = e.clientX - desktopLimite.left;
-//     // mouseDifY = e.clientY - desktopLimite.top;
-
-//     // if (mouseDifX <= (offsetX + janela.offsetLeft)) {
-//     //     janela.style.left = `${mouseDifX}px`;
-//     // } else janela.style.left = "0px"
-
-//     // if (mouseDifY <= (offsetY + janela.offsetTop)) {
-//     //     janela.style.top = `${mouseDifY}px`;
-//     // } else janela.style.top = "0px"    
-//     janela.style.left = `${Math.abs(e.clientX - offsetX)}px`;
-//     janela.style.top = `${Math.abs(e.clientY - offsetY)}px`;
-// }
-
-// janela.addEventListener("mousedown", (e) => { 
-//     offsetX = e.clientX - janela.offsetLeft;
-//     offsetY = e.clientY - janela.offsetTop;
-//     document.addEventListener("mousemove", move);
-// });
-
-// document.addEventListener("mouseup", () => {
-//     document.removeEventListener("mousemove", move);
-// });
-
-
-// Movimento da janela de skills dentro do desktop atrelada aos limites do pai
 
 var windowContent = document.querySelector(".habilidades-conteudo");
 var windowHeader = document.querySelector(".habilidades-janela-header");
