@@ -196,12 +196,12 @@
                             </div>
                         </div>
             </section>
-            <section class="sobre" id="sobre">
-                <div class="Botao-sobre">
-                    <h1 class="sobreh1-1">Habilidades</h1>
+            <section class="desktop" id="desktop">
+                <div class="Botao-habilidades">
+                    <h1>Habilidades</h1>
                     <i class='bx bx-down-arrow-alt' id="seta-botao-sobre"></i>
                 </div>
-                <div class="conteudo-sobre">
+                <div class="desktop-sobre">
                     <div class="habilidades">
                         <div class="habilidades-conteudo">
                             <div class="pasta-habilidade" onclick="abrirjanela()">
@@ -428,87 +428,62 @@
                     </div>
                 </div>
             </section>
-            <section id="contato">
-                <div class="Botao-sobre-contato">
-                    <h1 class="sobreh1-2">Contato</h1>
-                    <i class='bx bx-down-arrow-alt' id="seta-botao-sobre"></i>
-                </div>
-                <div class="contato-conteudo">
-                    <div class="redes-sociais-final">
-                        <div class="github">
-                            <a href="https://github.com/FernandoKohn" target="_blank"><img
-                                    src="fotos/github_8bit_yelotd.png" alt=""></a>
-                            <h1>GitHub</h1>
-                        </div>
-                        <div class="linkedin">
-                            <a href="https://www.linkedin.com/in/fernandokohn/" target="_blank"><img
-                                    src="fotos/linkedin_pixel_logo_icon_181925.png" alt="" id="linkedin"></a>
-                            <h1>LinkedIn</h1>
-                        </div>
-                        <div class="email" onclick="abriremail();copiarlowwidth()">
-                            <a href="#"><img
-                                    src="fotos/pixel-art-email-notification-envelope-vector-icon-8bit-game-white-background_360488-1408.png"
-                                    alt=""></a>
-                            <h1>Email</h1>
-                        </div>
-                    </div>
-                    <div class="abaemail">
-                        <div class="abaemail-header">
-                            <div class="abaemail-header-wrap">
-                                <i class='bx bx-window-close' id="botao-fechar-email" onclick="fecharjanelaemail()"></i>
-                            </div>
-                        </div>
-                        <div class="abaemail-conteudo">
-                            <h1 id="emailfernando">contatofernandokohn@gmail.com</h1>
-                            <span class="material-symbols-outlined" id="copiar" onclick="copiar()">
-                                content_copy
-                            </span>
-                            <i class='bx bx-check' id="checked" onclick="voltarcopiar()"></i>
-                        </div>
-                    </div>
-                    <div class="contato-janela">
-                        <header>
-                            <div class="contato-janela-headerwrap">
-                                <img src="fotos/Butoes.png" alt="Botões" id="botao-janela">
-                                <h1>Fale comigo</h1>
-                            </div>
+            <section id="Sobre">
+                <h1 id="sobre-titulo">Projetos</h1>
+                <div class="sobre-container">
+                    <div class="card-1" onclick="moverjanela1()">
+                        <header class="card-header">
+                            <i class='bx bx-checkbox-minus'></i>
+                            <h1>Error 404</h1>
                         </header>
-                        <form action="mailto:contatofernandodeoliveira01@gmail.com" method="post" enctype="text/plain"
-                            onsubmit="mandaremail()" id="formulario">
-                            <div class="janela-input">
-                                <div class="caixa-input">
-                                    <input type="text" name="nome" placeholder="" required>
-                                    <span class="placeholder" id="place-nome">Nome</span>
-                                </div>
-                                <div class="caixa-input">
-                                    <input type="text" name="email" placeholder="" required id="email">
-                                    <span class="placeholder">Email</span>
-                                </div>
-                            </div>
-                            <div class="texto">
-                                <textarea name="mensagem" id="caixa-texto" cols="30" rows="10" placeholder=""
-                                    required></textarea>
-                                <span class="placeholder">Sua mensagem</span>
-                            </div>
-                            <!-- <div class="botao-enviar">
-                                    <button type="submit" class="enviar">Enviar</button>
-                                </div>  -->
-                            <button class="botao-enviar-img">
-                                <img src="fotos/sending icon.png" alt="" id="send-form">
-                                <i class='bx bx-check' id="checked-form"></i>
-                            </button>
-
-                        </form>
+                        <div class="projeto-img1">
+                        </div>
+                        <div class="card-sobre">
+                            <H1>Lorem ipsum dolor sit amet.</H1>
+                            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. At nihil odio quod provident
+                                nobis quidem consectetur adipisci quasi quae exercitationem!</p>
+                        </div>
                     </div>
-                    <!-- <a href="#index" id="seta-voltar">
-                        <i class='bx bxs-up-arrow-circle'></i>
-                    </a> -->
+                    <div class="card-1" onclick="moverjanela2()">
+                        <header class="card-header">
+                            <i class='bx bx-checkbox-minus'></i>
+                            <h1>Error 404</h1>
+                        </header>
+                        <div class="projeto-img1">
+                        </div>
+                        <div class="card-sobre">
+                            <H1>Lorem ipsum dolor sit amet.</H1>
+                            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. At nihil odio quod provident
+                                nobis quidem consectetur adipisci quasi quae exercitationem!</p>
+                        </div>
+                    </div>
+                    <div class="card-1" onclick="moverjanela3()">
+                        <header class="card-header">
+                            <i class='bx bx-checkbox-minus'></i>
+                            <h1>Error 404</h1>
+                        </header>
+                        <div class="projeto-img1">
+                        </div>
+                        <div class="card-sobre">
+                            <H1>Lorem ipsum dolor sit amet.</H1>
+                            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. At nihil odio quod provident
+                                nobis quidem consectetur adipisci quasi quae exercitationem!</p>
+                        </div>
+                    </div>
+                    <div class="card-1" onclick="moverjanela4()">
+                        <header class="card-header">
+                            <i class='bx bx-checkbox-minus'></i>
+                            <h1>Error 404</h1>
+                        </header>
+                        <div class="projeto-img1">
+                        </div>
+                        <div class="card-sobre">
+                            <H1>Lorem ipsum dolor sit amet.</H1>
+                            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. At nihil odio quod provident
+                                nobis quidem consectetur adipisci quasi quae exercitationem!</p>
+                        </div>
+                    </div>
                 </div>
-                <footer id="copy">
-                    <div>
-                        <h1>© 2023 Fernando Kohn</h1>
-                    </div>
-                </footer>
             </section>
         </section>
     </main>
