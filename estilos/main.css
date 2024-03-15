@@ -484,9 +484,6 @@ main {
     background-color: white;
 }
 
-/* section {
-    min-height: 1000px;
-} */
 
 #index {
     width: 100%;
@@ -1207,7 +1204,7 @@ main {
     flex-direction: column;
     position: relative;
     background: url(https://assets.website-files.com/5e87e737ee7085b9ba02c101/5e87e737ee7085fccd02c10d_pattern-grey.svg);
-    background-size:6px;
+    background-size: 6px;
 
 }
 
@@ -1255,7 +1252,7 @@ main {
     height: 100%;
     justify-content: center;
     padding-top: 1%;
-    
+
 }
 
 .habilidades {
@@ -1328,7 +1325,7 @@ main {
     align-items: center;
     color: white;
     width: 20%;
-    height: 25%;   
+    height: 25%;
     margin: 15px 0 0 10px;
     position: absolute;
     z-index: 1;
@@ -1811,17 +1808,22 @@ main {
     border-top: 3px solid black;
     scroll-margin-top: -100px;
     background-color: white;
+    position: relative;
 }
 
 #projetos.dark {
-    background: url("../fotos/pretopng.png");
+    background: #171717;
     background-size: 6px;
     transition: 1s;
 }
 
+#projetos.dark>#projetos-titulo {
+    color: white;
+}
+
 #projetos-titulo {
     font-size: 5em;
-    padding: 5% 0 1% 11%;
+    padding: 5% 0 2% 11%;
 }
 
 #projetos-titulo.dark {
@@ -1837,6 +1839,10 @@ main {
     user-select: none;
 }
 
+.projetos-container:hover {
+    cursor: grab;
+}
+
 .inner {
     display: flex;
     padding-right: 30px;
@@ -1847,7 +1853,7 @@ main {
 .projetos-container.active {
     cursor: grabbing;
     cursor: -webkit-grabbing;
-    transform: scale(1.01);    
+    transform: scale(1.01);
 }
 
 .proj {
@@ -1891,7 +1897,7 @@ main {
     background-image: url("../fotos/projeto4img.png");
     background-size: cover;
     border-bottom: 3px solid black;
-} 
+}
 
 #thaisbanner {
     background-image: url("../fotos/proj2foto2.png");
@@ -1930,7 +1936,7 @@ main {
     background-color: #E8FF8B;
     border: none;
     transition: 0.6s;
-    color:#05735C;
+    color: #05735C;
     cursor: pointer;
 }
 
@@ -1938,7 +1944,7 @@ main {
     background-color: #D6CAAF;
     border: none;
     transition: 0.6s;
-    color:white;
+    color: white;
     cursor: pointer;
 }
 
@@ -1979,12 +1985,17 @@ main {
     border-top: 3px solid black;
     scroll-margin-top: -100px;
     background: url(https://assets.website-files.com/5e87e737ee7085b9ba02c101/5e87e737ee7085fccd02c10d_pattern-grey.svg);
-    background-size:6px;
+    background-size: 6px;
 }
 
 #Sobre.dark {
+    background: none;
     background-color: #171717;
     transition: 1s;
+}
+
+#Sobre.dark>#sobre-titulo {
+    color: white;
 }
 
 #sobre-titulo {
@@ -2004,8 +2015,6 @@ main {
     position: relative;
     display: flex;
     margin-right: 10px;
-    
-
 }
 
 .sobre-container header {
@@ -2026,7 +2035,7 @@ main {
 }
 
 
-.card{
+.card {
     display: flex;
     flex-direction: column;
     position: absolute;
@@ -2086,10 +2095,10 @@ main {
 
 #img1 {
     background: url("../fotos/cardimg1.png");
-   background-size: auto;
+    background-size: auto;
 }
 
-#img3{
+#img3 {
     background: url("../fotos/cardimg2.png");
 }
 
@@ -2111,6 +2120,53 @@ main {
 .card-sobre p {
     font-size: 20px;
     color: #474747;
+}
+
+#usaflag {
+    width: 3%;
+    position: absolute;
+    left: 343px;
+    top: 225px;
+}
+
+#reactjsTitulo {
+    color: #0fabdf;
+
+}
+
+.underline4 {
+    text-decoration: underline crimson 5px;
+}
+
+.markup1 {
+    color: #0A3161;
+}
+
+.markup1_2 {
+    color: #B31942;
+}
+
+.markup3 {
+    color: #0fabdf;
+}
+
+.markup4 {
+    color: crimson;
+}
+
+.footer {
+    display: flex;
+    padding: 0 30px;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    border-top: 2px solid black;
+    background-color: white;
+}
+
+.footer div {
+    display: flex;
+    gap: 30px;
 }
 
 
@@ -2259,31 +2315,7 @@ main {
         top: 70px;
     }
 
-    .contato-janela {
-        height: 600px;
-    }
-
-    .texto textarea {
-        width: 100%;
-        height: 230px;
-        border: 3px solid black;
-        background-color: #C4C4C4;
-        padding: 5%;
-        font-size: 1.5em;
-        resize: none;
-        font-family: "Pixel";
-        text-transform: uppercase;
-        position: relative;
-    }
-
 }
-
-@media screen and (max-height: 970px) and (max-width: 970px) {
-    .texto textarea {
-        height: 150px;
-    }
-}
-
 
 
 @media screen and (max-height: 715px) {
@@ -2325,30 +2357,11 @@ main {
         top: 15px;
     }
 
-    .contato-janela {
-        padding: 0;
-        height: 580px;
-        padding-bottom: 40px;
-    }
-
-    .contato-conteudo {
-        padding: 0;
-    }
-
-
-    .redes-sociais-final {
-        top: 100px;
-    }
 }
-
 
 @media screen and (max-width:1810px) {
     #linguas {
         font-size: 0.8vw;
-    }
-
-    .redes-sociais-final {
-        left: 180px;
     }
 
 }
@@ -2367,23 +2380,18 @@ main {
 
 }
 
-@media screen and (max-width: 1750px) {
-    .abaemail {
-        width: 400px;
-    }
-}
 
 @media screen and (max-width: 1650px) {
-    .redes-sociais-final {
-        left: 150px;
+
+    #Sobre {
+        position: relative;
+        min-height: 950px;
     }
 
-    /* .janela-sobre {
-        height: 860px;
-    } */
-
-    .conteudo-janela-sobre div span {
-        font-size: 1.5em;
+    .sobre-container {
+        transform: scale(0.8);
+        top: 130px;
+        position: absolute;
     }
 
 }
@@ -2396,16 +2404,7 @@ main {
         font-size: 16px;
     }
 
-    .conteudo-janela-sobre div span {
-        font-size: 1.5em;
-    }
 
-}
-
-@media screen and (max-width:1454px) {
-    .redes-sociais-final {
-        left: 110px;
-    }
 }
 
 
@@ -2482,45 +2481,43 @@ main {
     }
 
 
-    #formulario {
-        padding-top: 80px;
-    }
-
-    .abaemail {
-        left: 100px;
-        top: 600px;
-    }
-
-   
-
-  
-
-    
 }
 
-/* @media screen and (max-width: 1300px) { */
-
-
-
-@media screen and (max-width: 1250px) {
-    .redes-sociais-final {
-        left: 80px;
+@media screen and (max-width: 1300px) {
+    .sobre-container {
+        left: -70px;
     }
-
-
-
 }
 
 
-@media screen and (max-width: 1150px) {
-    .conteudo-janela-sobre div span {
-        font-size: 1.7em;
+
+@media (width <=1210px) {
+    .sobre-container {
+        left: -130px;
     }
 }
 
 @media screen and (max-width: 1132px) {
     .placeholder {
         font-size: 20px;
+    }
+
+    #Sobre {
+        min-height: 700px;
+    }
+
+    #sobre-titulo {
+        padding: 5% 0 1% 6%;
+    }
+
+    .sobre-container {
+        transform: scale(0.6);
+        top: 30px;
+        left: -100px;
+    }
+
+    .footer {
+        font-size: 0.7em;
     }
 }
 
@@ -2545,36 +2542,6 @@ main {
         font-size: 4.3vw;
     }
 
-    .titulo1,
-    .titulo2,
-    .titulo3,
-    .titulo4 {
-        font-size: 3vw;
-    }
-
-    .descricao {
-        font-size: 2.5vw;
-    }
-
-    .Botao-sobre-contato {
-        width: 30%;
-    }
-
-}
-
-@media screen and (max-width: 1070px) {
-    .redes-sociais-final {
-        left: 50px;
-    }
-
-    #sobre-3 {
-        height: 200px;
-    }
-
-    .conteudo-janela-sobre div span {
-        font-size: 1.6em;
-    }
-
 }
 
 @media screen and (min-width: 1112px) {
@@ -2592,26 +2559,6 @@ main {
 
 @media screen and (max-width: 970px) {
 
-    .janela-sobre {
-        height: 800px;
-    }
-
-    .conteudo-janela-sobre div span {
-        font-size: 1.3em;
-    }
-
-    .titulo1,
-    .titulo2,
-    .titulo3,
-    .titulo4 {
-        font-size: 3.4vw;
-        color: #C13A4B;
-    }
-
-    .descricao {
-        font-size: 3vw;
-    }
-
     .taskbar-janelas {
         width: 60%;
     }
@@ -2626,14 +2573,6 @@ main {
         width: 100%;
     }
 
-    #send-form {
-        width: 60px;
-    }
-
-    #formulario {
-        padding: 20px;
-    }
-
     .taskbar-janelas {
         bottom: 57px;
     }
@@ -2642,20 +2581,37 @@ main {
 }
 
 @media screen and (max-width: 907px) {
-    .redes-sociais-final {
-        left: 20px;
-    }
+
 
     #projetos {
         position: relative;
         min-height: 2800px;
     }
 
+    #Sobre {
+        min-height: 2800px;
+    }
+
+    .sobre-container {
+        transform: scale(1);
+        position: static;
+        padding: 10px;
+        margin: 0;
+        flex-direction: column;
+        gap: 40px;
+    }
+
+    .card {
+        position: unset;
+        width: 100%;
+        height: 600px;
+    }
+
     #projetos-titulo {
         padding: 2%;
     }
 
-    .projetos-container {    
+    .projetos-container {
         height: 100%;
     }
 
@@ -2663,6 +2619,7 @@ main {
         padding: 0 10px;
         flex-direction: column;
     }
+
 
     .proj {
         width: 100%;
@@ -2676,13 +2633,18 @@ main {
         font-size: 1.2em;
     }
 
+    #usaflag {
+        top: 279px;
+        left: 357px;
+    }
+
 
 }
 
-@media screen and (max-width:850px){
-    .conteudo-janela-sobre div span {
-        font-size: 1.2em;
-    }    
+@media screen and (max-width:850px) {
+    .footer {
+        font-size: 0.5em;
+    }
 }
 
 @media screen and (max-width:830px) {
@@ -2754,39 +2716,14 @@ main {
         gap: 30px;
     }
 
-    .contato-janela form {
-        gap: 5px;
-    }
-
-    .abaemail {
-        left: 50px;
-        top: 600px;
-    }
 }
 
 
 @media screen and (max-width: 730px) {
 
-    .Botao-sobre-contato {
-        width: 50%;
-    }
-
     .Botao-sobre {
         width: 55%;
     }
-
-}
-
-@media screen and (max-width: 713px) {
-    .redes-sociais-final img {
-        width: 50px;
-    }
-
-    .redes-sociais-final {
-        left: 10px;
-    }
-
-
 
 }
 
@@ -2812,60 +2749,31 @@ main {
         width: 80%;
     }
 
-    #contato {
-        min-height: 1100px;
+    .card h1 {
+        font-size: 0.9em;
     }
 
-    .contato-conteudo {
-        display: flex;
+    .card p {
+        font-size: 0.55em;
+    }
+
+    #usaflag {
+        top: 279px;
+        left: 357px;
+    }
+
+    .footer {
         flex-direction: column;
-        justify-content: unset;
-        padding-top: 50px;
-    }
-
-    .redes-sociais-final {
-        flex-direction: row;
-        width: 60%;
-        height: 10%;
-        position: initial;
-        top: 0;
-        right: 0px;
-        left: 0;
-        margin: 0 auto;
-        padding-right: 20px;
-
-    }
-
-    .contato-janela {
-        margin: 0 auto;
-        width: 500px;
-        height: 640px;
-    }
-
-    .texto textarea {
-        height: 200px;
-    }
-
-    .redes-sociais-final img {
-        width: 30px;
-    }
-
-    #linkedin {
-        width: 30px;
-    }
-
-    .abaemail {
-        display: none;
     }
 
 
 
 }
 
-@media (width <= 600px) {
+@media (width <=600px) {
 
     #projetos {
-        min-height: 3350px;
+        min-height: 2850px;
     }
 
     .projetos-container {
@@ -2875,15 +2783,23 @@ main {
     .proj {
         height: 700px;
     }
+
+    #proj2 {
+        height: 600px;
+    }
+
+    #proj3 {
+        height: 600px;
+    }
+
+    #proj4 {
+        height: 400px;
+    }
 }
 
 
 
 @media screen and (max-width: 585px) {
-    .contato-janela {
-        width: 90%;
-        margin: 0 auto;
-    }
 
     .relogio-data {
         width: 35%;
@@ -3001,37 +2917,11 @@ main {
         margin-left: 0;
     }
 
-    .Botao-sobre-contato,
+
     .Botao-sobre {
         width: 70%;
     }
 
-
-    .contato-janela-headerwrap {
-        font-size: 20px;
-    }
-
-    #botao-janela {
-        width: 40px;
-    }
-
-
-
-    #contato {
-        min-height: 1000px;
-    }
-
-    .contato-janela {
-        height: 510px;
-    }
-
-    .texto textarea {
-        height: 100px;
-    }
-
-    .botao-enviar-img img {
-        width: 50px;
-    }
 
 }
 
@@ -3052,6 +2942,10 @@ main {
 
     .bola-descri {
         padding: 0 10px;
+    }
+
+    #proj2 {
+        height: 650px;
     }
 }
 
@@ -3095,11 +2989,6 @@ main {
         width: 90%;
     }
 
-
-    .contato-janela-headerwrap {
-        font-size: 14px;
-    }
-
     .img-460 img {
         transform: scale(1.2);
     }
@@ -3107,8 +2996,24 @@ main {
 }
 
 @media screen and (max-width:436px) {
-    .janela-sobre {
-        height: 1300px;
+
+
+    #Sobre {
+        min-height: 3200px;
+    }
+
+    .card {
+        height: 700px;
+    }
+
+    #proj1 {
+        height: 780px;
+    }
+}
+
+@media (width <=410px) {
+    #proj2 {
+        height: 700px;
     }
 }
 
@@ -3118,10 +3023,13 @@ main {
         transform: scale(1.5);
     }
 
-    .janela-sobre {
-        height: 1400px;
-    }
 
+}
+
+@media (width <=390px) {
+    #proj2 {
+        height: 810px;
+    }
 }
 
 
@@ -3149,9 +3057,6 @@ main {
         font-size: 25px;
     }
 
-    .janela-sobre {
-        height: 1400px;
-    }
 
     #janelah1,
     #janelah1-2 {
@@ -3162,20 +3067,7 @@ main {
         width: 10vw;
     }
 
-    .conteudo-janela-sobre img {
-        width: 10px;
-    }
 
-    .janela-sobre-header h1 {
-        font-size: 5vw;
-    }
-
-    .titulo1,
-    .titulo2,
-    .titulo3,
-    .titulo4 {
-        font-size: 4vw;
-    }
 
     .pasta-habilidade {
         width: 50%;
@@ -3193,6 +3085,8 @@ main {
         padding: 0;
     }
 
+
+
     #projetos {
         min-height: 3800px;
     }
@@ -3205,24 +3099,12 @@ main {
         height: 850px;
     }
 
-    .Botao-sobre-contato h1,
-    .Botao-sobre-contato i,
-    .Botao-sobre h1,
-    .Botao-sobre i {
-        font-size: 20px;
+    #proj1 {
+        height: 900px;
     }
 
-    .redes-sociais-final {
-        gap: 15px;
-    }
 
-    .menu-lateral {
-        width: 180px;
-    }
 
-    .box-lateral a {
-        font-size: 25px;
-    }
 }
 
 @media screen and (max-width: 350px) {
@@ -3245,6 +3127,10 @@ main {
     .incializador-conteudo {
         width: 260px;
         height: 300px;
+    }
+
+    #proj1 {
+        height: 1000px;
     }
 
 }

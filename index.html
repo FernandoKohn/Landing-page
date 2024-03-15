@@ -54,14 +54,11 @@
                 <a href="#" id="navlink0">Home</a>
             </div>
             <div class="box-lateral">
-                <a href="#sobre" class="navlink1">Sobre mim</a>
-            </div>
-            <div class="box-lateral">
                 <a href="#projetos" class="navlink2">Projetos</a>
             </div>
             <div class="box-lateral">
-                <a href="#contato" class="navlink3">Contato</a>
-            </div>
+                <a href="#Sobre" class="navlink1">Sobre mim</a>
+            </div>           
         </div>
         <header class="menu-fixo">
             <div class="header-fk-darkmode">
@@ -79,9 +76,8 @@
             </div>
             <nav class="navbar">
                 <a href="#index" aria-current="page" class="navlink4">Home</a>
-                <a href="#sobre" class="navlink5">Sobre mim</a>
                 <a href="#projetos" class="navlink6">Projetos</a>
-                <a href="#contato" class="navlink7">Contato</a>
+                <a href="#Sobre" class="navlink5">Sobre mim</a>             
             </nav>
             <i class='bx bx-menu' id="menu-hamburguer" onclick="abrirhamburguer()"></i>
         </header>
@@ -252,7 +248,7 @@
                                     <div class="iniciar" id="iniciar">
                                         <div class="search-box">
                                             <input type="text" name="Procurar" id="input-procurar"
-                                                placeholder="Pesquisar" maxlength="10">
+                                            placeholder="Pesquisar" maxlength="10">
                                         </div>
                                         <h1 id="aplicacoes-h1">Aplicações</h1>
                                         <div class="iniciar-conteudo">
@@ -359,7 +355,7 @@
                 <h1 id="projetos-titulo">Projetos</h1>
                 <div class="projetos-container">
                     <div class="inner">
-                        <div class="proj">
+                        <div class="proj" id="proj1">
                             <div class="projheader">
                                 <h1>Jadefy.html</h1>
                                 <img src="./fotos/Butoes.png" alt="">
@@ -378,7 +374,7 @@
                                         projeto</button></a>
                             </div>
                         </div>
-                        <div class="proj">
+                        <div class="proj" id="proj2">
                             <div class="projheader">
                                 <h1>A-Thais.html</h1>
                                 <img src="./fotos/Butoes.png" alt="">
@@ -396,7 +392,7 @@
                                         projeto</button></a>
                             </div>
                         </div>
-                        <div class="proj">
+                        <div class="proj" id="proj3">
                             <div class="projheader">
                                 <h1>Este site.html</h1>
                                 <img src="./fotos/Butoes.png" alt="">
@@ -412,7 +408,7 @@
                                 </p>
                             </div>
                         </div>
-                        <div class="proj">
+                        <div class="proj" id="proj4">
                             <div class="projheader">
                                 <h1>404</h1>
                                 <img src="./fotos/Butoes.png" alt="">
@@ -439,7 +435,13 @@
                         </div>
                         <div class="card-sobre">
                             <H1>Fluente em inglês</H1>
-                            <p>Fluente em inglês, possuo habilidade verbal e escrita para comunicação eficaz em ambientes profissionais. Experiência sólida em interações cotidianas, garantindo uma colaboração fluida em projetos internacionais. Aptidão para compreensão e expressão de conceitos complexos na língua inglesa.</p>
+                            <img src="fotos/usa.png" alt="usa flag" id="usaflag">
+                            <p>Fluente em inglês, possuo<span class="markup1">
+                                 habilidade verbal e escrita para comunicação eficaz em
+                                    ambientes profissionais
+                            </span>. Experiência sólida em interações cotidianas, garantindo uma
+                                <span class="markup1_2">colaboração fluida em projetos internacionais</span>. Aptidão para compreensão e expressão de
+                                conceitos complexos na língua inglesa.</p>
                         </div>
                     </div>
                     <div id="card-2" class="card" onclick="moverjanela2()">
@@ -451,11 +453,12 @@
                         <div class="card-sobre">
                             <H1>Atividades desenvolvidas:</H1>
                             <p>-Concepção de componentes reutilizáveis e inteligentes. <br>
-                            -Resolução de bugs e manutenção do código, buscando sempre mantê-lo limpo e coerente.<br>
-                            -Gerenciamento dos pacotes e dependências do projeto com ferramentas como NPM. <br>
-                             -Gerenciar o ciclo de vida de toda a comunicação API com endpoints RESTful. <br>
-                            -Garantir a qualidade da entrega e da comunicação com o cliente. <br>
-                            -Gerenciar todo o ambiente git e os versionamentos do projeto.
+                                -Resolução de bugs e manutenção do código, buscando sempre mantê-lo limpo e
+                                coerente.<br>
+                                -Gerenciamento dos pacotes e dependências do projeto com ferramentas como NPM. <br>
+                                -Gerenciar o ciclo de vida de toda a comunicação API com endpoints RESTful. <br>
+                                -Garantir a qualidade da entrega e da comunicação com o cliente. <br>
+                                -Gerenciar todo o ambiente git e os versionamentos do projeto.
                             </p>
                         </div>
                     </div>
@@ -466,28 +469,38 @@
                         <div class="card-img" id="img3">
                         </div>
                         <div class="card-sobre">
-                            <H1>ReactJS</H1>
+                            <H1 id="reactjsTitulo">ReactJS</H1>
                             <p>Especializado em ReactJS, com experiência na criação de interfaces interativas e
-                                eficientes. Proficiente na construção de componentes reutilizáveis, gerenciamento de
-                                estado eficaz e integração de APIs RESTful. Comprometido com a entrega de experiências
-                                de usuário excepcionais, possuo habilidades avançadas em JavaScript, HTML e CSS.</p>
+                                eficientes. Proficiente na construção de <span class="markup3">
+                                    componentes reutilizáveis, gerenciamento de
+                                    estado eficaz e integração de APIs RESTful
+                                </span>. Comprometido com
+                                    entrega de experiência
+                                    de usuário excepcional
+                               , possuo habilidades avançadas em JavaScript, HTML e CSS.</p>
                         </div>
                     </div>
                     <div id="card-4" class="card" onclick="moverjanela4()">
                         <header class="card-header">
                             <img src="./fotos/Butoes.png" class="card-header-img" alt="Circulos Retro">
                         </header>
-                        <div class="card-img" id="img4"> 
+                        <div class="card-img" id="img4">
                         </div>
                         <div class="card-sobre">
-                            <H1>Dedicação como diferencial</H1>
-                            <p>Desenvolvedor web autônomo com 1 ano de experiência, apaixonado por transformar ideias em
-                                soluções digitais inovadoras. Especializado em criar websites dinâmicos e responsivos,
-                                utilizando as mais recentes tecnologias e melhores práticas de desenvolvimento.</p>
+                            <H1><span class="underline4">Dedicação</span> como diferencial</H1>
+                            <p>Desenvolvedor web autônomo com 1 ano de experiência, apaixonado por transformar <span class="markup4">ideias em soluções digitais inovadoras </span>. Especializado em criar websites <span class="markup4">dinâmicos e responsivos</span> utilizando as mais recentes tecnologias e melhores práticas de desenvolvimento.</p>
                         </div>
                     </div>
                 </div>
+                
             </section>
+            <footer class="footer">
+                <h1>©2024 All rights reserved. Made by Fernando Kohn.</h1>
+                <div>
+                    <h1>Contato:</h1>
+                    <h1>contatofernandokohn@gmail.com</h1>
+                </div>
+            </footer>
         </section>
     </main>
 </body>

@@ -59,7 +59,7 @@ window.location.hash = 'index';
 
 var darkmode = document.getElementById("dark-mode")
 darkmode.addEventListener("click", () => {
-    document.querySelectorAll("#index, #dark-mode, #conteudo-total, .Conteudo-Index, body, .menu-fixo, .box-lateral a, .fk, .navbar, .navlink1, .navlink2, .navlink3, .navlink4, .navlink5, .navlink6, .navlink7, .ola-wrap-h6, .fernandokohn, .fernandokohn2, .efeito-wrap-h2, .Efeito-digitado, .Conteudo-Index-h4-1, .Conteudo-Index-h4-2, .mais-sobre-mim, #mais-sobre-mim2, .mais-sobre-mim-h1, #mais-sobre-mim2-h1, .caixa-butao, #cx-bt2, #cx-bt-a3, #cx-bt-a4, .caixa-butao-a1, .caixa-butao-a2, #caixao-botao-dark1, #caixao-botao-dark2, .sobre, .Botao-sobre, .janela-sobre, .janela-sobre-header, .conteudo-janela-sobre, .titulo1, .titulo2, .titulo3, .titulo4, .sobre-descricao1, .sobre-descricao2, .sobre-descricao3, .sobre-descricao4, .header-wrap1, .header-wrap2, .header-wrap3, #botao-fechar, #projetos, #projetos-titulo, .projetos-container, .projeto-header1, .projeto-header2, .projeto-header3, .projeto-header4, .Botao-sobre-contato, #contato, .swiper-slide, #swipeimg, .swipeh6, .swipeh4, .swipeh2, .Efeito-digitado-2, .Efeito-digitado-3, .bola-460, .bola-texto, .bola-texto header, .bola-texto h6, .bola-texto h1, #efeito-wrap-460, .sobremim-460, .sobremim-460 a, #cx-bt-05, #cx-bt-06, .header-fk-darkmode, .contato-janela").forEach(classe => {
+    document.querySelectorAll("#index, #dark-mode, #conteudo-total, .Conteudo-Index, body, .menu-fixo, .box-lateral a, .fk, .navbar, .navlink1, .navlink2, .navlink3, .navlink4, .navlink5, .navlink6, .navlink7, .ola-wrap-h6, .fernandokohn, .fernandokohn2, .efeito-wrap-h2, .Efeito-digitado, .Conteudo-Index-h4F-1, .Conteudo-Index-h4-2, .mais-sobre-mim, #mais-sobre-mim2, .mais-sobre-mim-h1, #mais-sobre-mim2-h1, .caixa-butao, #cx-bt2, #cx-bt-a3, #cx-bt-a4, .caixa-butao-a1, .caixa-butao-a2, #caixao-botao-dark1, #caixao-botao-dark2, .header-wrap2, .header-wrap3, #botao-fechar, .Botao-sobre-contato, .swiper-slide, #swipeimg, .swipeh6, .swipeh4, .swipeh2, .Efeito-digitado-2, .Efeito-digitado-3, .bola-460, .bola-texto, .bola-texto header, .bola-texto h6, .bola-texto h1, #efeito-wrap-460, .sobremim-460, .sobremim-460 a, #cx-bt-05, #cx-bt-06, .header-fk-darkmode, #projetos, .desktop, #Sobre" ).forEach(classe => {
         classe.classList.toggle("dark")
     })
     var fotoP = document.querySelector("#fotoperfil1")
@@ -74,24 +74,6 @@ darkmode.addEventListener("click", () => {
     }
 })
 
-
-// Biblioteca de mandar email
-
-/*
-    function mandaremail() {
-        Email.send({
-            Host: "smtp.staticemail.com",
-            Username: "contatofernandodeoliveira01@gmail.com",
-            Password: "password",
-            To: 'contatofernandodeoliveira01@gmail.com',
-            From: document.getElementById("email").value,
-            Subject: "",
-            Body: document.getElementById("caixa-texto")
-        }).then(
-            message => alert(message)
-        );
-    }
- */
 
 //Bola que segue o mouse
 
@@ -278,36 +260,9 @@ function moverjanela4() {
 
 //
 
-function abriremail() {
-    document.querySelector(".abaemail").style.visibility = "visible"
-}
-
-function fecharjanelaemail() {
-    document.querySelector(".abaemail").style.visibility = "hidden"
-
-}
-
 //As funções nomeadas "Copiar" copiam o HTML para o clipboard (teclado)
 
-var text = document.getElementById("emailfernando")
 
-function copiarlowwidth() {
-    if (window.innerWidth < 670) {
-        navigator.clipboard.writeText(text.innerHTML)
-        window.alert("Email copiado para área de transferência")
-    }
-}
-
-async function copiar() {
-    await navigator.clipboard.writeText(text.innerHTML)
-    document.querySelector("#copiar").style.display = "none"
-    document.querySelector("#checked").style.display = "block"
-}
-
-function voltarcopiar() {
-    document.querySelector("#copiar").style.display = "block"
-    document.querySelector("#checked").style.display = "none"
-}
 
 //
 
