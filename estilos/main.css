@@ -28,6 +28,8 @@ html {
 }
 
 
+
+
 #cursor {
     background-color: #ffffff;
     width: 30px;
@@ -1921,10 +1923,16 @@ main {
     gap: 15px;
 }
 
+.links {
+    display: flex;
+    gap: 15px;
+}
+
+#links_thais {
+    margin-top: 47px;
+}
+
 .projbotao {
-    position: absolute;
-    bottom: 30px;
-    left: 30px;
     width: 150px;
     height: 70px;
     background-color: #C4C4C4;
@@ -2991,6 +2999,12 @@ main {
 
     .img-460 img {
         transform: scale(1.2);
+    }
+
+    .links, #links_thais {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
     }
 
 }
