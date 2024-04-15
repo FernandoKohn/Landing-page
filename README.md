@@ -1,5 +1,8 @@
 # Portfólio Fernando Kohn,  Resgate e Inovação nos Antigos Sistemas Operacionais.
 
+- ✅ [Highlights](#Highlights)
+- ‍💻 [CMD](#CMD,-um-_Easter-Egg_)
+
 [![ofernandokohn](https://github.com/FernandoKohn/Landing-page/assets/131038556/47e85905-4291-4ca1-96b7-634c83091ca5)](https://o-fernando.com/#index)
 
 ## Conceito
