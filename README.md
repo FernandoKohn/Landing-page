@@ -23,7 +23,7 @@ Características:
 - Gerenciador de Taréfas, com memória utilizada em tempo real.
 - Aba iniciar.
 
-![ofernandokohn_desktop2](https://github.com/FernandoKohn/Landing-page/assets/131038556/cd43e668-c661-442f-9cb0-ef22d158d423)
+![ofernandokohn_cmd](https://github.com/FernandoKohn/Landing-page/assets/131038556/966f74bf-2396-40ea-b38c-d83eb1ec2915)
 
 ## CMD, um _Easter Egg_
 
