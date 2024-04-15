@@ -30,8 +30,8 @@ Qual será a senha? Qualquer um pode encontrar.
 
 ## Tecnologias
 
--Javascipt
--HTML
--CSS
+- Javascipt
+- HTML
+- CSS
 
 
