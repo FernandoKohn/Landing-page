@@ -1901,6 +1901,11 @@ main {
     border-bottom: 3px solid black;
 }
 
+#luminyBanner {
+    background-image: url("../fotos/bannerLuminy.svg");
+    background-size: cover;
+}
+
 #thaisbanner {
     background-image: url("../fotos/proj2foto2.png");
     background-size: cover;
@@ -1928,6 +1933,10 @@ main {
     gap: 15px;
 }
 
+#linksLuminy {
+    padding-top: 15px;
+}
+
 #links_thais {
     margin-top: 47px;
 }
@@ -1953,6 +1962,14 @@ main {
     border: none;
     transition: 0.6s;
     color: white;
+    cursor: pointer;
+}
+
+#projbotaoLuminy:hover {
+    background-color: #152522;
+    border: none;
+    transition: 0.6s;
+    color: #F8A9FF;
     cursor: pointer;
 }
 
